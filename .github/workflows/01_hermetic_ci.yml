@@ -1,0 +1,31 @@
+name: Hermetic CI & OCI Packaging
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v16
+
+      - name: Setup Magic Nix Cache
+        uses: DeterminateSystems/magic-nix-cache-action@v9
+
+      - name: Nix Flake Evaluation Check
+        run: nix flake check
+
+      - name: Build Hermetic Container Image
+        run: nix build .#dockerImage
+
+      - name: Load Image into Docker Daemon
+        run: docker load < result
+
+      - name: Validate Container Execution
+        run: docker run --rm faster-whisper:latest
