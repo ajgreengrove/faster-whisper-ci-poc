@@ -40,8 +40,12 @@
             pip
             setuptools
             wheel
+            build
             pytest
             virtualenv
+            black
+            isort
+            flake8
             fasterWhisperPkg
           ]);
 
