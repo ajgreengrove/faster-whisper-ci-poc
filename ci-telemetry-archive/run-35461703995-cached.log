@@ -1,0 +1,284 @@
+build-and-validate	UNKNOWN STEP	﻿2026-09-19T18:35:58.8435784Z Current runner version: '2.337.0'
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8471615Z ##[group]Runner Image Provisioner
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8473063Z Hosted Compute Agent
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8474018Z Version: 20260828.587
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8475192Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8476493Z Build Date: 2026-08-28T16:44:25Z
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8478088Z Worker ID: {560c7708-222d-4600-9485-7d4cfdce3b4d}
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8479279Z Azure Region: eastus2
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8480202Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8483005Z ##[group]Operating System
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8484078Z Ubuntu
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8485046Z 24.04.5
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8485882Z LTS
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8486658Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8487993Z ##[group]Runner Image
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8489123Z Image: ubuntu-24.04
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8490144Z Version: 20260907.300.1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8492219Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8494969Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8496634Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8498958Z ##[group]GITHUB_TOKEN Permissions
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8501855Z Contents: read
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8502903Z Metadata: read
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8503789Z Packages: read
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8505337Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8508603Z Secret source: Actions
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8510179Z Cache mode: write
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8511785Z Prepare workflow directory
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.8991093Z Prepare all required actions
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:58.9061675Z Getting action download info
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.1211789Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.2398666Z Download action repository 'DeterminateSystems/nix-installer-action@v16' (SHA:e50d5f73bfe71c2dd0aa4218de8f4afa59f8f81d)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.4239925Z Download action repository 'DeterminateSystems/magic-nix-cache-action@v9' (SHA:6221693898146dc97e38ad0e013488a16477a4c4)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.7723066Z Complete job name: build-and-validate
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8600615Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8609172Z ##[group]Run actions/checkout@v4
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8609914Z with:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8610410Z   repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8614584Z   token: ***
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8615020Z   ssh-strict: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8615449Z   ssh-user: git
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8615881Z   persist-credentials: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8616372Z   clean: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8616809Z   sparse-checkout-cone-mode: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8617331Z   fetch-depth: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8618147Z   fetch-tags: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8618599Z   show-progress: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8619050Z   lfs: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8619492Z   submodules: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8619940Z   set-safe-directory: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8620454Z   allow-unsafe-pr-checkout: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.8621284Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9616252Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9618977Z ##[group]Getting Git version info
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9620546Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9621951Z [command]/usr/bin/git version
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9683683Z git version 2.55.0
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9707271Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9725422Z Temporarily overriding HOME='/home/runner/work/_temp/799e8922-3b83-481c-978b-5cfe47d5004f' before making global git config changes
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9729838Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9732918Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9787885Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9795631Z ##[group]Initializing the repository
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9800044Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9898883Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9900754Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9902563Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9904316Z hint: call:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9905135Z hint:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9907081Z hint: 	git config --global init.defaultBranch <name>
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9908586Z hint:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9909707Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9912425Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9913879Z hint:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9914718Z hint: 	git branch -m <name>
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9915643Z hint:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9916953Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9919732Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9923421Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9959104Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9960420Z ##[group]Disabling automatic garbage collection
+build-and-validate	UNKNOWN STEP	2026-09-19T18:35:59.9964154Z [command]/usr/bin/git config --local gc.auto 0
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0005027Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0005792Z ##[group]Setting up auth
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0006530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0038281Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0394878Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0435743Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0680566Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0716416Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0943970Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0983113Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0983938Z ##[group]Fetching the repository
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:00.0993264Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +56efc9997dce0f5c275902d05b945a7e9a77de87:refs/remotes/origin/master
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2032182Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2033683Z  * [new ref]         56efc9997dce0f5c275902d05b945a7e9a77de87 -> origin/master
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2037915Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2039073Z ##[group]Determining the checkout info
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2041394Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2048186Z [command]/usr/bin/git sparse-checkout disable
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2099606Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2132104Z ##[group]Checking out the ref
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.2136551Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3230435Z Reset branch 'master'
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3234147Z branch 'master' set up to track 'origin/master'.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3241524Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3286116Z [command]/usr/bin/git log -1 --format=%H
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3313794Z 56efc9997dce0f5c275902d05b945a7e9a77de87
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3652156Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3654615Z ##[group]Run DeterminateSystems/nix-installer-action@v16
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3655164Z with:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3655540Z   determinate: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3655937Z   flakehub: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3656346Z   force-docker-shim: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3659726Z   github-token: ***
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3660184Z   github-server-url: https://github.com
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3660686Z   job-status: success
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3661082Z   kvm: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3661459Z   modify-profile: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3661871Z   reinstall: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3662257Z   start-daemon: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3662718Z   diagnostic-endpoint: -
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3663139Z   trust-runner-user: true
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3663590Z   _internal-strict-mode: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.3664035Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.5145906Z (node:2262) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:01.5147966Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.1691642Z ##[group]Configuring KVM
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.2263481Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.2264840Z ^[[32m Accelerated KVM is enabled ^[[33m⚡️
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.2268614Z ##[group]Installing Nix
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.2271182Z ##[group]Downloading nix-installer for x86_64-linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.2273042Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/x86_64-linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.3732549Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:02.8101750Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/nix-installer-c9753f2b-be87-40b0-a3e9-46ed0c143e91 --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.0632066Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0E9auagAAAADTaNR3zDn2TqPgK7AOrgPEUEhMMzBFREdFMDQyMgBFZGdl
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.0670017Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.0685485Z [command]/home/runner/work/_temp/nix-installer-0361e579-55f1-4025-9e91-94c2d5f60306 install linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.0740967Z  INFO nix-installer v3.22.5
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.1828832Z ^[[2m^[[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...^[[39m^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.1934415Z  INFO nix-installer v3.22.5
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.3824977Z  INFO Step: Create directory `/nix`
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.3825727Z  INFO Step: Install Determinate Nixd
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:03.3985160Z  INFO Step: Provision Nix
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:06.0978878Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:06.9423343Z  INFO Step: Configure Nix
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:07.5279272Z  INFO Step: Create directory `/etc/tmpfiles.d`
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:07.5289331Z  INFO Step: Configure the Determinate Nix daemon
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:08.6986613Z  INFO Step: Cleanup
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:08.7015179Z  INFO Running self test for shell sh
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.0059158Z  INFO Running self test for shell bash
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.2072538Z ^[[1m^[[32mNix was installed successfully!^[[39m^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.2073802Z To get started using Nix, open a new shell or run `^[[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh^[[0m`
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.2074582Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.2466579Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3296025Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3297417Z ##[group]Run DeterminateSystems/magic-nix-cache-action@v9
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3298105Z with:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3298342Z   listen: 127.0.0.1:37515
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3298605Z   upstream-cache: https://cache.nixos.org
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3298904Z   diagnostic-endpoint: -
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3299200Z   flakehub-cache-server: https://cache.flakehub.com
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3299571Z   flakehub-api-server: https://api.flakehub.com
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3299902Z   startup-notification-port: 41239
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3300162Z   diff-store: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3300379Z   _internal-strict-mode: false
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3300613Z env:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3300855Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.3301075Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.6016622Z The Nix daemon may not consider the user running this workflow to be trusted. Magic Nix Cache may not start correctly.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.6021991Z ##[group]Downloading magic-nix-cache for X64-Linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.6023380Z Fetching from https://cf.install.determinate.systems/magic-nix-cache-closure/stable/X64-Linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:09.9181796Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:11.0887548Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/magic-nix-cache-a6cbdeeb-61d6-4392-bd91-3ce6d298533b --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:11.2547997Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0G9auagAAAAAJctZMmTcqSLTNx/0AvUoJUEhMMzBFREdFMDExNwBFZGdl
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:11.2628634Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.0948055Z FlakeHub Cache is disabled due to missing or invalid token
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.0949601Z If you're signed up for FlakeHub Cache, make sure that your Actions config has a `permissions` block with `id-token` set to "write" and `contents` set to "read"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1008091Z Waiting for magic-nix-cache to start...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1150289Z   ^[[2m2026-09-19T18:36:20.112672Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mEnabling FlakeHub cache because determinate-nixd is available.^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1151779Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:325
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1152202Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1153533Z   ^[[2m2026-09-19T18:36:20.112708Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mIgnoring the user-specified --flakehub-api-server-netrc, in favor of the determinate-nixd netrc^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1154475Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:330
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1154693Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1155715Z   ^[[2m2026-09-19T18:36:20.112954Z^[[0m ^[[31mERROR^[[0m ^[[1;31mmagic_nix_cache^[[0m^[[31m: ^[[31mFlakeHub: cache initialized failed: Unauthenticated: Cannot find netrc credentials for https://api.flakehub.com/^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1156690Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:399
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1156931Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1161377Z ##[error]Unable to authenticate to FlakeHub. Individuals must register at FlakeHub.com; Organizations must create an organization at FlakeHub.com.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1164315Z   ^[[2m2026-09-19T18:36:20.112982Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mLoading credentials from environment^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1165498Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:423
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1165970Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1299577Z   ^[[2m2026-09-19T18:36:20.129268Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mNative GitHub Action cache is enabled.^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1300566Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:441
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1301274Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1301845Z   ^[[2m2026-09-19T18:36:20.129287Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mSubscribing to Determinate Nixd build events.^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1302559Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:467
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1302786Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.1465203Z Launched Magic Nix Cache
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2111106Z ##[group]Run nix flake check
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2111426Z ^[[36;1mnix flake check^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2154379Z shell: /usr/bin/bash -e {0}
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2154647Z env:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2154846Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2155327Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a91e193f-ac6d-4071-bc6f-fe6f642ad721
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2155825Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2707236Z evaluating 'devShells'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2708080Z evaluating 'devShells'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2709547Z evaluating 'packages'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.2711036Z evaluating 'packages'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:20.3811126Z copying path '/nix/store/b8xf6hsi4wfakzvn6lsi040bh9n8djcc-source' from 'http://127.0.0.1:37515'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7798742Z evaluating 'devShells.x86_64-linux'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7799976Z evaluating 'devShells.aarch64-linux'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7802499Z evaluating 'packages.aarch64-linux'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7803472Z evaluating 'packages.x86_64-linux'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7804458Z evaluating 'devShells.x86_64-linux.default'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7809935Z evaluating 'packages.x86_64-linux.default'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.7810566Z evaluating 'packages.x86_64-linux.dockerImage'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.8905342Z ✅ devShells.x86_64-linux.default (build skipped)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.8912505Z ✅ packages.x86_64-linux.default (build skipped)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.8913091Z ✅ packages.x86_64-linux.dockerImage (build skipped)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.8913607Z warning: The check omitted these incompatible systems: aarch64-linux
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:27.8914019Z Use '--all-systems' to check all.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0096176Z ##[group]Run nix build .#dockerImage
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0096688Z ^[[36;1mnix build .#dockerImage^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0138961Z shell: /usr/bin/bash -e {0}
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0139214Z env:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0139420Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0139904Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a91e193f-ac6d-4071-bc6f-fe6f642ad721
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:28.0140414Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:33.1082430Z this path will be fetched (0.0 KiB download, 3.3 GiB unpacked):
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:33.1083744Z   /nix/store/b5p7qwm53gld8nx4cmfqrjsv3sk7rdwr-faster-whisper.tar.gz
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:33.1090284Z copying path '/nix/store/b5p7qwm53gld8nx4cmfqrjsv3sk7rdwr-faster-whisper.tar.gz' from 'http://127.0.0.1:37515'...
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2402700Z ##[group]Run docker load < result
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2403216Z ^[[36;1mdocker load < result^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2442658Z shell: /usr/bin/bash -e {0}
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2442904Z env:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2443098Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2443595Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a91e193f-ac6d-4071-bc6f-fe6f642ad721
+build-and-validate	UNKNOWN STEP	2026-09-19T18:36:57.2444088Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.2943544Z Loaded image: faster-whisper:latest
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8012193Z ##[group]Run docker run --rm faster-whisper:latest
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8012603Z ^[[36;1mdocker run --rm faster-whisper:latest^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8073295Z shell: /usr/bin/bash -e {0}
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8073548Z env:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8073745Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8074227Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a91e193f-ac6d-4071-bc6f-fe6f642ad721
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:16.8074735Z ##[endgroup]
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:17.2708590Z faster-whisper initialized successfully. Ready for inference.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:17.3862438Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:17.3863887Z Post job cleanup.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0930817Z   ^[[2m2026-09-19T18:38:18.086347Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWorkflow finished^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0931718Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:58
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0932103Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0932786Z   ^[[2m2026-09-19T18:38:18.086595Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWaiting for GitHub action cache uploads to finish^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0933559Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:98
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0934186Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0935167Z   ^[[2m2026-09-19T18:38:18.086618Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mFlakeHub cache is not enabled, not uploading anything to it^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0936238Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:110
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0936480Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0936833Z   ^[[2m2026-09-19T18:38:18.086679Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mShutting down^[[0m
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0943870Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:559
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.0944240Z 
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.6572347Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.6573599Z Post job cleanup.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.8061104Z (node:3650) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:18.8062351Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.8287936Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.8290288Z Post job cleanup.
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9308529Z [command]/usr/bin/git version
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9348305Z git version 2.55.0
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9401409Z Temporarily overriding HOME='/home/runner/work/_temp/14593265-7d11-4a9f-b18d-8df1ccfc1206' before making global git config changes
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9419402Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9421137Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9458624Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9523264Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9802322Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9838405Z http.https://github.com/.extraheader
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9849226Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:19.9880003Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:20.0158485Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:20.0184370Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:20.0566897Z Cleaning up orphan processes
+build-and-validate	UNKNOWN STEP	2026-09-19T18:38:20.1064183Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, DeterminateSystems/magic-nix-cache-action@v9, DeterminateSystems/nix-installer-action@v16. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
