@@ -1,6 +1,19 @@
+# faster-whisper CI/CD Nix Layering & Dynamic Linking Benchmark Proof
+
+> **Purpose:** Proof-of-concept resolving runtime `libcublas.so.12` missing library errors ([SYSTRAN/faster-whisper #717](https://github.com/SYSTRAN/faster-whisper/issues/717)) without triggering 20-minute target host recompiles or blanket `cudaSupport` source builds in Nix.
+
+### Key Telemetry Proofs
+- **Cold Cache CI Run:** 21m 54s -> **Cached CI Run:** 2m 26s (88% reduction)
+- **Container Footprint:** Lightweight OCI layer synthesis without host driver dependencies inside rootfs.
+
+See full technical incident report and breakdown: [ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking](https://www.ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/)
+
+---
+*(Original SYSTRAN README contents below)*
+
 [![CI](https://github.com/SYSTRAN/faster-whisper/workflows/CI/badge.svg)](https://github.com/SYSTRAN/faster-whisper/actions?query=workflow%3ACI) [![PyPI version](https://badge.fury.io/py/faster-whisper.svg)](https://badge.fury.io/py/faster-whisper)
 
-# Faster Whisper transcription with CTranslate2
+## Faster Whisper transcription with CTranslate2
 
 **faster-whisper** is a reimplementation of OpenAI's Whisper model using [CTranslate2](https://github.com/OpenNMT/CTranslate2/), which is a fast inference engine for Transformer models.
 
