@@ -1,0 +1,1120 @@
+run-tests	Set up job	﻿2026-10-24T15:19:01.0652792Z Current runner version: '2.338.0'
+run-tests	Set up job	2026-10-24T15:19:01.0690283Z ##[group]Runner Image Provisioner
+run-tests	Set up job	2026-10-24T15:19:01.0691665Z Hosted Compute Agent
+run-tests	Set up job	2026-10-24T15:19:01.0692716Z Version: 20261012.601
+run-tests	Set up job	2026-10-24T15:19:01.0693850Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+run-tests	Set up job	2026-10-24T15:19:01.0695111Z Build Date: 2026-10-12T17:48:21Z
+run-tests	Set up job	2026-10-24T15:19:01.0696230Z Worker ID: {90489e86-c0f2-494f-b829-57f88ca62f6f}
+run-tests	Set up job	2026-10-24T15:19:01.0697542Z Region: eastus
+run-tests	Set up job	2026-10-24T15:19:01.0698714Z Cloud: Azure
+run-tests	Set up job	2026-10-24T15:19:01.0699685Z ##[endgroup]
+run-tests	Set up job	2026-10-24T15:19:01.0701929Z ##[group]Operating System
+run-tests	Set up job	2026-10-24T15:19:01.0702947Z Ubuntu
+run-tests	Set up job	2026-10-24T15:19:01.0703980Z 24.04.5
+run-tests	Set up job	2026-10-24T15:19:01.0704860Z LTS
+run-tests	Set up job	2026-10-24T15:19:01.0705728Z ##[endgroup]
+run-tests	Set up job	2026-10-24T15:19:01.0706739Z ##[group]Runner Image
+run-tests	Set up job	2026-10-24T15:19:01.0708077Z Image: ubuntu-24.04
+run-tests	Set up job	2026-10-24T15:19:01.0709095Z Version: 20261012.334.1
+run-tests	Set up job	2026-10-24T15:19:01.0710908Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+run-tests	Set up job	2026-10-24T15:19:01.0713930Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+run-tests	Set up job	2026-10-24T15:19:01.0716175Z ##[endgroup]
+run-tests	Set up job	2026-10-24T15:19:01.0718543Z ##[group]GITHUB_TOKEN Permissions
+run-tests	Set up job	2026-10-24T15:19:01.0722234Z Contents: read
+run-tests	Set up job	2026-10-24T15:19:01.0723188Z Metadata: read
+run-tests	Set up job	2026-10-24T15:19:01.0724059Z Packages: read
+run-tests	Set up job	2026-10-24T15:19:01.0725102Z ##[endgroup]
+run-tests	Set up job	2026-10-24T15:19:01.0728489Z Secret source: Actions
+run-tests	Set up job	2026-10-24T15:19:01.0730173Z Cache mode: write
+run-tests	Set up job	2026-10-24T15:19:01.0731578Z Prepare workflow directory
+run-tests	Set up job	2026-10-24T15:19:01.1226591Z Prepare all required actions
+run-tests	Set up job	2026-10-24T15:19:01.1299870Z Getting action download info
+run-tests	Set up job	2026-10-24T15:19:01.3447037Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+run-tests	Set up job	2026-10-24T15:19:01.4442645Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+run-tests	Set up job	2026-10-24T15:19:01.6854055Z Complete job name: run-tests
+run-tests	Run actions/checkout@v4	﻿2026-10-24T15:19:01.7648565Z ##[group]Run actions/checkout@v4
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7649582Z with:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7650123Z   repository: ajgreengrove/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7654067Z   token: ***
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7654514Z   ssh-strict: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7654958Z   ssh-user: git
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7655413Z   persist-credentials: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7655909Z   clean: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7656365Z   sparse-checkout-cone-mode: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7656900Z   fetch-depth: 1
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7657328Z   fetch-tags: false
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7657981Z   show-progress: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7658437Z   lfs: false
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7658854Z   submodules: false
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7659298Z   set-safe-directory: true
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7659804Z   allow-unsafe-pr-checkout: false
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.7660671Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8716724Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8719863Z ##[group]Getting Git version info
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8721326Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8723281Z [command]/usr/bin/git version
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8770205Z git version 2.55.0
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8800333Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8809758Z Temporarily overriding HOME='/home/runner/work/_temp/5644deb9-1057-44af-9264-fb7c5242ff93' before making global git config changes
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8812585Z Adding repository directory to the temporary git global config as a safe directory
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8815146Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8867482Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8873660Z ##[group]Initializing the repository
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8878888Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8991885Z hint: Using 'master' as the name for the initial branch. This default branch name
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8994312Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8996085Z hint: to use in all of your new repositories, which will suppress this warning,
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.8999689Z hint: call:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9000633Z hint:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9001721Z hint: 	git config --global init.defaultBranch <name>
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9003139Z hint:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9004271Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9005972Z hint: 'development'. The just-created branch can be renamed via this command:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9007584Z hint:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9008785Z hint: 	git branch -m <name>
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9009742Z hint:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9010918Z hint: Disable this message with "git config set advice.defaultBranchName false"
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9013092Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9017044Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9060058Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9061431Z ##[group]Disabling automatic garbage collection
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9065061Z [command]/usr/bin/git config --local gc.auto 0
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9120146Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9122357Z ##[group]Setting up auth
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9130846Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9169394Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9549109Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9590194Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9829706Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:01.9869372Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:02.0100979Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:02.0161893Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:02.0177899Z ##[group]Fetching the repository
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:02.0179595Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +208f44c591437593ede79fe0df139b1e776136a5:refs/remotes/origin/master
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0764223Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0765657Z  * [new ref]         208f44c591437593ede79fe0df139b1e776136a5 -> origin/master
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0781314Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0782967Z ##[group]Determining the checkout info
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0784934Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0785993Z [command]/usr/bin/git sparse-checkout disable
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0849296Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0888118Z ##[group]Checking out the ref
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.0895354Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.2005817Z Reset branch 'master'
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.2009059Z branch 'master' set up to track 'origin/master'.
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.2018182Z ##[endgroup]
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.2066100Z [command]/usr/bin/git log -1 --format=%H
+run-tests	Run actions/checkout@v4	2026-10-24T15:19:03.2095102Z 208f44c591437593ede79fe0df139b1e776136a5
+run-tests	Set up Python 3.9	﻿2026-10-24T15:19:03.2485974Z ##[group]Run actions/setup-python@v5
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2487334Z with:
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2488514Z   python-version: 3.9
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2489618Z   check-latest: false
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2498725Z   token: ***
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2499770Z   update-environment: true
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2500932Z   allow-prereleases: false
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2502045Z   freethreaded: false
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.2503098Z ##[endgroup]
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.3881785Z ##[group]Installed versions
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.4345827Z Version 3.9 was not found in the local cache
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.4482723Z (node:2303) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+run-tests	Set up Python 3.9	2026-10-24T15:19:03.4483892Z (Use `node --trace-deprecation ...` to show where the warning was created)
+run-tests	Set up Python 3.9	2026-10-24T15:19:04.0282297Z Version 3.9 is available for downloading
+run-tests	Set up Python 3.9	2026-10-24T15:19:04.0283589Z Download from "https://github.com/actions/python-versions/releases/download/3.9.25-19039189640/python-3.9.25-linux-24.04-x64.tar.gz"
+run-tests	Set up Python 3.9	2026-10-24T15:19:04.7790467Z Extract downloaded archive
+run-tests	Set up Python 3.9	2026-10-24T15:19:04.7926868Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/365116ca-4cb6-400f-8bcb-abfbf24e4b34 -f /home/runner/work/_temp/7632c9ff-3c76-42e1-abf0-a9c1db3d9c12
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.1780884Z Execute installation script
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.1879905Z Check if Python hostedtoolcache folder exist...
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.1880703Z Create Python 3.9.25 folder
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.1895592Z Copy Python binaries to hostedtoolcache folder
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.6508311Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+run-tests	Set up Python 3.9	2026-10-24T15:19:06.6553935Z Upgrading pip...
+run-tests	Set up Python 3.9	2026-10-24T15:19:09.3241214Z Looking in links: /tmp/tmpl3c6cyt5
+run-tests	Set up Python 3.9	2026-10-24T15:19:09.3246548Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (79.0.1)
+run-tests	Set up Python 3.9	2026-10-24T15:19:09.3252429Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (23.0.1)
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.0706849Z Collecting pip
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.1067390Z Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.1429128Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 54.7 MB/s eta 0:00:00
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.1429923Z 
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.2070776Z Installing collected packages: pip
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.2079415Z Attempting uninstall: pip
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.2080014Z     Found existing installation: pip 23.0.1
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.3905919Z Uninstalling pip-23.0.1:
+run-tests	Set up Python 3.9	2026-10-24T15:19:11.3980640Z Successfully uninstalled pip-23.0.1
+run-tests	Set up Python 3.9	2026-10-24T15:19:12.2806666Z Successfully installed pip-26.0.1
+run-tests	Set up Python 3.9	2026-10-24T15:19:12.3381818Z Create complete file
+run-tests	Set up Python 3.9	2026-10-24T15:19:12.3430900Z Successfully set up CPython (3.9.25)
+run-tests	Set up Python 3.9	2026-10-24T15:19:12.3432361Z ##[endgroup]
+run-tests	Install module	﻿2026-10-24T15:19:12.3627495Z ##[group]Run pip install wheel
+run-tests	Install module	2026-10-24T15:19:12.3628195Z ^[[36;1mpip install wheel^[[0m
+run-tests	Install module	2026-10-24T15:19:12.3628467Z ^[[36;1mpip install -e .[dev]^[[0m
+run-tests	Install module	2026-10-24T15:19:12.3926243Z shell: /usr/bin/bash -e {0}
+run-tests	Install module	2026-10-24T15:19:12.3926607Z env:
+run-tests	Install module	2026-10-24T15:19:12.3926921Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Install module	2026-10-24T15:19:12.3927512Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+run-tests	Install module	2026-10-24T15:19:12.3928255Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Install module	2026-10-24T15:19:12.3928703Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Install module	2026-10-24T15:19:12.3929161Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Install module	2026-10-24T15:19:12.3929596Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+run-tests	Install module	2026-10-24T15:19:12.3929956Z ##[endgroup]
+run-tests	Install module	2026-10-24T15:19:13.2563783Z Collecting wheel
+run-tests	Install module	2026-10-24T15:19:13.2870410Z   Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+run-tests	Install module	2026-10-24T15:19:13.3056296Z Collecting packaging>=24.0 (from wheel)
+run-tests	Install module	2026-10-24T15:19:13.3096349Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+run-tests	Install module	2026-10-24T15:19:13.3166126Z Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+run-tests	Install module	2026-10-24T15:19:13.3251587Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+run-tests	Install module	2026-10-24T15:19:13.3540625Z Installing collected packages: packaging, wheel
+run-tests	Install module	2026-10-24T15:19:13.4533548Z 
+run-tests	Install module	2026-10-24T15:19:13.4552135Z Successfully installed packaging-26.3 wheel-0.48.0
+run-tests	Install module	2026-10-24T15:19:14.0348720Z Obtaining file:///home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+run-tests	Install module	2026-10-24T15:19:14.0379109Z   Installing build dependencies: started
+run-tests	Install module	2026-10-24T15:19:14.7795258Z   Installing build dependencies: finished with status 'done'
+run-tests	Install module	2026-10-24T15:19:14.7806610Z   Checking if build backend supports build_editable: started
+run-tests	Install module	2026-10-24T15:19:15.1073560Z   Checking if build backend supports build_editable: finished with status 'done'
+run-tests	Install module	2026-10-24T15:19:15.1086401Z   Getting requirements to build editable: started
+run-tests	Install module	2026-10-24T15:19:15.3081224Z   Getting requirements to build editable: finished with status 'done'
+run-tests	Install module	2026-10-24T15:19:15.3095247Z   Preparing editable metadata (pyproject.toml): started
+run-tests	Install module	2026-10-24T15:19:15.4982936Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+run-tests	Install module	2026-10-24T15:19:15.6697409Z Collecting ctranslate2<5,>=4.0 (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:15.7032163Z   Downloading ctranslate2-4.8.3-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+run-tests	Install module	2026-10-24T15:19:15.7683321Z Collecting huggingface_hub>=0.23 (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:15.7735374Z   Downloading huggingface_hub-1.8.0-py3-none-any.whl.metadata (13 kB)
+run-tests	Install module	2026-10-24T15:19:15.9724291Z Collecting tokenizers<1,>=0.13 (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:15.9796825Z   Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+run-tests	Install module	2026-10-24T15:19:16.0631079Z Collecting onnxruntime<2,>=1.14 (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.0681119Z   Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.5 kB)
+run-tests	Install module	2026-10-24T15:19:16.1313106Z Collecting av>=11 (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.1363105Z   Downloading av-15.1.0-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (4.6 kB)
+run-tests	Install module	2026-10-24T15:19:16.1787646Z Collecting tqdm (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.1829001Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+run-tests	Install module	2026-10-24T15:19:16.2783619Z Collecting black==23.* (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.2834984Z   Downloading black-23.12.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (68 kB)
+run-tests	Install module	2026-10-24T15:19:16.3117909Z Collecting flake8==6.* (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.3159824Z   Downloading flake8-6.1.0-py2.py3-none-any.whl.metadata (3.8 kB)
+run-tests	Install module	2026-10-24T15:19:16.3644005Z Collecting isort==5.* (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.3684385Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+run-tests	Install module	2026-10-24T15:19:16.4063764Z Collecting pytest==7.* (from faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.4103231Z   Downloading pytest-7.4.4-py3-none-any.whl.metadata (7.9 kB)
+run-tests	Install module	2026-10-24T15:19:16.4324625Z Collecting click>=8.0.0 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.4362438Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+run-tests	Install module	2026-10-24T15:19:16.4480621Z Collecting mypy-extensions>=0.4.3 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.4519667Z   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+run-tests	Install module	2026-10-24T15:19:16.4550506Z Requirement already satisfied: packaging>=22.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from black==23.*->faster-whisper==1.2.1) (26.3)
+run-tests	Install module	2026-10-24T15:19:16.4675389Z Collecting pathspec>=0.9.0 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.4712082Z   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+run-tests	Install module	2026-10-24T15:19:16.4976832Z Collecting platformdirs>=2 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.5024099Z   Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+run-tests	Install module	2026-10-24T15:19:16.5393413Z Collecting tomli>=1.1.0 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.5433399Z   Downloading tomli-2.5.0-py3-none-any.whl.metadata (10 kB)
+run-tests	Install module	2026-10-24T15:19:16.5638496Z Collecting typing-extensions>=4.0.1 (from black==23.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.5677268Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+run-tests	Install module	2026-10-24T15:19:16.8393187Z Collecting numpy (from ctranslate2<5,>=4.0->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.8436019Z   Downloading numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+run-tests	Install module	2026-10-24T15:19:16.9248644Z Collecting pyyaml<7,>=5.3 (from ctranslate2<5,>=4.0->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.9316411Z   Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+run-tests	Install module	2026-10-24T15:19:16.9443467Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==6.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.9482014Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+run-tests	Install module	2026-10-24T15:19:16.9620197Z Collecting pycodestyle<2.12.0,>=2.11.0 (from flake8==6.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.9658977Z   Downloading pycodestyle-2.11.1-py2.py3-none-any.whl.metadata (4.5 kB)
+run-tests	Install module	2026-10-24T15:19:16.9818112Z Collecting pyflakes<3.2.0,>=3.1.0 (from flake8==6.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:16.9997837Z   Downloading pyflakes-3.1.0-py2.py3-none-any.whl.metadata (3.5 kB)
+run-tests	Install module	2026-10-24T15:19:17.0187885Z Collecting coloredlogs (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.0226147Z   Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+run-tests	Install module	2026-10-24T15:19:17.0380906Z Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.0422769Z   Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+run-tests	Install module	2026-10-24T15:19:17.2503102Z Collecting protobuf (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.2546260Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+run-tests	Install module	2026-10-24T15:19:17.2749404Z Collecting sympy (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.2802295Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+run-tests	Install module	2026-10-24T15:19:17.2935516Z Collecting iniconfig (from pytest==7.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.2977718Z   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+run-tests	Install module	2026-10-24T15:19:17.3123613Z Collecting pluggy<2.0,>=0.12 (from pytest==7.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.3169646Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+run-tests	Install module	2026-10-24T15:19:17.3320549Z Collecting exceptiongroup>=1.0.0rc8 (from pytest==7.*->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.3359511Z   Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+run-tests	Install module	2026-10-24T15:19:17.3885576Z Collecting filelock>=3.10.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.3926045Z   Downloading filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+run-tests	Install module	2026-10-24T15:19:17.4156570Z Collecting fsspec>=2023.5.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.4201692Z   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+run-tests	Install module	2026-10-24T15:19:17.5012992Z Collecting hf-xet<2.0.0,>=1.4.2 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.5081663Z   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+run-tests	Install module	2026-10-24T15:19:17.5310858Z Collecting httpx<1,>=0.23.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.5355364Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+run-tests	Install module	2026-10-24T15:19:17.5732586Z Collecting typer (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.5785062Z   Downloading typer-0.23.2-py3-none-any.whl.metadata (16 kB)
+run-tests	Install module	2026-10-24T15:19:17.6064569Z Collecting anyio (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.6109239Z   Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+run-tests	Install module	2026-10-24T15:19:17.6396116Z Collecting certifi (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.6436948Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+run-tests	Install module	2026-10-24T15:19:17.6636157Z Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.6680127Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+run-tests	Install module	2026-10-24T15:19:17.6861552Z Collecting idna (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.6902463Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+run-tests	Install module	2026-10-24T15:19:17.7032753Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.7069696Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+run-tests	Install module	2026-10-24T15:19:17.7515402Z Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.7551513Z   Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+run-tests	Install module	2026-10-24T15:19:17.7733814Z Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.7770575Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+run-tests	Install module	2026-10-24T15:19:17.7942499Z Collecting shellingham>=1.3.0 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.7983631Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+run-tests	Install module	2026-10-24T15:19:17.8385691Z Collecting rich>=12.3.0 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.8424803Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+run-tests	Install module	2026-10-24T15:19:17.8538703Z Collecting annotated-doc>=0.0.2 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.8577549Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+run-tests	Install module	2026-10-24T15:19:17.8750746Z Collecting markdown-it-py>=2.2.0 (from rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.8786331Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+run-tests	Install module	2026-10-24T15:19:17.9026041Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.9069277Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+run-tests	Install module	2026-10-24T15:19:17.9185806Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+run-tests	Install module	2026-10-24T15:19:17.9223149Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+run-tests	Install module	2026-10-24T15:19:17.9323249Z Downloading black-23.12.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+run-tests	Install module	2026-10-24T15:19:17.9628697Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 57.2 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:17.9700245Z Downloading ctranslate2-4.8.3-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (39.9 MB)
+run-tests	Install module	2026-10-24T15:19:18.3899037Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.9/39.9 MB 95.0 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.3941055Z Downloading flake8-6.1.0-py2.py3-none-any.whl (58 kB)
+run-tests	Install module	2026-10-24T15:19:18.4005014Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+run-tests	Install module	2026-10-24T15:19:18.4070772Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+run-tests	Install module	2026-10-24T15:19:18.4156747Z Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (13.2 MB)
+run-tests	Install module	2026-10-24T15:19:18.4786834Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 214.3 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.4832409Z Downloading pycodestyle-2.11.1-py2.py3-none-any.whl (31 kB)
+run-tests	Install module	2026-10-24T15:19:18.5109234Z Downloading pyflakes-3.1.0-py2.py3-none-any.whl (62 kB)
+run-tests	Install module	2026-10-24T15:19:18.5174677Z Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+run-tests	Install module	2026-10-24T15:19:18.5261773Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+run-tests	Install module	2026-10-24T15:19:18.5322292Z Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (750 kB)
+run-tests	Install module	2026-10-24T15:19:18.5375717Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 750.8/750.8 kB 168.1 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.5421755Z Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+run-tests	Install module	2026-10-24T15:19:18.5541676Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 320.8 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.5582985Z Downloading huggingface_hub-1.8.0-py3-none-any.whl (625 kB)
+run-tests	Install module	2026-10-24T15:19:18.5658067Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 625.2/625.2 kB 85.0 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.5703870Z Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+run-tests	Install module	2026-10-24T15:19:18.6330408Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 301.0 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.6377808Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+run-tests	Install module	2026-10-24T15:19:18.6439818Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+run-tests	Install module	2026-10-24T15:19:18.6514392Z Downloading av-15.1.0-cp39-cp39-manylinux_2_28_x86_64.whl (39.1 MB)
+run-tests	Install module	2026-10-24T15:19:18.8704269Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.1/39.1 MB 179.7 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.8745397Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+run-tests	Install module	2026-10-24T15:19:18.8806682Z Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+run-tests	Install module	2026-10-24T15:19:18.8863577Z Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+run-tests	Install module	2026-10-24T15:19:18.8922030Z Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+run-tests	Install module	2026-10-24T15:19:18.8991081Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+run-tests	Install module	2026-10-24T15:19:18.9045990Z Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+run-tests	Install module	2026-10-24T15:19:18.9104065Z Downloading numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+run-tests	Install module	2026-10-24T15:19:18.9675194Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.5/19.5 MB 355.0 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:18.9899863Z Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+run-tests	Install module	2026-10-24T15:19:19.0005348Z Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+run-tests	Install module	2026-10-24T15:19:19.0060088Z Downloading tomli-2.5.0-py3-none-any.whl (14 kB)
+run-tests	Install module	2026-10-24T15:19:19.0115253Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+run-tests	Install module	2026-10-24T15:19:19.0174035Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+run-tests	Install module	2026-10-24T15:19:19.0235797Z Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+run-tests	Install module	2026-10-24T15:19:19.0295076Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+run-tests	Install module	2026-10-24T15:19:19.0351101Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+run-tests	Install module	2026-10-24T15:19:19.0409485Z Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+run-tests	Install module	2026-10-24T15:19:19.0468208Z Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+run-tests	Install module	2026-10-24T15:19:19.0532808Z Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+run-tests	Install module	2026-10-24T15:19:19.0592453Z Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+run-tests	Install module	2026-10-24T15:19:19.0650666Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+run-tests	Install module	2026-10-24T15:19:19.0726001Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+run-tests	Install module	2026-10-24T15:19:19.0965465Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 287.9 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:19.1011286Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+run-tests	Install module	2026-10-24T15:19:19.1063689Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 102.0 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:19.1133792Z Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+run-tests	Install module	2026-10-24T15:19:19.1192559Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+run-tests	Install module	2026-10-24T15:19:19.1248738Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+run-tests	Install module	2026-10-24T15:19:19.1316904Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+run-tests	Install module	2026-10-24T15:19:19.1388497Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 225.6 MB/s  0:00:00
+run-tests	Install module	2026-10-24T15:19:19.1446192Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+run-tests	Install module	2026-10-24T15:19:19.1503848Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+run-tests	Install module	2026-10-24T15:19:19.1557563Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+run-tests	Install module	2026-10-24T15:19:19.3071226Z Building wheels for collected packages: faster-whisper
+run-tests	Install module	2026-10-24T15:19:19.3080918Z   Building editable for faster-whisper (pyproject.toml): started
+run-tests	Install module	2026-10-24T15:19:19.5328880Z   Building editable for faster-whisper (pyproject.toml): finished with status 'done'
+run-tests	Install module	2026-10-24T15:19:19.5337419Z   Created wheel for faster-whisper: filename=faster_whisper-1.2.1-0.editable-py3-none-any.whl size=9837 sha256=4e9c9d6e2c5931888c496582f8da2a0a961e6878337ae59d6c31415a7d0f2fa8
+run-tests	Install module	2026-10-24T15:19:19.5339663Z   Stored in directory: /tmp/pip-ephem-wheel-cache-5dj0u00a/wheels/13/ef/96/41e38ebc19a5a44a5ddad372b9a51d82337faf584ffe1e86ac
+run-tests	Install module	2026-10-24T15:19:19.5364919Z Successfully built faster-whisper
+run-tests	Install module	2026-10-24T15:19:19.6802826Z Installing collected packages: mpmath, flatbuffers, typing-extensions, tqdm, tomli, sympy, shellingham, pyyaml, pygments, pyflakes, pycodestyle, protobuf, pluggy, platformdirs, pathspec, numpy, mypy-extensions, mdurl, mccabe, isort, iniconfig, idna, humanfriendly, hf-xet, h11, fsspec, filelock, click, certifi, av, annotated-doc, markdown-it-py, httpcore, flake8, exceptiongroup, ctranslate2, coloredlogs, black, rich, pytest, onnxruntime, anyio, typer, httpx, huggingface_hub, tokenizers, faster-whisper
+run-tests	Install module	2026-10-24T15:19:31.4581554Z 
+run-tests	Install module	2026-10-24T15:19:31.4663087Z Successfully installed annotated-doc-0.0.5 anyio-4.12.1 av-15.1.0 black-23.12.1 certifi-2026.10.23 click-8.1.8 coloredlogs-15.0.1 ctranslate2-4.8.3 exceptiongroup-1.3.1 faster-whisper-1.2.1 filelock-3.19.1 flake8-6.1.0 flatbuffers-25.12.19 fsspec-2025.10.0 h11-0.16.0 hf-xet-1.7.0 httpcore-1.0.9 httpx-0.28.1 huggingface_hub-1.8.0 humanfriendly-10.0 idna-3.20 iniconfig-2.1.0 isort-5.13.2 markdown-it-py-3.0.0 mccabe-0.7.0 mdurl-0.1.2 mpmath-1.3.0 mypy-extensions-1.1.0 numpy-2.0.2 onnxruntime-1.19.2 pathspec-1.1.1 platformdirs-4.4.0 pluggy-1.6.0 protobuf-6.33.6 pycodestyle-2.11.1 pyflakes-3.1.0 pygments-2.21.0 pytest-7.4.4 pyyaml-6.0.3 rich-15.0.0 shellingham-1.5.4 sympy-1.14.0 tokenizers-0.22.2 tomli-2.5.0 tqdm-4.70.1 typer-0.23.2 typing-extensions-4.16.0
+run-tests	Run pytest	﻿2026-10-24T15:19:31.7399218Z ##[group]Run pytest -v tests/
+run-tests	Run pytest	2026-10-24T15:19:31.7399545Z ^[[36;1mpytest -v tests/^[[0m
+run-tests	Run pytest	2026-10-24T15:19:31.7465275Z shell: /usr/bin/bash -e {0}
+run-tests	Run pytest	2026-10-24T15:19:31.7465528Z env:
+run-tests	Run pytest	2026-10-24T15:19:31.7465792Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Run pytest	2026-10-24T15:19:31.7466240Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+run-tests	Run pytest	2026-10-24T15:19:31.7466671Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Run pytest	2026-10-24T15:19:31.7467055Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Run pytest	2026-10-24T15:19:31.7467440Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+run-tests	Run pytest	2026-10-24T15:19:31.7468049Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+run-tests	Run pytest	2026-10-24T15:19:31.7468370Z ##[endgroup]
+run-tests	Run pytest	2026-10-24T15:19:32.1747056Z ============================= test session starts ==============================
+run-tests	Run pytest	2026-10-24T15:19:32.1748407Z platform linux -- Python 3.9.25, pytest-7.4.4, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.9.25/x64/bin/python
+run-tests	Run pytest	2026-10-24T15:19:32.1749493Z cachedir: .pytest_cache
+run-tests	Run pytest	2026-10-24T15:19:32.1750144Z rootdir: /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+run-tests	Run pytest	2026-10-24T15:19:32.1750852Z plugins: anyio-4.12.1
+run-tests	Run pytest	2026-10-24T15:19:32.3890204Z collecting ... collected 19 items
+run-tests	Run pytest	2026-10-24T15:19:32.3891094Z 
+run-tests	Run pytest	2026-10-24T15:19:33.3996280Z tests/test_tokenizer.py::test_suppressed_tokens_minus_1 PASSED           [  5%]
+run-tests	Run pytest	2026-10-24T15:19:33.5319727Z tests/test_tokenizer.py::test_suppressed_tokens_minus_value PASSED       [ 10%]
+run-tests	Run pytest	2026-10-24T15:19:33.9755805Z tests/test_tokenizer.py::test_split_on_unicode PASSED                    [ 15%]
+run-tests	Run pytest	2026-10-24T15:19:34.1585207Z tests/test_transcribe.py::test_supported_languages PASSED                [ 21%]
+run-tests	Run pytest	2026-10-24T15:19:36.2664428Z tests/test_transcribe.py::test_transcribe PASSED                         [ 26%]
+run-tests	Run pytest	2026-10-24T15:19:46.5974703Z tests/test_transcribe.py::test_batched_transcribe PASSED                 [ 31%]
+run-tests	Run pytest	2026-10-24T15:19:47.6256970Z tests/test_transcribe.py::test_empty_audio PASSED                        [ 36%]
+run-tests	Run pytest	2026-10-24T15:19:48.6574410Z tests/test_transcribe.py::test_prefix_with_timestamps PASSED             [ 42%]
+run-tests	Run pytest	2026-10-24T15:19:49.7227195Z tests/test_transcribe.py::test_vad PASSED                                [ 47%]
+run-tests	Run pytest	2026-10-24T15:19:51.4483830Z tests/test_transcribe.py::test_stereo_diarization PASSED                 [ 52%]
+run-tests	Run pytest	2026-10-24T15:19:56.8926732Z tests/test_transcribe.py::test_multilingual_transcription PASSED         [ 57%]
+run-tests	Run pytest	2026-10-24T15:19:58.6481454Z tests/test_transcribe.py::test_hotwords PASSED                           [ 63%]
+run-tests	Run pytest	2026-10-24T15:19:58.6490705Z tests/test_transcribe.py::test_transcribe_signature PASSED               [ 68%]
+run-tests	Run pytest	2026-10-24T15:20:26.1671252Z tests/test_transcribe.py::test_monotonic_timestamps PASSED               [ 73%]
+run-tests	Run pytest	2026-10-24T15:20:27.5231816Z tests/test_transcribe.py::test_cliptimestamps_segments PASSED            [ 78%]
+run-tests	Run pytest	2026-10-24T15:20:28.8697317Z tests/test_transcribe.py::test_cliptimestamps_timings PASSED             [ 84%]
+run-tests	Run pytest	2026-10-24T15:20:28.8706163Z tests/test_utils.py::test_available_models PASSED                        [ 89%]
+run-tests	Run pytest	2026-10-24T15:20:29.0652272Z tests/test_utils.py::test_download_model PASSED                          [ 94%]
+run-tests	Run pytest	2026-10-24T15:20:29.3720469Z tests/test_utils.py::test_download_model_in_cache PASSED                 [100%]
+run-tests	Run pytest	2026-10-24T15:20:29.3721015Z 
+run-tests	Run pytest	2026-10-24T15:20:29.3721186Z =============================== warnings summary ===============================
+run-tests	Run pytest	2026-10-24T15:20:29.3721623Z tests/test_tokenizer.py::test_suppressed_tokens_minus_1
+run-tests	Run pytest	2026-10-24T15:20:29.3722008Z tests/test_tokenizer.py::test_split_on_unicode
+run-tests	Run pytest	2026-10-24T15:20:29.3722373Z tests/test_transcribe.py::test_monotonic_timestamps
+run-tests	Run pytest	2026-10-24T15:20:29.3722736Z tests/test_utils.py::test_download_model_in_cache
+run-tests	Run pytest	2026-10-24T15:20:29.3723781Z   /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages/huggingface_hub/file_download.py:1826: DeprecationWarning: hf_xet.download_files() is deprecated. Use XetSession().new_file_download_group().start_download_file() instead.
+run-tests	Run pytest	2026-10-24T15:20:29.3725751Z     xet_get(
+run-tests	Run pytest	2026-10-24T15:20:29.3725957Z 
+run-tests	Run pytest	2026-10-24T15:20:29.3726301Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+run-tests	Run pytest	2026-10-24T15:20:29.3727152Z ======================= 19 passed, 4 warnings in 57.20s ========================
+run-tests	Post Set up Python 3.9	﻿2026-10-24T15:20:29.4624338Z Post job cleanup.
+run-tests	Post Set up Python 3.9	2026-10-24T15:20:29.5841675Z (node:2666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+run-tests	Post Set up Python 3.9	2026-10-24T15:20:29.5843677Z (Use `node --trace-deprecation ...` to show where the warning was created)
+run-tests	Post Run actions/checkout@v4	﻿2026-10-24T15:20:29.6102690Z Post job cleanup.
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.6998840Z [command]/usr/bin/git version
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7044256Z git version 2.55.0
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7088972Z Temporarily overriding HOME='/home/runner/work/_temp/c67e16bf-e78b-4928-9ee3-0f8241ef330d' before making global git config changes
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7090436Z Adding repository directory to the temporary git global config as a safe directory
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7095148Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7136217Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7172216Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7435505Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7467681Z http.https://github.com/.extraheader
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7482704Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7523152Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.7847615Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+run-tests	Post Run actions/checkout@v4	2026-10-24T15:20:29.8156465Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+run-tests	Complete job	﻿2026-10-24T15:20:29.8334148Z Cleaning up orphan processes
+run-tests	Complete job	2026-10-24T15:20:29.8628353Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+check-code-format	Set up job	﻿2026-10-24T15:19:01.6835769Z Current runner version: '2.338.0'
+check-code-format	Set up job	2026-10-24T15:19:01.6858474Z ##[group]Runner Image Provisioner
+check-code-format	Set up job	2026-10-24T15:19:01.6859276Z Hosted Compute Agent
+check-code-format	Set up job	2026-10-24T15:19:01.6859754Z Version: 20261012.601
+check-code-format	Set up job	2026-10-24T15:19:01.6860327Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+check-code-format	Set up job	2026-10-24T15:19:01.6860916Z Build Date: 2026-10-12T17:48:21Z
+check-code-format	Set up job	2026-10-24T15:19:01.6861506Z Worker ID: {7f0bf377-26ca-4f77-8ddb-c62031a97819}
+check-code-format	Set up job	2026-10-24T15:19:01.6862112Z Region: westus3
+check-code-format	Set up job	2026-10-24T15:19:01.6862746Z Cloud: Azure
+check-code-format	Set up job	2026-10-24T15:19:01.6863235Z ##[endgroup]
+check-code-format	Set up job	2026-10-24T15:19:01.6864376Z ##[group]Operating System
+check-code-format	Set up job	2026-10-24T15:19:01.6864960Z Ubuntu
+check-code-format	Set up job	2026-10-24T15:19:01.6865431Z 24.04.5
+check-code-format	Set up job	2026-10-24T15:19:01.6865854Z LTS
+check-code-format	Set up job	2026-10-24T15:19:01.6866326Z ##[endgroup]
+check-code-format	Set up job	2026-10-24T15:19:01.6866787Z ##[group]Runner Image
+check-code-format	Set up job	2026-10-24T15:19:01.6867250Z Image: ubuntu-24.04
+check-code-format	Set up job	2026-10-24T15:19:01.6867802Z Version: 20261012.334.1
+check-code-format	Set up job	2026-10-24T15:19:01.6868653Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+check-code-format	Set up job	2026-10-24T15:19:01.6870127Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+check-code-format	Set up job	2026-10-24T15:19:01.6870895Z ##[endgroup]
+check-code-format	Set up job	2026-10-24T15:19:01.6871943Z ##[group]GITHUB_TOKEN Permissions
+check-code-format	Set up job	2026-10-24T15:19:01.6874092Z Contents: read
+check-code-format	Set up job	2026-10-24T15:19:01.6874670Z Metadata: read
+check-code-format	Set up job	2026-10-24T15:19:01.6875131Z Packages: read
+check-code-format	Set up job	2026-10-24T15:19:01.6875692Z ##[endgroup]
+check-code-format	Set up job	2026-10-24T15:19:01.6877435Z Secret source: Actions
+check-code-format	Set up job	2026-10-24T15:19:01.6878229Z Cache mode: write
+check-code-format	Set up job	2026-10-24T15:19:01.6878818Z Prepare workflow directory
+check-code-format	Set up job	2026-10-24T15:19:01.7149214Z Prepare all required actions
+check-code-format	Set up job	2026-10-24T15:19:01.7190521Z Getting action download info
+check-code-format	Set up job	2026-10-24T15:19:02.0000297Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+check-code-format	Set up job	2026-10-24T15:19:02.0789934Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+check-code-format	Set up job	2026-10-24T15:19:02.2553288Z Complete job name: check-code-format
+check-code-format	Run actions/checkout@v4	﻿2026-10-24T15:19:02.3172683Z ##[group]Run actions/checkout@v4
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3173415Z with:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3173819Z   repository: ajgreengrove/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3177189Z   token: ***
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3177542Z   ssh-strict: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3177893Z   ssh-user: git
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3178245Z   persist-credentials: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3178630Z   clean: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3178984Z   sparse-checkout-cone-mode: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3179396Z   fetch-depth: 1
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3179736Z   fetch-tags: false
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3180094Z   show-progress: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3180446Z   lfs: false
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3180771Z   submodules: false
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3181128Z   set-safe-directory: true
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3181526Z   allow-unsafe-pr-checkout: false
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.3182091Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4023125Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4025225Z ##[group]Getting Git version info
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4026398Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4027843Z [command]/usr/bin/git version
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4629013Z git version 2.55.0
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4646503Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4659951Z Temporarily overriding HOME='/home/runner/work/_temp/8a65e1d6-3827-462a-ae85-61d88379baf5' before making global git config changes
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4661721Z Adding repository directory to the temporary git global config as a safe directory
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4665580Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4986577Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4990581Z ##[group]Initializing the repository
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.4994591Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5085772Z hint: Using 'master' as the name for the initial branch. This default branch name
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5087358Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5088493Z hint: to use in all of your new repositories, which will suppress this warning,
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5089219Z hint: call:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5089557Z hint:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5090126Z hint: 	git config --global init.defaultBranch <name>
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5090871Z hint:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5091503Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5092649Z hint: 'development'. The just-created branch can be renamed via this command:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5093321Z hint:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5093653Z hint: 	git branch -m <name>
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5094027Z hint:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5094510Z hint: Disable this message with "git config set advice.defaultBranchName false"
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5095554Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5097512Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5139512Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5143220Z ##[group]Disabling automatic garbage collection
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5143785Z [command]/usr/bin/git config --local gc.auto 0
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5171868Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5172649Z ##[group]Setting up auth
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5177680Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5206904Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5653202Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5684894Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5878729Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.5911745Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.6107841Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.6146858Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.6147638Z ##[group]Fetching the repository
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:02.6154690Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +208f44c591437593ede79fe0df139b1e776136a5:refs/remotes/origin/master
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4121158Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4122909Z  * [new ref]         208f44c591437593ede79fe0df139b1e776136a5 -> origin/master
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4132376Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4133155Z ##[group]Determining the checkout info
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4133889Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4134541Z [command]/usr/bin/git sparse-checkout disable
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4180804Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4212390Z ##[group]Checking out the ref
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.4217626Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.5151804Z Reset branch 'master'
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.5154132Z branch 'master' set up to track 'origin/master'.
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.5161486Z ##[endgroup]
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.5200620Z [command]/usr/bin/git log -1 --format=%H
+check-code-format	Run actions/checkout@v4	2026-10-24T15:19:04.5223146Z 208f44c591437593ede79fe0df139b1e776136a5
+check-code-format	Set up Python 3.9	﻿2026-10-24T15:19:04.5518143Z ##[group]Run actions/setup-python@v5
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5519093Z with:
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5519751Z   python-version: 3.9
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5520490Z   check-latest: false
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5528530Z   token: ***
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5529243Z   update-environment: true
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5530053Z   allow-prereleases: false
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5530839Z   freethreaded: false
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.5531545Z ##[endgroup]
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.6567571Z ##[group]Installed versions
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.8429477Z Version 3.9 was not found in the local cache
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.8533375Z (node:2073) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+check-code-format	Set up Python 3.9	2026-10-24T15:19:04.8534510Z (Use `node --trace-deprecation ...` to show where the warning was created)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:05.9745280Z Version 3.9 is available for downloading
+check-code-format	Set up Python 3.9	2026-10-24T15:19:05.9745957Z Download from "https://github.com/actions/python-versions/releases/download/3.9.25-19039189640/python-3.9.25-linux-24.04-x64.tar.gz"
+check-code-format	Set up Python 3.9	2026-10-24T15:19:06.5689267Z Extract downloaded archive
+check-code-format	Set up Python 3.9	2026-10-24T15:19:06.5788533Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/cb16e7b8-0059-4de1-8567-06a52b667cf8 -f /home/runner/work/_temp/03984b89-8ef0-4e6c-b0d5-127194542433
+check-code-format	Set up Python 3.9	2026-10-24T15:19:07.7548130Z Execute installation script
+check-code-format	Set up Python 3.9	2026-10-24T15:19:07.7623774Z Check if Python hostedtoolcache folder exist...
+check-code-format	Set up Python 3.9	2026-10-24T15:19:07.7624390Z Create Python 3.9.25 folder
+check-code-format	Set up Python 3.9	2026-10-24T15:19:07.7635970Z Copy Python binaries to hostedtoolcache folder
+check-code-format	Set up Python 3.9	2026-10-24T15:19:08.1351901Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:08.1386433Z Upgrading pip...
+check-code-format	Set up Python 3.9	2026-10-24T15:19:11.7889727Z Looking in links: /tmp/tmpb1x8m3sh
+check-code-format	Set up Python 3.9	2026-10-24T15:19:11.7892550Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (79.0.1)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:11.7896718Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (23.0.1)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:13.9570362Z Collecting pip
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.0048555Z Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.0876036Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 22.2 MB/s eta 0:00:00
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.0876527Z 
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.1309989Z Installing collected packages: pip
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.1311425Z Attempting uninstall: pip
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.1315259Z Found existing installation: pip 23.0.1
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.2731679Z Uninstalling pip-23.0.1:
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.2804924Z Successfully uninstalled pip-23.0.1
+check-code-format	Set up Python 3.9	2026-10-24T15:19:14.9898834Z Successfully installed pip-26.0.1
+check-code-format	Set up Python 3.9	2026-10-24T15:19:15.0343415Z Create complete file
+check-code-format	Set up Python 3.9	2026-10-24T15:19:15.0391631Z Successfully set up CPython (3.9.25)
+check-code-format	Set up Python 3.9	2026-10-24T15:19:15.0392545Z ##[endgroup]
+check-code-format	Install module	﻿2026-10-24T15:19:15.0570820Z ##[group]Run pip install wheel
+check-code-format	Install module	2026-10-24T15:19:15.0571125Z ^[[36;1mpip install wheel^[[0m
+check-code-format	Install module	2026-10-24T15:19:15.0571345Z ^[[36;1mpip install -e .[dev]^[[0m
+check-code-format	Install module	2026-10-24T15:19:15.0912651Z shell: /usr/bin/bash -e {0}
+check-code-format	Install module	2026-10-24T15:19:15.0912907Z env:
+check-code-format	Install module	2026-10-24T15:19:15.0913143Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Install module	2026-10-24T15:19:15.0913549Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+check-code-format	Install module	2026-10-24T15:19:15.0913892Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Install module	2026-10-24T15:19:15.0914224Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Install module	2026-10-24T15:19:15.0914512Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Install module	2026-10-24T15:19:15.0914799Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+check-code-format	Install module	2026-10-24T15:19:15.0915052Z ##[endgroup]
+check-code-format	Install module	2026-10-24T15:19:15.3828536Z Collecting wheel
+check-code-format	Install module	2026-10-24T15:19:15.4078461Z   Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+check-code-format	Install module	2026-10-24T15:19:15.4213225Z Collecting packaging>=24.0 (from wheel)
+check-code-format	Install module	2026-10-24T15:19:15.4249773Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+check-code-format	Install module	2026-10-24T15:19:15.4307365Z Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+check-code-format	Install module	2026-10-24T15:19:15.4375254Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+check-code-format	Install module	2026-10-24T15:19:15.4613198Z Installing collected packages: packaging, wheel
+check-code-format	Install module	2026-10-24T15:19:15.5678218Z 
+check-code-format	Install module	2026-10-24T15:19:15.5692120Z Successfully installed packaging-26.3 wheel-0.48.0
+check-code-format	Install module	2026-10-24T15:19:15.9278723Z Obtaining file:///home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+check-code-format	Install module	2026-10-24T15:19:15.9302904Z   Installing build dependencies: started
+check-code-format	Install module	2026-10-24T15:19:16.4809942Z   Installing build dependencies: finished with status 'done'
+check-code-format	Install module	2026-10-24T15:19:16.4819053Z   Checking if build backend supports build_editable: started
+check-code-format	Install module	2026-10-24T15:19:16.7190339Z   Checking if build backend supports build_editable: finished with status 'done'
+check-code-format	Install module	2026-10-24T15:19:16.7200925Z   Getting requirements to build editable: started
+check-code-format	Install module	2026-10-24T15:19:16.8685476Z   Getting requirements to build editable: finished with status 'done'
+check-code-format	Install module	2026-10-24T15:19:16.8696908Z   Preparing editable metadata (pyproject.toml): started
+check-code-format	Install module	2026-10-24T15:19:17.0092973Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+check-code-format	Install module	2026-10-24T15:19:17.1307562Z Collecting ctranslate2<5,>=4.0 (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.1775511Z   Downloading ctranslate2-4.8.3-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+check-code-format	Install module	2026-10-24T15:19:17.2190474Z Collecting huggingface_hub>=0.23 (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.2301564Z   Downloading huggingface_hub-1.8.0-py3-none-any.whl.metadata (13 kB)
+check-code-format	Install module	2026-10-24T15:19:17.3672042Z Collecting tokenizers<1,>=0.13 (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.3785884Z   Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+check-code-format	Install module	2026-10-24T15:19:17.4309369Z Collecting onnxruntime<2,>=1.14 (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.4423231Z   Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.5 kB)
+check-code-format	Install module	2026-10-24T15:19:17.5158577Z Collecting av>=11 (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.5279578Z   Downloading av-15.1.0-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (4.6 kB)
+check-code-format	Install module	2026-10-24T15:19:17.6147418Z Collecting tqdm (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.6253438Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+check-code-format	Install module	2026-10-24T15:19:17.6993110Z Collecting black==23.* (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.7116869Z   Downloading black-23.12.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (68 kB)
+check-code-format	Install module	2026-10-24T15:19:17.7347439Z Collecting flake8==6.* (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.7456846Z   Downloading flake8-6.1.0-py2.py3-none-any.whl.metadata (3.8 kB)
+check-code-format	Install module	2026-10-24T15:19:17.7772859Z Collecting isort==5.* (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.7879269Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+check-code-format	Install module	2026-10-24T15:19:17.8139106Z Collecting pytest==7.* (from faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.8249335Z   Downloading pytest-7.4.4-py3-none-any.whl.metadata (7.9 kB)
+check-code-format	Install module	2026-10-24T15:19:17.8670430Z Collecting click>=8.0.0 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.8777966Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+check-code-format	Install module	2026-10-24T15:19:17.8874146Z Collecting mypy-extensions>=0.4.3 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.8979159Z   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+check-code-format	Install module	2026-10-24T15:19:17.9001318Z Requirement already satisfied: packaging>=22.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from black==23.*->faster-whisper==1.2.1) (26.3)
+check-code-format	Install module	2026-10-24T15:19:17.9093595Z Collecting pathspec>=0.9.0 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.9198202Z   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+check-code-format	Install module	2026-10-24T15:19:17.9740272Z Collecting platformdirs>=2 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:17.9846827Z   Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+check-code-format	Install module	2026-10-24T15:19:18.0086792Z Collecting tomli>=1.1.0 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.0192465Z   Downloading tomli-2.5.0-py3-none-any.whl.metadata (10 kB)
+check-code-format	Install module	2026-10-24T15:19:18.1292509Z Collecting typing-extensions>=4.0.1 (from black==23.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.1407804Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+check-code-format	Install module	2026-10-24T15:19:18.3165428Z Collecting numpy (from ctranslate2<5,>=4.0->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.3281499Z   Downloading numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+check-code-format	Install module	2026-10-24T15:19:18.3940198Z Collecting pyyaml<7,>=5.3 (from ctranslate2<5,>=4.0->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.4050455Z   Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+check-code-format	Install module	2026-10-24T15:19:18.4280884Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==6.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.4387389Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+check-code-format	Install module	2026-10-24T15:19:18.4731671Z Collecting pycodestyle<2.12.0,>=2.11.0 (from flake8==6.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.4838925Z   Downloading pycodestyle-2.11.1-py2.py3-none-any.whl.metadata (4.5 kB)
+check-code-format	Install module	2026-10-24T15:19:18.9489238Z Collecting pyflakes<3.2.0,>=3.1.0 (from flake8==6.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:18.9605021Z   Downloading pyflakes-3.1.0-py2.py3-none-any.whl.metadata (3.5 kB)
+check-code-format	Install module	2026-10-24T15:19:19.1926769Z Collecting coloredlogs (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:19.2036696Z   Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+check-code-format	Install module	2026-10-24T15:19:19.7336907Z Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:19.7445168Z   Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+check-code-format	Install module	2026-10-24T15:19:20.5989960Z Collecting protobuf (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:20.6100940Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+check-code-format	Install module	2026-10-24T15:19:20.9851171Z Collecting sympy (from onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:20.9959679Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+check-code-format	Install module	2026-10-24T15:19:21.4881363Z Collecting iniconfig (from pytest==7.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.4989942Z   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+check-code-format	Install module	2026-10-24T15:19:21.5596343Z Collecting pluggy<2.0,>=0.12 (from pytest==7.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.5701462Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+check-code-format	Install module	2026-10-24T15:19:21.5994928Z Collecting exceptiongroup>=1.0.0rc8 (from pytest==7.*->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.6099851Z   Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+check-code-format	Install module	2026-10-24T15:19:21.6511186Z Collecting filelock>=3.10.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.6617546Z   Downloading filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+check-code-format	Install module	2026-10-24T15:19:21.6773643Z Collecting fsspec>=2023.5.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.6883075Z   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+check-code-format	Install module	2026-10-24T15:19:21.7405662Z Collecting hf-xet<2.0.0,>=1.4.2 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.7513658Z   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+check-code-format	Install module	2026-10-24T15:19:21.7660269Z Collecting httpx<1,>=0.23.0 (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.7764816Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+check-code-format	Install module	2026-10-24T15:19:21.8030901Z Collecting typer (from huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.8137363Z   Downloading typer-0.23.2-py3-none-any.whl.metadata (16 kB)
+check-code-format	Install module	2026-10-24T15:19:21.8343253Z Collecting anyio (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.8453861Z   Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+check-code-format	Install module	2026-10-24T15:19:21.8620998Z Collecting certifi (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.8727514Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+check-code-format	Install module	2026-10-24T15:19:21.8869207Z Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.8977680Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+check-code-format	Install module	2026-10-24T15:19:21.9107050Z Collecting idna (from httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.9211996Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+check-code-format	Install module	2026-10-24T15:19:21.9308176Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.9412522Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+check-code-format	Install module	2026-10-24T15:19:21.9749028Z Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:21.9854941Z   Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+check-code-format	Install module	2026-10-24T15:19:21.9983679Z Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime<2,>=1.14->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.0089315Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+check-code-format	Install module	2026-10-24T15:19:22.0208560Z Collecting shellingham>=1.3.0 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.0313194Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+check-code-format	Install module	2026-10-24T15:19:22.0578956Z Collecting rich>=12.3.0 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.0684485Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+check-code-format	Install module	2026-10-24T15:19:22.0769166Z Collecting annotated-doc>=0.0.2 (from typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.0874496Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+check-code-format	Install module	2026-10-24T15:19:22.0994160Z Collecting markdown-it-py>=2.2.0 (from rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.1099666Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+check-code-format	Install module	2026-10-24T15:19:22.1272886Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.1378086Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+check-code-format	Install module	2026-10-24T15:19:22.1467149Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->huggingface_hub>=0.23->faster-whisper==1.2.1)
+check-code-format	Install module	2026-10-24T15:19:22.1572023Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+check-code-format	Install module	2026-10-24T15:19:22.1722861Z Downloading black-23.12.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+check-code-format	Install module	2026-10-24T15:19:22.2296781Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 38.3 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.2409877Z Downloading ctranslate2-4.8.3-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (39.9 MB)
+check-code-format	Install module	2026-10-24T15:19:22.5632965Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.9/39.9 MB 123.7 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.5754922Z Downloading flake8-6.1.0-py2.py3-none-any.whl (58 kB)
+check-code-format	Install module	2026-10-24T15:19:22.5877591Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+check-code-format	Install module	2026-10-24T15:19:22.5998938Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+check-code-format	Install module	2026-10-24T15:19:22.6125482Z Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (13.2 MB)
+check-code-format	Install module	2026-10-24T15:19:22.7060626Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 141.4 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.7172037Z Downloading pycodestyle-2.11.1-py2.py3-none-any.whl (31 kB)
+check-code-format	Install module	2026-10-24T15:19:22.7297327Z Downloading pyflakes-3.1.0-py2.py3-none-any.whl (62 kB)
+check-code-format	Install module	2026-10-24T15:19:22.7416733Z Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+check-code-format	Install module	2026-10-24T15:19:22.7550255Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+check-code-format	Install module	2026-10-24T15:19:22.7673360Z Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (750 kB)
+check-code-format	Install module	2026-10-24T15:19:22.7732847Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 750.8/750.8 kB 132.3 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.7848319Z Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+check-code-format	Install module	2026-10-24T15:19:22.8076133Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 144.1 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.8184442Z Downloading huggingface_hub-1.8.0-py3-none-any.whl (625 kB)
+check-code-format	Install module	2026-10-24T15:19:22.8260974Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 625.2/625.2 kB 77.8 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.8367955Z Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+check-code-format	Install module	2026-10-24T15:19:22.8675021Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 137.4 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:22.8781840Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+check-code-format	Install module	2026-10-24T15:19:22.8906251Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+check-code-format	Install module	2026-10-24T15:19:22.9037806Z Downloading av-15.1.0-cp39-cp39-manylinux_2_28_x86_64.whl (39.1 MB)
+check-code-format	Install module	2026-10-24T15:19:23.3291650Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.1/39.1 MB 91.9 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:23.3400807Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+check-code-format	Install module	2026-10-24T15:19:23.3521837Z Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+check-code-format	Install module	2026-10-24T15:19:23.3647624Z Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+check-code-format	Install module	2026-10-24T15:19:23.3767550Z Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+check-code-format	Install module	2026-10-24T15:19:23.3894073Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+check-code-format	Install module	2026-10-24T15:19:23.4012537Z Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+check-code-format	Install module	2026-10-24T15:19:23.4131031Z Downloading numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+check-code-format	Install module	2026-10-24T15:19:23.6138965Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.5/19.5 MB 124.9 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:23.6248653Z Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+check-code-format	Install module	2026-10-24T15:19:23.6372377Z Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+check-code-format	Install module	2026-10-24T15:19:23.6491077Z Downloading tomli-2.5.0-py3-none-any.whl (14 kB)
+check-code-format	Install module	2026-10-24T15:19:23.6610106Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+check-code-format	Install module	2026-10-24T15:19:23.6731037Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7024607Z Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7146356Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7269021Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7392880Z Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7516864Z Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7639685Z Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7759933Z Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+check-code-format	Install module	2026-10-24T15:19:23.7878473Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+check-code-format	Install module	2026-10-24T15:19:23.8006536Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+check-code-format	Install module	2026-10-24T15:19:23.8465095Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 138.4 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:23.8575228Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+check-code-format	Install module	2026-10-24T15:19:23.8631708Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 73.3 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:23.8740535Z Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+check-code-format	Install module	2026-10-24T15:19:23.8860268Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+check-code-format	Install module	2026-10-24T15:19:23.8978624Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+check-code-format	Install module	2026-10-24T15:19:23.9104572Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+check-code-format	Install module	2026-10-24T15:19:24.0438755Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 7.5 MB/s  0:00:00
+check-code-format	Install module	2026-10-24T15:19:24.0546359Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+check-code-format	Install module	2026-10-24T15:19:24.0668892Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+check-code-format	Install module	2026-10-24T15:19:24.0787610Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+check-code-format	Install module	2026-10-24T15:19:24.2032922Z Building wheels for collected packages: faster-whisper
+check-code-format	Install module	2026-10-24T15:19:24.2040543Z   Building editable for faster-whisper (pyproject.toml): started
+check-code-format	Install module	2026-10-24T15:19:24.3772092Z   Building editable for faster-whisper (pyproject.toml): finished with status 'done'
+check-code-format	Install module	2026-10-24T15:19:24.3778613Z   Created wheel for faster-whisper: filename=faster_whisper-1.2.1-0.editable-py3-none-any.whl size=9837 sha256=77141e6c3eedb706f22985b7507a7327467f3da024fa29221dee6e2bfd1b0920
+check-code-format	Install module	2026-10-24T15:19:24.3779967Z   Stored in directory: /tmp/pip-ephem-wheel-cache-6rfrjmx1/wheels/13/ef/96/41e38ebc19a5a44a5ddad372b9a51d82337faf584ffe1e86ac
+check-code-format	Install module	2026-10-24T15:19:24.3801169Z Successfully built faster-whisper
+check-code-format	Install module	2026-10-24T15:19:24.4831198Z Installing collected packages: mpmath, flatbuffers, typing-extensions, tqdm, tomli, sympy, shellingham, pyyaml, pygments, pyflakes, pycodestyle, protobuf, pluggy, platformdirs, pathspec, numpy, mypy-extensions, mdurl, mccabe, isort, iniconfig, idna, humanfriendly, hf-xet, h11, fsspec, filelock, click, certifi, av, annotated-doc, markdown-it-py, httpcore, flake8, exceptiongroup, ctranslate2, coloredlogs, black, rich, pytest, onnxruntime, anyio, typer, httpx, huggingface_hub, tokenizers, faster-whisper
+check-code-format	Install module	2026-10-24T15:19:34.2919683Z 
+check-code-format	Install module	2026-10-24T15:19:34.2974701Z Successfully installed annotated-doc-0.0.5 anyio-4.12.1 av-15.1.0 black-23.12.1 certifi-2026.10.23 click-8.1.8 coloredlogs-15.0.1 ctranslate2-4.8.3 exceptiongroup-1.3.1 faster-whisper-1.2.1 filelock-3.19.1 flake8-6.1.0 flatbuffers-25.12.19 fsspec-2025.10.0 h11-0.16.0 hf-xet-1.7.0 httpcore-1.0.9 httpx-0.28.1 huggingface_hub-1.8.0 humanfriendly-10.0 idna-3.20 iniconfig-2.1.0 isort-5.13.2 markdown-it-py-3.0.0 mccabe-0.7.0 mdurl-0.1.2 mpmath-1.3.0 mypy-extensions-1.1.0 numpy-2.0.2 onnxruntime-1.19.2 pathspec-1.1.1 platformdirs-4.4.0 pluggy-1.6.0 protobuf-6.33.6 pycodestyle-2.11.1 pyflakes-3.1.0 pygments-2.21.0 pytest-7.4.4 pyyaml-6.0.3 rich-15.0.0 shellingham-1.5.4 sympy-1.14.0 tokenizers-0.22.2 tomli-2.5.0 tqdm-4.70.1 typer-0.23.2 typing-extensions-4.16.0
+check-code-format	Check code format with Black	﻿2026-10-24T15:19:34.6632408Z ##[group]Run black --check .
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6632685Z ^[[36;1mblack --check .^[[0m
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6692481Z shell: /usr/bin/bash -e {0}
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6692706Z env:
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6692940Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6693295Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6693621Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6693910Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6694194Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6694482Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+check-code-format	Check code format with Black	2026-10-24T15:19:34.6694734Z ##[endgroup]
+check-code-format	Check code format with Black	2026-10-24T15:19:35.0671785Z All done! ✨ 🍰 ✨
+check-code-format	Check code format with Black	2026-10-24T15:19:35.0672320Z 20 files would be left unchanged.
+check-code-format	Check imports order with isort	﻿2026-10-24T15:19:35.0881817Z ##[group]Run isort --check-only .
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0882113Z ^[[36;1misort --check-only .^[[0m
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0938075Z shell: /usr/bin/bash -e {0}
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0938298Z env:
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0938536Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0938902Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0939472Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0939788Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0940099Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0940411Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.0940681Z ##[endgroup]
+check-code-format	Check imports order with isort	2026-10-24T15:19:35.2024642Z Skipped 1 files
+check-code-format	Check code style with Flake8	﻿2026-10-24T15:19:35.2131420Z ##[group]Run flake8 .
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2131641Z ^[[36;1mflake8 .^[[0m
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2187704Z shell: /usr/bin/bash -e {0}
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2187919Z env:
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2188130Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2188475Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2188796Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2189100Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2189387Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2189687Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+check-code-format	Check code style with Flake8	2026-10-24T15:19:35.2189938Z ##[endgroup]
+check-code-format	Post Set up Python 3.9	﻿2026-10-24T15:19:35.6373396Z Post job cleanup.
+check-code-format	Post Set up Python 3.9	2026-10-24T15:19:35.7312039Z (node:2268) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+check-code-format	Post Set up Python 3.9	2026-10-24T15:19:35.7313098Z (Use `node --trace-deprecation ...` to show where the warning was created)
+check-code-format	Post Run actions/checkout@v4	﻿2026-10-24T15:19:35.7468704Z Post job cleanup.
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8167843Z [command]/usr/bin/git version
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8204857Z git version 2.55.0
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8240337Z Temporarily overriding HOME='/home/runner/work/_temp/0fe5b5f7-90b5-46c2-866b-e921a01e2410' before making global git config changes
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8241173Z Adding repository directory to the temporary git global config as a safe directory
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8244345Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8277942Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8328134Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8603925Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8632736Z http.https://github.com/.extraheader
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8653125Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8705216Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8939841Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check-code-format	Post Run actions/checkout@v4	2026-10-24T15:19:35.8969128Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check-code-format	Complete job	﻿2026-10-24T15:19:35.9300138Z Cleaning up orphan processes
+check-code-format	Complete job	2026-10-24T15:19:35.9547165Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-push-package	Set up job	﻿2026-10-24T15:20:35.1943958Z Current runner version: '2.338.0'
+build-and-push-package	Set up job	2026-10-24T15:20:35.1971269Z ##[group]Runner Image Provisioner
+build-and-push-package	Set up job	2026-10-24T15:20:35.1972233Z Hosted Compute Agent
+build-and-push-package	Set up job	2026-10-24T15:20:35.1972962Z Version: 20261021.618
+build-and-push-package	Set up job	2026-10-24T15:20:35.1973605Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+build-and-push-package	Set up job	2026-10-24T15:20:35.1974380Z Build Date: 2026-10-21T00:45:21Z
+build-and-push-package	Set up job	2026-10-24T15:20:35.1975169Z Worker ID: {764d0133-b71f-4063-8e81-21fb79e15c5e}
+build-and-push-package	Set up job	2026-10-24T15:20:35.1975879Z Region: eastus2
+build-and-push-package	Set up job	2026-10-24T15:20:35.1976455Z Cloud: Azure
+build-and-push-package	Set up job	2026-10-24T15:20:35.1977003Z ##[endgroup]
+build-and-push-package	Set up job	2026-10-24T15:20:35.1978627Z ##[group]Operating System
+build-and-push-package	Set up job	2026-10-24T15:20:35.1979382Z Ubuntu
+build-and-push-package	Set up job	2026-10-24T15:20:35.1979917Z 24.04.5
+build-and-push-package	Set up job	2026-10-24T15:20:35.1980503Z LTS
+build-and-push-package	Set up job	2026-10-24T15:20:35.1981236Z ##[endgroup]
+build-and-push-package	Set up job	2026-10-24T15:20:35.1982064Z ##[group]Runner Image
+build-and-push-package	Set up job	2026-10-24T15:20:35.1982889Z Image: ubuntu-24.04
+build-and-push-package	Set up job	2026-10-24T15:20:35.1983828Z Version: 20261012.334.1
+build-and-push-package	Set up job	2026-10-24T15:20:35.1985578Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+build-and-push-package	Set up job	2026-10-24T15:20:35.1988232Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+build-and-push-package	Set up job	2026-10-24T15:20:35.1989705Z ##[endgroup]
+build-and-push-package	Set up job	2026-10-24T15:20:35.1990985Z ##[group]GITHUB_TOKEN Permissions
+build-and-push-package	Set up job	2026-10-24T15:20:35.1993661Z Contents: read
+build-and-push-package	Set up job	2026-10-24T15:20:35.1994397Z Metadata: read
+build-and-push-package	Set up job	2026-10-24T15:20:35.1994955Z Packages: read
+build-and-push-package	Set up job	2026-10-24T15:20:35.1995616Z ##[endgroup]
+build-and-push-package	Set up job	2026-10-24T15:20:35.1997757Z Secret source: Actions
+build-and-push-package	Set up job	2026-10-24T15:20:35.1998964Z Cache mode: write
+build-and-push-package	Set up job	2026-10-24T15:20:35.1999907Z Prepare workflow directory
+build-and-push-package	Set up job	2026-10-24T15:20:35.2368356Z Prepare all required actions
+build-and-push-package	Set up job	2026-10-24T15:20:35.2418946Z Getting action download info
+build-and-push-package	Set up job	2026-10-24T15:20:35.4982629Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-push-package	Set up job	2026-10-24T15:20:35.6115402Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-push-package	Set up job	2026-10-24T15:20:35.6968764Z Download action repository 'pypa/gh-action-pypi-publish@release/v1' (SHA:7245906fb61fa33a13554f9d5fb856fe61758086)
+build-and-push-package	Set up job	2026-10-24T15:20:35.9356663Z Getting action download info
+build-and-push-package	Set up job	2026-10-24T15:20:36.0255005Z Download action repository 'actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405' (SHA:a309ff8b426b58ec0e2a45f0f869d46889d02405)
+build-and-push-package	Set up job	2026-10-24T15:20:36.2089797Z Complete job name: build-and-push-package
+build-and-push-package	Run actions/checkout@v4	﻿2026-10-24T15:20:36.3088228Z ##[group]Run actions/checkout@v4
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3089776Z with:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3090823Z   repository: ajgreengrove/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3100231Z   token: ***
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3101295Z   ssh-strict: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3102544Z   ssh-user: git
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3103725Z   persist-credentials: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3104826Z   clean: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3105790Z   sparse-checkout-cone-mode: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3106905Z   fetch-depth: 1
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3107822Z   fetch-tags: false
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3108753Z   show-progress: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3109696Z   lfs: false
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3110601Z   submodules: false
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3111800Z   set-safe-directory: true
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3112900Z   allow-unsafe-pr-checkout: false
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.3114361Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4215199Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4220401Z ##[group]Getting Git version info
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4223825Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4228175Z [command]/usr/bin/git version
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4282122Z git version 2.55.0
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4306775Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4323819Z Temporarily overriding HOME='/home/runner/work/_temp/3920f210-29a4-4d9e-8bef-5276488d2595' before making global git config changes
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4328973Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4334179Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4391811Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4398787Z ##[group]Initializing the repository
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4405992Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4519029Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4523902Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4526654Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4528559Z hint: call:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4529681Z hint:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4531449Z hint: 	git config --global init.defaultBranch <name>
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4533908Z hint:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4536026Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4538737Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4540969Z hint:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4543333Z hint: 	git branch -m <name>
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4545264Z hint:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4547508Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4550731Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4557399Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4600818Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4603815Z ##[group]Disabling automatic garbage collection
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4606935Z [command]/usr/bin/git config --local gc.auto 0
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4647158Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4649834Z ##[group]Setting up auth
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4656121Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.4706778Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5121621Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5162116Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5400447Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5442338Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5678563Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5726400Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5730074Z ##[group]Fetching the repository
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:36.5740019Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +208f44c591437593ede79fe0df139b1e776136a5:refs/remotes/origin/master
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6209843Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6212057Z  * [new ref]         208f44c591437593ede79fe0df139b1e776136a5 -> origin/master
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6216951Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6218099Z ##[group]Determining the checkout info
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6220512Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6229701Z [command]/usr/bin/git sparse-checkout disable
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6294279Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6333283Z ##[group]Checking out the ref
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.6339183Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.7451682Z Reset branch 'master'
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.7455924Z branch 'master' set up to track 'origin/master'.
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.7463582Z ##[endgroup]
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.7513533Z [command]/usr/bin/git log -1 --format=%H
+build-and-push-package	Run actions/checkout@v4	2026-10-24T15:20:37.7543106Z 208f44c591437593ede79fe0df139b1e776136a5
+build-and-push-package	Set up Python 3.9	﻿2026-10-24T15:20:37.7918301Z ##[group]Run actions/setup-python@v5
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7918785Z with:
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7919119Z   python-version: 3.9
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7919513Z   check-latest: false
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7922586Z   token: ***
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7922992Z   update-environment: true
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7923411Z   allow-prereleases: false
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7923824Z   freethreaded: false
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.7924200Z ##[endgroup]
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.9343326Z ##[group]Installed versions
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.9426794Z Version 3.9 was not found in the local cache
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.9561767Z (node:2282) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:37.9563441Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:38.5552604Z Version 3.9 is available for downloading
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:38.5554296Z Download from "https://github.com/actions/python-versions/releases/download/3.9.25-19039189640/python-3.9.25-linux-24.04-x64.tar.gz"
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:39.1994298Z Extract downloaded archive
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:39.2124299Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/602cdc6a-2cca-4393-9970-8230d05bc64d -f /home/runner/work/_temp/76c90c59-871a-4c96-9566-904dcaabd836
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:40.5830291Z Execute installation script
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:40.5924908Z Check if Python hostedtoolcache folder exist...
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:40.5926101Z Create Python 3.9.25 folder
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:40.5939836Z Copy Python binaries to hostedtoolcache folder
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:41.0648683Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:41.0690826Z Upgrading pip...
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:43.3122208Z Looking in links: /tmp/tmpal_0n0vx
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:43.3126267Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (79.0.1)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:43.3131677Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (23.0.1)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.6197775Z Collecting pip
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.6665985Z Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.7547339Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 21.1 MB/s eta 0:00:00
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.7548076Z 
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.8198587Z Installing collected packages: pip
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.8199456Z Attempting uninstall: pip
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:44.8209770Z Found existing installation: pip 23.0.1
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.0059315Z Uninstalling pip-23.0.1:
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.0140228Z Successfully uninstalled pip-23.0.1
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.9117451Z Successfully installed pip-26.0.1
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.9860921Z Create complete file
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.9909413Z Successfully set up CPython (3.9.25)
+build-and-push-package	Set up Python 3.9	2026-10-24T15:20:45.9910618Z ##[endgroup]
+build-and-push-package	Install dependencies	﻿2026-10-24T15:20:46.0089406Z ##[group]Run pip install wheel
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0089855Z ^[[36;1mpip install wheel^[[0m
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0345422Z shell: /usr/bin/bash -e {0}
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0345887Z env:
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0346251Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0346886Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0347461Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0347963Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0348468Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0348968Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.0349391Z ##[endgroup]
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.4481463Z Collecting wheel
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.4907710Z   Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.5148507Z Collecting packaging>=24.0 (from wheel)
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.5230106Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.5355176Z Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.5516899Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.5810717Z Installing collected packages: packaging, wheel
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.6839822Z 
+build-and-push-package	Install dependencies	2026-10-24T15:20:46.6860207Z Successfully installed packaging-26.3 wheel-0.48.0
+build-and-push-package	Build package	﻿2026-10-24T15:20:46.8450737Z ##[group]Run python3 setup.py sdist bdist_wheel
+build-and-push-package	Build package	2026-10-24T15:20:46.8451575Z ^[[36;1mpython3 setup.py sdist bdist_wheel^[[0m
+build-and-push-package	Build package	2026-10-24T15:20:46.8519816Z shell: /usr/bin/bash -e {0}
+build-and-push-package	Build package	2026-10-24T15:20:46.8520151Z env:
+build-and-push-package	Build package	2026-10-24T15:20:46.8520481Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Build package	2026-10-24T15:20:46.8521187Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+build-and-push-package	Build package	2026-10-24T15:20:46.8521720Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Build package	2026-10-24T15:20:46.8522190Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Build package	2026-10-24T15:20:46.8522669Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build-and-push-package	Build package	2026-10-24T15:20:46.8523134Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+build-and-push-package	Build package	2026-10-24T15:20:46.8523527Z ##[endgroup]
+build-and-push-package	Build package	2026-10-24T15:20:47.1369985Z /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+build-and-push-package	Build package	2026-10-24T15:20:47.1371630Z !!
+build-and-push-package	Build package	2026-10-24T15:20:47.1371907Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.1372155Z         ********************************************************************************
+build-and-push-package	Build package	2026-10-24T15:20:47.1373146Z         Please consider removing the following classifiers in favor of a SPDX license expression:
+build-and-push-package	Build package	2026-10-24T15:20:47.1374037Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.1374409Z         License :: OSI Approved :: MIT License
+build-and-push-package	Build package	2026-10-24T15:20:47.1374814Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.1375409Z         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+build-and-push-package	Build package	2026-10-24T15:20:47.1376519Z         ********************************************************************************
+build-and-push-package	Build package	2026-10-24T15:20:47.1376978Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.1377266Z !!
+build-and-push-package	Build package	2026-10-24T15:20:47.1377647Z   self._finalize_license_expression()
+build-and-push-package	Build package	2026-10-24T15:20:47.1751519Z running sdist
+build-and-push-package	Build package	2026-10-24T15:20:47.1752314Z running egg_info
+build-and-push-package	Build package	2026-10-24T15:20:47.1782670Z creating faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.1784105Z writing faster_whisper.egg-info/PKG-INFO
+build-and-push-package	Build package	2026-10-24T15:20:47.1801382Z writing dependency_links to faster_whisper.egg-info/dependency_links.txt
+build-and-push-package	Build package	2026-10-24T15:20:47.1807525Z writing requirements to faster_whisper.egg-info/requires.txt
+build-and-push-package	Build package	2026-10-24T15:20:47.1808867Z writing top-level names to faster_whisper.egg-info/top_level.txt
+build-and-push-package	Build package	2026-10-24T15:20:47.1810411Z writing manifest file 'faster_whisper.egg-info/SOURCES.txt'
+build-and-push-package	Build package	2026-10-24T15:20:47.1930691Z reading manifest file 'faster_whisper.egg-info/SOURCES.txt'
+build-and-push-package	Build package	2026-10-24T15:20:47.1932205Z reading manifest template 'MANIFEST.in'
+build-and-push-package	Build package	2026-10-24T15:20:47.1935068Z adding license file 'LICENSE'
+build-and-push-package	Build package	2026-10-24T15:20:47.1944879Z writing manifest file 'faster_whisper.egg-info/SOURCES.txt'
+build-and-push-package	Build package	2026-10-24T15:20:47.1946993Z running check
+build-and-push-package	Build package	2026-10-24T15:20:47.1977689Z creating faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1980537Z creating faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.1982160Z creating faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.1983656Z creating faster_whisper-1.2.1/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.1985104Z creating faster_whisper-1.2.1/tests
+build-and-push-package	Build package	2026-10-24T15:20:47.1986079Z copying files to faster_whisper-1.2.1...
+build-and-push-package	Build package	2026-10-24T15:20:47.1987236Z copying LICENSE -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1989377Z copying MANIFEST.in -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1991179Z copying README.md -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1993533Z copying requirements.conversion.txt -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1994866Z copying requirements.txt -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1996608Z copying setup.cfg -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.1998207Z copying setup.py -> faster_whisper-1.2.1
+build-and-push-package	Build package	2026-10-24T15:20:47.2000147Z copying faster_whisper/__init__.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2001959Z copying faster_whisper/audio.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2004116Z copying faster_whisper/feature_extractor.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2006266Z copying faster_whisper/tokenizer.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2008536Z copying faster_whisper/transcribe.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2011708Z copying faster_whisper/utils.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2014043Z copying faster_whisper/vad.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2016626Z copying faster_whisper/version.py -> faster_whisper-1.2.1/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.2018401Z copying faster_whisper.egg-info/PKG-INFO -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2021795Z copying faster_whisper.egg-info/SOURCES.txt -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2023492Z copying faster_whisper.egg-info/dependency_links.txt -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2025620Z copying faster_whisper.egg-info/requires.txt -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2027608Z copying faster_whisper.egg-info/top_level.txt -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2029483Z copying faster_whisper/assets/__init__.py -> faster_whisper-1.2.1/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.2031746Z copying faster_whisper/assets/silero_vad_v6.onnx -> faster_whisper-1.2.1/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.2040874Z copying tests/test_tokenizer.py -> faster_whisper-1.2.1/tests
+build-and-push-package	Build package	2026-10-24T15:20:47.2043039Z copying tests/test_transcribe.py -> faster_whisper-1.2.1/tests
+build-and-push-package	Build package	2026-10-24T15:20:47.2044854Z copying tests/test_utils.py -> faster_whisper-1.2.1/tests
+build-and-push-package	Build package	2026-10-24T15:20:47.2046705Z copying faster_whisper.egg-info/SOURCES.txt -> faster_whisper-1.2.1/faster_whisper.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.2060017Z Writing faster_whisper-1.2.1/setup.cfg
+build-and-push-package	Build package	2026-10-24T15:20:47.2063527Z creating dist
+build-and-push-package	Build package	2026-10-24T15:20:47.2078194Z Creating tar archive
+build-and-push-package	Build package	2026-10-24T15:20:47.2817067Z removing 'faster_whisper-1.2.1' (and everything under it)
+build-and-push-package	Build package	2026-10-24T15:20:47.2827867Z running bdist_wheel
+build-and-push-package	Build package	2026-10-24T15:20:47.2996896Z running build
+build-and-push-package	Build package	2026-10-24T15:20:47.2997362Z running build_py
+build-and-push-package	Build package	2026-10-24T15:20:47.3000424Z creating build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3003527Z copying faster_whisper/audio.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3005746Z copying faster_whisper/utils.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3008030Z copying faster_whisper/version.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3009908Z copying faster_whisper/vad.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3012697Z copying faster_whisper/feature_extractor.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3014756Z copying faster_whisper/__init__.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3016846Z copying faster_whisper/tokenizer.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3019001Z copying faster_whisper/transcribe.py -> build/lib/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3022449Z creating build/lib/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3024024Z copying faster_whisper/assets/__init__.py -> build/lib/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3029807Z copying faster_whisper/assets/silero_vad_v6.onnx -> build/lib/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3114571Z /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+build-and-push-package	Build package	2026-10-24T15:20:47.3115676Z !!
+build-and-push-package	Build package	2026-10-24T15:20:47.3115815Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.3116010Z         ********************************************************************************
+build-and-push-package	Build package	2026-10-24T15:20:47.3116534Z         Please avoid running ``setup.py`` directly.
+build-and-push-package	Build package	2026-10-24T15:20:47.3117336Z         Instead, use pypa/build, pypa/installer or other
+build-and-push-package	Build package	2026-10-24T15:20:47.3117840Z         standards-based tools.
+build-and-push-package	Build package	2026-10-24T15:20:47.3118184Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.3118556Z         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+build-and-push-package	Build package	2026-10-24T15:20:47.3119246Z         ********************************************************************************
+build-and-push-package	Build package	2026-10-24T15:20:47.3119585Z 
+build-and-push-package	Build package	2026-10-24T15:20:47.3119695Z !!
+build-and-push-package	Build package	2026-10-24T15:20:47.3120110Z   self.initialize_options()
+build-and-push-package	Build package	2026-10-24T15:20:47.3145078Z installing to build/bdist.linux-x86_64/wheel
+build-and-push-package	Build package	2026-10-24T15:20:47.3145715Z running install
+build-and-push-package	Build package	2026-10-24T15:20:47.3206141Z running install_lib
+build-and-push-package	Build package	2026-10-24T15:20:47.3248233Z creating build/bdist.linux-x86_64/wheel
+build-and-push-package	Build package	2026-10-24T15:20:47.3250853Z creating build/bdist.linux-x86_64/wheel/faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3252971Z copying build/lib/faster_whisper/audio.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3254824Z copying build/lib/faster_whisper/utils.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3256655Z copying build/lib/faster_whisper/version.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3258615Z creating build/bdist.linux-x86_64/wheel/faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3260521Z copying build/lib/faster_whisper/assets/__init__.py -> build/bdist.linux-x86_64/wheel/./faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3262367Z copying build/lib/faster_whisper/assets/silero_vad_v6.onnx -> build/bdist.linux-x86_64/wheel/./faster_whisper/assets
+build-and-push-package	Build package	2026-10-24T15:20:47.3271394Z copying build/lib/faster_whisper/vad.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3273551Z copying build/lib/faster_whisper/feature_extractor.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3275183Z copying build/lib/faster_whisper/__init__.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3276805Z copying build/lib/faster_whisper/tokenizer.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3278553Z copying build/lib/faster_whisper/transcribe.py -> build/bdist.linux-x86_64/wheel/./faster_whisper
+build-and-push-package	Build package	2026-10-24T15:20:47.3280518Z running install_egg_info
+build-and-push-package	Build package	2026-10-24T15:20:47.3330933Z Copying faster_whisper.egg-info to build/bdist.linux-x86_64/wheel/./faster_whisper-1.2.1-py3.9.egg-info
+build-and-push-package	Build package	2026-10-24T15:20:47.3338658Z running install_scripts
+build-and-push-package	Build package	2026-10-24T15:20:47.3349143Z creating build/bdist.linux-x86_64/wheel/faster_whisper-1.2.1.dist-info/WHEEL
+build-and-push-package	Build package	2026-10-24T15:20:47.3353455Z creating 'dist/faster_whisper-1.2.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+build-and-push-package	Build package	2026-10-24T15:20:47.3356385Z adding 'faster_whisper/__init__.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3359577Z adding 'faster_whisper/audio.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3363738Z adding 'faster_whisper/feature_extractor.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3367576Z adding 'faster_whisper/tokenizer.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3388500Z adding 'faster_whisper/transcribe.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3392254Z adding 'faster_whisper/utils.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3396968Z adding 'faster_whisper/vad.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3399177Z adding 'faster_whisper/version.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3401308Z adding 'faster_whisper/assets/__init__.py'
+build-and-push-package	Build package	2026-10-24T15:20:47.3824994Z adding 'faster_whisper/assets/silero_vad_v6.onnx'
+build-and-push-package	Build package	2026-10-24T15:20:47.3838165Z adding 'faster_whisper-1.2.1.dist-info/licenses/LICENSE'
+build-and-push-package	Build package	2026-10-24T15:20:47.3844197Z adding 'faster_whisper-1.2.1.dist-info/METADATA'
+build-and-push-package	Build package	2026-10-24T15:20:47.3846137Z adding 'faster_whisper-1.2.1.dist-info/WHEEL'
+build-and-push-package	Build package	2026-10-24T15:20:47.3847972Z adding 'faster_whisper-1.2.1.dist-info/top_level.txt'
+build-and-push-package	Build package	2026-10-24T15:20:47.3850268Z adding 'faster_whisper-1.2.1.dist-info/RECORD'
+build-and-push-package	Build package	2026-10-24T15:20:47.3861942Z removing build/bdist.linux-x86_64/wheel
+build-and-push-package	Post Set up Python 3.9	﻿2026-10-24T15:20:47.4175371Z Post job cleanup.
+build-and-push-package	Post Set up Python 3.9	2026-10-24T15:20:47.5392792Z (node:2389) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-push-package	Post Set up Python 3.9	2026-10-24T15:20:47.5393894Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-push-package	Post Run actions/checkout@v4	﻿2026-10-24T15:20:47.5590279Z Post job cleanup.
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6501907Z [command]/usr/bin/git version
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6541362Z git version 2.55.0
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6588263Z Temporarily overriding HOME='/home/runner/work/_temp/bf2bc185-b836-46de-9c9a-753bef8dd2c9' before making global git config changes
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6590222Z Adding repository directory to the temporary git global config as a safe directory
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6595108Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6642058Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6712562Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.6985757Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.7016088Z http.https://github.com/.extraheader
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.7032032Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.7078823Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.7349488Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-push-package	Post Run actions/checkout@v4	2026-10-24T15:20:47.7393790Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-push-package	Complete job	﻿2026-10-24T15:20:47.7780971Z Cleaning up orphan processes
+build-and-push-package	Complete job	2026-10-24T15:20:47.8064375Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
