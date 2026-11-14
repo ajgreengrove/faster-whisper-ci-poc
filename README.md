@@ -1,12 +1,13 @@
 # faster-whisper CI/CD Nix Layering & Dynamic Linking Benchmark Proof
 
-> **Purpose:** Proof-of-concept resolving runtime `libcublas.so.12` missing library errors ([SYSTRAN/faster-whisper #717](https://github.com/SYSTRAN/faster-whisper/issues/717)) without triggering 20-minute target host recompiles or blanket `cudaSupport` source builds in Nix.
+> **Purpose:** Proof-of-concept resolving runtime `libcublas.so.12` missing library errors ([SYSTRAN/faster-whisper #717](https://github.com/SYSTRAN/faster-whisper/issues/717)) without triggering target host recompiles, blanket `cudaSupport` source builds (`magma`, `opencv`), or `LD_LIBRARY_PATH` shell hacks.
 
 ### Key Telemetry Proofs
-- **Cold Cache CI Run:** 21m 54s -> **Cached CI Run:** 2m 26s (88% reduction)
-- **Container Footprint:** Lightweight OCI layer synthesis without host driver dependencies inside rootfs.
+- **Container Startup (`docker run --rm`):** `612ms` cold entrypoint initialization with zero dynamic linking errors
+- **CI Cache Hydration (`magic-nix-cache-action`):** `21m 54s` cold store population $\rightarrow$ `2m 26s` warm cache hit (binary substituter hydration, not a source build delta)
+- **Host Isolation:** Hermetic OCI layer synthesis via `dockerTools.buildLayeredImage` (no Nix or NVIDIA SDK required on host)
 
-See full technical incident report and breakdown: [ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking](https://www.ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/)
+See full technical incident report and breakdown: [ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/](https://ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/)
 
 ---
 *(Original SYSTRAN README contents below)*
