@@ -27,5 +27,5 @@ jobs:
       - name: Load Image into Docker Daemon
         run: docker load < result
 
-      - name: Validate Container Execution
-        run: docker run --rm faster-whisper:latest
+      - name: Verify CUDA Shared Libraries (Pre-Deploy Check)
+        run: docker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"

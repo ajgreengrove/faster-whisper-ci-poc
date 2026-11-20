@@ -1,13 +1,11 @@
-# faster-whisper CI/CD Nix Layering & Dynamic Linking Benchmark Proof
+# Catching Silent CUDA Link Crashes in CPU CI (`faster-whisper`)
 
-> **Purpose:** Proof-of-concept resolving runtime `libcublas.so.12` missing library errors ([SYSTRAN/faster-whisper #717](https://github.com/SYSTRAN/faster-whisper/issues/717)) without triggering target host recompiles, blanket `cudaSupport` source builds (`magma`, `opencv`), or `LD_LIBRARY_PATH` shell hacks.
+> **Problem:** CPU-only CI passes `import faster_whisper` silently, then crashes in GPU production with `Library libcublas.so.12 is not found` ([SYSTRAN/faster-whisper #717](https://github.com/SYSTRAN/faster-whisper/issues/717)).  
+> **Fix:** Build a standard container image with pinned CUDA paths (`flake.nix`). Verify the `.so` links on CPU CI before deploy (`.github/workflows/01_hermetic_ci.yml`). No Nix installation is needed on developer laptops or production clusters.
 
-### Key Telemetry Proofs
-- **Container Startup (`docker run --rm`):** `612ms` cold entrypoint initialization with zero dynamic linking errors
-- **CI Cache Hydration (`magic-nix-cache-action`):** `21m 54s` cold store population $\rightarrow$ `2m 26s` warm cache hit (binary substituter hydration, not a source build delta)
-- **Host Isolation:** Hermetic OCI layer synthesis via `dockerTools.buildLayeredImage` (no Nix or NVIDIA SDK required on host)
-
-See full technical incident report and breakdown: [ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/](https://ajgreengrove.com/posts/faster_whisper_cut_oci_container_buildtime_nonbreaking/)
+### Reproduce Locally
+- **Dev shell (`nix develop`):** `nix develop --command python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('devShell OK')"`
+- **Container image & pre-deploy check:** `nix build .#dockerImage && docker load < result && docker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"`
 
 ---
 *(Original SYSTRAN README contents below)*
