@@ -1,0 +1,270 @@
+build-and-validate	Set up job	﻿2026-11-20T10:16:18.2929264Z Current runner version: '2.338.2'
+build-and-validate	Set up job	2026-11-20T10:16:18.2954792Z ##[group]Runner Image Provisioner
+build-and-validate	Set up job	2026-11-20T10:16:18.2955699Z Hosted Compute Agent
+build-and-validate	Set up job	2026-11-20T10:16:18.2956272Z Version: 20261111.635
+build-and-validate	Set up job	2026-11-20T10:16:18.2956994Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+build-and-validate	Set up job	2026-11-20T10:16:18.2957731Z Build Date: 2026-11-11T01:49:01Z
+build-and-validate	Set up job	2026-11-20T10:16:18.2958460Z Worker ID: {667031a2-5eea-4472-869b-364c605f6f6f}
+build-and-validate	Set up job	2026-11-20T10:16:18.2959494Z Region: eastus2
+build-and-validate	Set up job	2026-11-20T10:16:18.2960103Z Cloud: Azure
+build-and-validate	Set up job	2026-11-20T10:16:18.2960738Z ##[endgroup]
+build-and-validate	Set up job	2026-11-20T10:16:18.2962256Z ##[group]Operating System
+build-and-validate	Set up job	2026-11-20T10:16:18.2963130Z Ubuntu
+build-and-validate	Set up job	2026-11-20T10:16:18.2963706Z 26.04.1
+build-and-validate	Set up job	2026-11-20T10:16:18.2964214Z LTS
+build-and-validate	Set up job	2026-11-20T10:16:18.2964793Z ##[endgroup]
+build-and-validate	Set up job	2026-11-20T10:16:18.2965353Z ##[group]Runner Image
+build-and-validate	Set up job	2026-11-20T10:16:18.2965991Z Image: ubuntu-26.04
+build-and-validate	Set up job	2026-11-20T10:16:18.2966614Z Version: 20261116.202.1
+build-and-validate	Set up job	2026-11-20T10:16:18.2967688Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+build-and-validate	Set up job	2026-11-20T10:16:18.2969822Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+build-and-validate	Set up job	2026-11-20T10:16:18.2970891Z ##[endgroup]
+build-and-validate	Set up job	2026-11-20T10:16:18.2972147Z ##[group]GITHUB_TOKEN Permissions
+build-and-validate	Set up job	2026-11-20T10:16:18.2974320Z Contents: read
+build-and-validate	Set up job	2026-11-20T10:16:18.2974968Z Metadata: read
+build-and-validate	Set up job	2026-11-20T10:16:18.2975548Z Packages: read
+build-and-validate	Set up job	2026-11-20T10:16:18.2976589Z ##[endgroup]
+build-and-validate	Set up job	2026-11-20T10:16:18.2979224Z Secret source: Actions
+build-and-validate	Set up job	2026-11-20T10:16:18.2980380Z Cache mode: write
+build-and-validate	Set up job	2026-11-20T10:16:18.2981350Z Prepare workflow directory
+build-and-validate	Set up job	2026-11-20T10:16:18.3311898Z Prepare all required actions
+build-and-validate	Set up job	2026-11-20T10:16:18.3358814Z Getting action download info
+build-and-validate	Set up job	2026-11-20T10:16:18.5338224Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-validate	Set up job	2026-11-20T10:16:18.6250451Z Download action repository 'DeterminateSystems/nix-installer-action@v16' (SHA:e50d5f73bfe71c2dd0aa4218de8f4afa59f8f81d)
+build-and-validate	Set up job	2026-11-20T10:16:18.7802643Z Download action repository 'DeterminateSystems/magic-nix-cache-action@v9' (SHA:6221693898146dc97e38ad0e013488a16477a4c4)
+build-and-validate	Set up job	2026-11-20T10:16:19.1312156Z Complete job name: build-and-validate
+build-and-validate	Checkout Repository	﻿2026-11-20T10:16:19.2189299Z ##[group]Run actions/checkout@v4
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2190299Z with:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2190820Z   repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2194722Z   token: ***
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2195172Z   ssh-strict: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2195612Z   ssh-user: git
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2196059Z   persist-credentials: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2196553Z   clean: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2197000Z   sparse-checkout-cone-mode: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2197526Z   fetch-depth: 1
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2197964Z   fetch-tags: false
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2198417Z   show-progress: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2198879Z   lfs: false
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2199444Z   submodules: false
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2199904Z   set-safe-directory: true
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2200413Z   allow-unsafe-pr-checkout: false
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.2201217Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4808291Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4811505Z ##[group]Getting Git version info
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4812518Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4814156Z [command]/usr/bin/git version
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4815050Z git version 2.56.1
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4832755Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4848051Z Temporarily overriding HOME='/home/runner/work/_temp/a5834918-6e5a-45d9-9733-05e78e45a85a' before making global git config changes
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4850756Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4854193Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4930079Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4940449Z ##[group]Initializing the repository
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.4960444Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5038211Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5040497Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5043146Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5044893Z hint: call:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5045893Z hint:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5046898Z hint: 	git config --global init.defaultBranch <name>
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5047711Z hint:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5048339Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5049757Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5051089Z hint:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5051797Z hint: 	git branch -m <name>
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5052581Z hint:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5053599Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5055421Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5064564Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5117000Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5118433Z ##[group]Disabling automatic garbage collection
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5120744Z [command]/usr/bin/git config --local gc.auto 0
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5158094Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5159619Z ##[group]Setting up auth
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5166306Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5201522Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5658898Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5691056Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5963476Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.5998901Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.6269122Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.6309480Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.6310974Z ##[group]Fetching the repository
+build-and-validate	Checkout Repository	2026-11-20T10:16:19.6320896Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cc40ef554de05e1a1d94230400e51eaa2a35c921:refs/remotes/origin/master
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7395087Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7397206Z  * [new ref]         cc40ef554de05e1a1d94230400e51eaa2a35c921 -> origin/master
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7401615Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7403364Z ##[group]Determining the checkout info
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7405363Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7410917Z [command]/usr/bin/git sparse-checkout disable
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7465605Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7497997Z ##[group]Checking out the ref
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.7502022Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.8647953Z Reset branch 'master'
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.8652187Z branch 'master' set up to track 'origin/master'.
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.8658781Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.8706098Z [command]/usr/bin/git log -1 --format=%H
+build-and-validate	Checkout Repository	2026-11-20T10:16:20.8730749Z cc40ef554de05e1a1d94230400e51eaa2a35c921
+build-and-validate	Install Nix	﻿2026-11-20T10:16:20.9283404Z ##[group]Run DeterminateSystems/nix-installer-action@v16
+build-and-validate	Install Nix	2026-11-20T10:16:20.9284804Z with:
+build-and-validate	Install Nix	2026-11-20T10:16:20.9285345Z   determinate: false
+build-and-validate	Install Nix	2026-11-20T10:16:20.9285980Z   flakehub: false
+build-and-validate	Install Nix	2026-11-20T10:16:20.9286608Z   force-docker-shim: false
+build-and-validate	Install Nix	2026-11-20T10:16:20.9296769Z   github-token: ***
+build-and-validate	Install Nix	2026-11-20T10:16:20.9297493Z   github-server-url: https://github.com
+build-and-validate	Install Nix	2026-11-20T10:16:20.9298388Z   job-status: success
+build-and-validate	Install Nix	2026-11-20T10:16:20.9299112Z   kvm: true
+build-and-validate	Install Nix	2026-11-20T10:16:20.9299674Z   modify-profile: true
+build-and-validate	Install Nix	2026-11-20T10:16:20.9300339Z   reinstall: false
+build-and-validate	Install Nix	2026-11-20T10:16:20.9300960Z   start-daemon: true
+build-and-validate	Install Nix	2026-11-20T10:16:20.9301633Z   diagnostic-endpoint: -
+build-and-validate	Install Nix	2026-11-20T10:16:20.9302360Z   trust-runner-user: true
+build-and-validate	Install Nix	2026-11-20T10:16:20.9303093Z   _internal-strict-mode: false
+build-and-validate	Install Nix	2026-11-20T10:16:20.9303852Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-20T10:16:21.1056801Z (node:2412) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	Install Nix	2026-11-20T10:16:21.1059482Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	Install Nix	2026-11-20T10:16:21.6352585Z ##[group]Configuring KVM
+build-and-validate	Install Nix	2026-11-20T10:16:21.7126604Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-20T10:16:21.7129699Z ^[[32m Accelerated KVM is enabled ^[[33m⚡️
+build-and-validate	Install Nix	2026-11-20T10:16:21.7133237Z ##[group]Installing Nix
+build-and-validate	Install Nix	2026-11-20T10:16:21.7141424Z ##[group]Downloading nix-installer for x86_64-linux
+build-and-validate	Install Nix	2026-11-20T10:16:21.7151092Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/x86_64-linux
+build-and-validate	Install Nix	2026-11-20T10:16:21.8592600Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	Install Nix	2026-11-20T10:16:22.3039184Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/nix-installer-dff5ee0b-fe26-4972-b1c5-01445c8a9f4f --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	Install Nix	2026-11-20T10:16:22.5630677Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>09h0AawAAAAAXsCzNaWZlSZps0ys6a41aUEhMMzBFREdFMDQwNgBFZGdl
+build-and-validate	Install Nix	2026-11-20T10:16:22.5669241Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-20T10:16:22.5682410Z [command]/home/runner/work/_temp/nix-installer-dea27bee-0b84-4a09-a9af-053e219001cb install linux
+build-and-validate	Install Nix	2026-11-20T10:16:22.5741773Z  INFO nix-installer v3.24.3
+build-and-validate	Install Nix	2026-11-20T10:16:22.6787383Z ^[[2m^[[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...^[[39m^[[0m
+build-and-validate	Install Nix	2026-11-20T10:16:22.6908190Z  INFO nix-installer v3.24.3
+build-and-validate	Install Nix	2026-11-20T10:16:22.8296327Z  INFO Step: Create directory `/nix`
+build-and-validate	Install Nix	2026-11-20T10:16:22.8298782Z  INFO Step: Install Determinate Nixd
+build-and-validate	Install Nix	2026-11-20T10:16:22.8581641Z  INFO Step: Provision Nix
+build-and-validate	Install Nix	2026-11-20T10:16:25.6885895Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+build-and-validate	Install Nix	2026-11-20T10:16:26.3179325Z  INFO Step: Configure Nix
+build-and-validate	Install Nix	2026-11-20T10:16:26.8746819Z  INFO Step: Create directory `/etc/tmpfiles.d`
+build-and-validate	Install Nix	2026-11-20T10:16:26.8765677Z  INFO Step: Configure the Determinate Nix daemon
+build-and-validate	Install Nix	2026-11-20T10:16:28.2180217Z  INFO Step: Cleanup
+build-and-validate	Install Nix	2026-11-20T10:16:28.2205939Z  INFO Running self test for shell sh
+build-and-validate	Install Nix	2026-11-20T10:16:28.4301072Z  INFO Running self test for shell bash
+build-and-validate	Install Nix	2026-11-20T10:16:28.6225971Z ^[[1m^[[32mNix was installed successfully!^[[39m^[[0m
+build-and-validate	Install Nix	2026-11-20T10:16:28.6250562Z To get started using Nix, open a new shell or run `^[[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh^[[0m`
+build-and-validate	Install Nix	2026-11-20T10:16:28.6269645Z 
+build-and-validate	Install Nix	2026-11-20T10:16:28.6647157Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	﻿2026-11-20T10:16:28.7448693Z ##[group]Run DeterminateSystems/magic-nix-cache-action@v9
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7449385Z with:
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7449594Z   listen: 127.0.0.1:37515
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7449859Z   upstream-cache: https://cache.nixos.org
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7450175Z   diagnostic-endpoint: -
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7450473Z   flakehub-cache-server: https://cache.flakehub.com
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7450836Z   flakehub-api-server: https://api.flakehub.com
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7451189Z   startup-notification-port: 41239
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7451457Z   diff-store: false
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7451677Z   _internal-strict-mode: false
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7452132Z env:
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7452319Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:28.7452534Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:29.0308501Z The Nix daemon may not consider the user running this workflow to be trusted. Magic Nix Cache may not start correctly.
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:29.0320191Z ##[group]Downloading magic-nix-cache for X64-Linux
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:29.0321150Z Fetching from https://cf.install.determinate.systems/magic-nix-cache-closure/stable/X64-Linux
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:29.3218690Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:30.2887803Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/magic-nix-cache-f6c8f113-1a3a-4a57-8380-4ceb8d8ca03c --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:30.4464696Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0/h0AawAAAACr+ugNKb5QTbgfgRO5dbo+UEhMMzBFREdFMDIxMwBFZGdl
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:30.4528144Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4021035Z FlakeHub Cache is disabled due to missing or invalid token
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4022434Z If you're signed up for FlakeHub Cache, make sure that your Actions config has a `permissions` block with `id-token` set to "write" and `contents` set to "read"
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4068901Z Waiting for magic-nix-cache to start...
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4206314Z   ^[[2m2026-11-20T10:16:37.418283Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mEnabling FlakeHub cache because determinate-nixd is available.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4207971Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:325
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4208657Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4210446Z   ^[[2m2026-11-20T10:16:37.418334Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mIgnoring the user-specified --flakehub-api-server-netrc, in favor of the determinate-nixd netrc^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4212448Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:330
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4213100Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4214713Z   ^[[2m2026-11-20T10:16:37.418514Z^[[0m ^[[31mERROR^[[0m ^[[1;31mmagic_nix_cache^[[0m^[[31m: ^[[31mFlakeHub: cache initialized failed: Unauthenticated: Cannot find netrc credentials for https://api.flakehub.com/^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4216645Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:399
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4217156Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4222468Z ##[error]Unable to authenticate to FlakeHub. Individuals must register at FlakeHub.com; Organizations must create an organization at FlakeHub.com.
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4224969Z   ^[[2m2026-11-20T10:16:37.418533Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mLoading credentials from environment^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4226101Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:423
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4226603Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4341108Z   ^[[2m2026-11-20T10:16:37.433282Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mNative GitHub Action cache is enabled.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4342991Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:441
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4343780Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4345005Z   ^[[2m2026-11-20T10:16:37.433300Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mSubscribing to Determinate Nixd build events.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4346285Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:467
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4346655Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-20T10:16:37.4508202Z Launched Magic Nix Cache
+build-and-validate	Nix Flake Evaluation Check	﻿2026-11-20T10:16:37.5140442Z ##[group]Run nix flake check
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5140775Z ^[[36;1mnix flake check^[[0m
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5177766Z shell: /usr/bin/bash -e {0}
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5178029Z env:
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5178225Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5178701Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a3b7d8c8-deae-4168-a78a-f93e2fcc7c1c
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5179341Z ##[endgroup]
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5782447Z evaluating 'devShells'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5783326Z evaluating 'devShells'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5784017Z evaluating 'packages'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5784649Z evaluating 'packages'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5785685Z evaluating 'devShells.x86_64-linux'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5786468Z evaluating 'devShells.x86_64-linux.default'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5787257Z evaluating 'packages.x86_64-linux'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.5790915Z evaluating 'packages.x86_64-linux.dockerImage'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:37.7034558Z copying path '/nix/store/b8xf6hsi4wfakzvn6lsi040bh9n8djcc-source' from 'http://127.0.0.1:37515'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:44.8506615Z ✅ devShells.x86_64-linux.default (build skipped)
+build-and-validate	Nix Flake Evaluation Check	2026-11-20T10:16:44.8516525Z ✅ packages.x86_64-linux.dockerImage (build skipped)
+build-and-validate	Build Hermetic Container Image	﻿2026-11-20T10:16:44.8645006Z ##[group]Run nix build .#dockerImage
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8645362Z ^[[36;1mnix build .#dockerImage^[[0m
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8680521Z shell: /usr/bin/bash -e {0}
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8680767Z env:
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8680959Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8681447Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a3b7d8c8-deae-4168-a78a-f93e2fcc7c1c
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:44.8681941Z ##[endgroup]
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:49.1444565Z this path will be fetched (0.0 KiB download, 1.8 GiB unpacked):
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:49.1447108Z   /nix/store/280vydy2x7qw5wf4zkrsvfwiq5svxd6p-faster-whisper.tar.gz
+build-and-validate	Build Hermetic Container Image	2026-11-20T10:16:49.1451219Z copying path '/nix/store/280vydy2x7qw5wf4zkrsvfwiq5svxd6p-faster-whisper.tar.gz' from 'http://127.0.0.1:37515'...
+build-and-validate	Load Image into Docker Daemon	﻿2026-11-20T10:17:03.3345089Z ##[group]Run docker load < result
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3345430Z ^[[36;1mdocker load < result^[[0m
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3385846Z shell: /usr/bin/bash -e {0}
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3386115Z env:
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3386308Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3386793Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a3b7d8c8-deae-4168-a78a-f93e2fcc7c1c
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:03.3387309Z ##[endgroup]
+build-and-validate	Load Image into Docker Daemon	2026-11-20T10:17:44.5448202Z Loaded image: faster-whisper:latest
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	﻿2026-11-20T10:17:44.5575308Z ##[group]Run docker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5576708Z ^[[36;1mdocker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"^[[0m
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5611568Z shell: /usr/bin/bash -e {0}
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5611819Z env:
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5612007Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5612470Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-a3b7d8c8-deae-4168-a78a-f93e2fcc7c1c
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:44.5612963Z ##[endgroup]
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-20T10:17:47.8165692Z OK
+build-and-validate	Post Setup Magic Nix Cache	﻿2026-11-20T10:17:47.9489464Z Post job cleanup.
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5472576Z   ^[[2m2026-11-20T10:17:48.542185Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWorkflow finished^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5473809Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:58
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5474157Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5475109Z   ^[[2m2026-11-20T10:17:48.542226Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWaiting for GitHub action cache uploads to finish^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5476304Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:98
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5476624Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5477606Z   ^[[2m2026-11-20T10:17:48.542257Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mFlakeHub cache is not enabled, not uploading anything to it^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5478652Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:110
+build-and-validate	Post Setup Magic Nix Cache	2026-11-20T10:17:48.5478867Z 
+build-and-validate	Post Install Nix	﻿2026-11-20T10:17:49.0955903Z Post job cleanup.
+build-and-validate	Post Install Nix	2026-11-20T10:17:49.2541791Z (node:3587) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	Post Install Nix	2026-11-20T10:17:49.2543438Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	Post Checkout Repository	﻿2026-11-20T10:17:50.2749818Z Post job cleanup.
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3611010Z [command]/usr/bin/git version
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3660049Z git version 2.56.1
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3705666Z Temporarily overriding HOME='/home/runner/work/_temp/5107bd8b-348e-49e8-973f-1042bee64b3a' before making global git config changes
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3707337Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3712132Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3757180Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.3794577Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4093820Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4121126Z http.https://github.com/.extraheader
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4134405Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4178822Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4484921Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	Post Checkout Repository	2026-11-20T10:17:50.4523758Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	Complete job	﻿2026-11-20T10:17:50.4955970Z Cleaning up orphan processes
+build-and-validate	Complete job	2026-11-20T10:17:50.5406380Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, DeterminateSystems/magic-nix-cache-action@v9, DeterminateSystems/nix-installer-action@v16. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
