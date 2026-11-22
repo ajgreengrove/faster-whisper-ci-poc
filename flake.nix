@@ -22,13 +22,12 @@
       faster-whisper-cuda = pkgs.python3Packages.faster-whisper.override {
         ctranslate2 = py-ctranslate2-cuda;
       };
-
       # Verified via: `nix eval nixpkgs#python3Packages.faster-whisper.propagatedBuildInputs`
-      # (faster-whisper already pulls in av, ctranslate2, onnxruntime; pytest supports local dev testing)
-      pythonEnv = pkgs.python3.withPackages (ps: [
+      # (faster-whisper already pulls in av, ctranslate2, onnxruntime; split runtime vs. dev closures to prevent dev-tool bloat in OCI layers)
+      pythonRuntimeEnv = pkgs.python3.withPackages (ps: [
         faster-whisper-cuda
-        ps.pytest
       ]);
+      pythonDevEnv = pythonRuntimeEnv;
       # Verified via: `pkgs/by-name/ct/ctranslate2/package.nix` (lines 81-88 `buildInputs` when `withCUDA = true`)
       # (getLib resolves .lib outputs on cudnn/libcublas/libcurand and falls back to .out on cuda_cudart)
       cudaLibs = map pkgs.lib.getLib [
@@ -46,7 +45,7 @@
       # Verified via: `ctypes.CDLL` fails without `LD_LIBRARY_PATH` in `nix develop`
       # (NoCC avoids gcc toolchain bloat while exporting identical Nix store CUDA paths)
       devShells.${system}.default = pkgs.mkShellNoCC {
-        packages = [ pythonEnv ];
+        packages = [ pythonDevEnv ];
         shellHook = ''
           export LD_LIBRARY_PATH="${cudaLibPath}''${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
         '';
@@ -56,9 +55,10 @@
         name = "faster-whisper";
         # Convenience tag for CI `docker run`; omit to default to Nix output hash (or use `self.shortRev or "dirty"`) for immutable registry pushes
         tag = "latest";
-        contents = [ pythonEnv ];
+        contents = [ pythonRuntimeEnv ];
         config = {
           Cmd = [ "python3" "--version" ];
+          # Note: On GPU hosts using NVIDIA Container Toolkit, append the host driver dir (e.g., :/usr/local/nvidia/lib64) so libcuda.so.1 resolves on this scratch image
           Env = [
             "LD_LIBRARY_PATH=${cudaLibPath}"
           ];
