@@ -1,0 +1,1161 @@
+build-and-validate	Set up job	﻿2026-11-22T17:59:29.7374992Z Current runner version: '2.338.2'
+build-and-validate	Set up job	2026-11-22T17:59:29.7399365Z ##[group]Runner Image Provisioner
+build-and-validate	Set up job	2026-11-22T17:59:29.7400485Z Hosted Compute Agent
+build-and-validate	Set up job	2026-11-22T17:59:29.7401126Z Version: 20261111.635
+build-and-validate	Set up job	2026-11-22T17:59:29.7401860Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+build-and-validate	Set up job	2026-11-22T17:59:29.7402583Z Build Date: 2026-11-11T01:49:01Z
+build-and-validate	Set up job	2026-11-22T17:59:29.7403291Z Worker ID: {71924e5a-0266-400d-9a57-d253cb8e28f1}
+build-and-validate	Set up job	2026-11-22T17:59:29.7404007Z Region: westus
+build-and-validate	Set up job	2026-11-22T17:59:29.7404577Z Cloud: Azure
+build-and-validate	Set up job	2026-11-22T17:59:29.7405148Z ##[endgroup]
+build-and-validate	Set up job	2026-11-22T17:59:29.7406552Z ##[group]Operating System
+build-and-validate	Set up job	2026-11-22T17:59:29.7407174Z Ubuntu
+build-and-validate	Set up job	2026-11-22T17:59:29.7407781Z 26.04.1
+build-and-validate	Set up job	2026-11-22T17:59:29.7408322Z LTS
+build-and-validate	Set up job	2026-11-22T17:59:29.7408912Z ##[endgroup]
+build-and-validate	Set up job	2026-11-22T17:59:29.7409464Z ##[group]Runner Image
+build-and-validate	Set up job	2026-11-22T17:59:29.7410205Z Image: ubuntu-26.04
+build-and-validate	Set up job	2026-11-22T17:59:29.7410856Z Version: 20261116.202.1
+build-and-validate	Set up job	2026-11-22T17:59:29.7411950Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+build-and-validate	Set up job	2026-11-22T17:59:29.7413707Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+build-and-validate	Set up job	2026-11-22T17:59:29.7414652Z ##[endgroup]
+build-and-validate	Set up job	2026-11-22T17:59:29.7415855Z ##[group]GITHUB_TOKEN Permissions
+build-and-validate	Set up job	2026-11-22T17:59:29.7417780Z Contents: read
+build-and-validate	Set up job	2026-11-22T17:59:29.7418556Z Metadata: read
+build-and-validate	Set up job	2026-11-22T17:59:29.7419118Z Packages: read
+build-and-validate	Set up job	2026-11-22T17:59:29.7420208Z ##[endgroup]
+build-and-validate	Set up job	2026-11-22T17:59:29.7422348Z Secret source: Actions
+build-and-validate	Set up job	2026-11-22T17:59:29.7423372Z Cache mode: write
+build-and-validate	Set up job	2026-11-22T17:59:29.7424072Z Prepare workflow directory
+build-and-validate	Set up job	2026-11-22T17:59:29.7753157Z Prepare all required actions
+build-and-validate	Set up job	2026-11-22T17:59:29.7802032Z Getting action download info
+build-and-validate	Set up job	2026-11-22T17:59:30.1626929Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-validate	Set up job	2026-11-22T17:59:30.2505953Z Download action repository 'DeterminateSystems/nix-installer-action@v16' (SHA:e50d5f73bfe71c2dd0aa4218de8f4afa59f8f81d)
+build-and-validate	Set up job	2026-11-22T17:59:30.6515947Z Download action repository 'DeterminateSystems/magic-nix-cache-action@v9' (SHA:6221693898146dc97e38ad0e013488a16477a4c4)
+build-and-validate	Set up job	2026-11-22T17:59:31.2297341Z Complete job name: build-and-validate
+build-and-validate	Checkout Repository	﻿2026-11-22T17:59:31.3398284Z ##[group]Run actions/checkout@v4
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3400011Z with:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3401119Z   repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3410553Z   token: ***
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3411343Z   ssh-strict: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3412140Z   ssh-user: git
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3412944Z   persist-credentials: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3413849Z   clean: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3414650Z   sparse-checkout-cone-mode: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3415626Z   fetch-depth: 1
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3416416Z   fetch-tags: false
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3417237Z   show-progress: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3418059Z   lfs: false
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3418807Z   submodules: false
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3419634Z   set-safe-directory: true
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3420732Z   allow-unsafe-pr-checkout: false
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.3422089Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5928998Z Syncing repository: ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5932694Z ##[group]Getting Git version info
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5935034Z Working directory is '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5938573Z [command]/usr/bin/git version
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5942768Z git version 2.56.1
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5973729Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.5994719Z Temporarily overriding HOME='/home/runner/work/_temp/4bb41632-798b-4453-9e56-126e49bf8a0d' before making global git config changes
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6000540Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6009436Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6048060Z Deleting the contents of '/home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc'
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6052963Z ##[group]Initializing the repository
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6056965Z [command]/usr/bin/git init /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6191947Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6195535Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6198983Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6201764Z hint: call:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6203345Z hint:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6205044Z hint: 	git config --global init.defaultBranch <name>
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6207119Z hint:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6209124Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6212550Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6215247Z hint:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6216613Z hint: 	git branch -m <name>
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6218189Z hint:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6220652Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6225194Z Initialized empty Git repository in /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc/.git/
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6232044Z [command]/usr/bin/git remote add origin https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6269923Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6272772Z ##[group]Disabling automatic garbage collection
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6275245Z [command]/usr/bin/git config --local gc.auto 0
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6312010Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6314392Z ##[group]Setting up auth
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6317850Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6352535Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6788223Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.6824492Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7095597Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7133554Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7397589Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7436573Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7438310Z ##[group]Fetching the repository
+build-and-validate	Checkout Repository	2026-11-22T17:59:31.7446666Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c08c5d29b403bff90e905ddcfd7010aee595b6c3:refs/remotes/origin/master
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1070627Z From https://github.com/ajgreengrove/faster-whisper-ci-poc
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1073142Z  * [new ref]         c08c5d29b403bff90e905ddcfd7010aee595b6c3 -> origin/master
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1076728Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1078083Z ##[group]Determining the checkout info
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1080558Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1088043Z [command]/usr/bin/git sparse-checkout disable
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1144430Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1179289Z ##[group]Checking out the ref
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.1180852Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.2321006Z Reset branch 'master'
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.2327553Z branch 'master' set up to track 'origin/master'.
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.2333654Z ##[endgroup]
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.2382171Z [command]/usr/bin/git log -1 --format=%H
+build-and-validate	Checkout Repository	2026-11-22T17:59:33.2406084Z c08c5d29b403bff90e905ddcfd7010aee595b6c3
+build-and-validate	Install Nix	﻿2026-11-22T17:59:33.2815332Z ##[group]Run DeterminateSystems/nix-installer-action@v16
+build-and-validate	Install Nix	2026-11-22T17:59:33.2816025Z with:
+build-and-validate	Install Nix	2026-11-22T17:59:33.2816298Z   determinate: false
+build-and-validate	Install Nix	2026-11-22T17:59:33.2816585Z   flakehub: false
+build-and-validate	Install Nix	2026-11-22T17:59:33.2816867Z   force-docker-shim: false
+build-and-validate	Install Nix	2026-11-22T17:59:33.2819606Z   github-token: ***
+build-and-validate	Install Nix	2026-11-22T17:59:33.2819944Z   github-server-url: https://github.com
+build-and-validate	Install Nix	2026-11-22T17:59:33.2820468Z   job-status: success
+build-and-validate	Install Nix	2026-11-22T17:59:33.2820754Z   kvm: true
+build-and-validate	Install Nix	2026-11-22T17:59:33.2821024Z   modify-profile: true
+build-and-validate	Install Nix	2026-11-22T17:59:33.2821320Z   reinstall: false
+build-and-validate	Install Nix	2026-11-22T17:59:33.2821599Z   start-daemon: true
+build-and-validate	Install Nix	2026-11-22T17:59:33.2821903Z   diagnostic-endpoint: -
+build-and-validate	Install Nix	2026-11-22T17:59:33.2822214Z   trust-runner-user: true
+build-and-validate	Install Nix	2026-11-22T17:59:33.2822536Z   _internal-strict-mode: false
+build-and-validate	Install Nix	2026-11-22T17:59:33.2822870Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-22T17:59:33.4544207Z (node:2409) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	Install Nix	2026-11-22T17:59:33.4545705Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	Install Nix	2026-11-22T17:59:33.7367671Z ##[group]Configuring KVM
+build-and-validate	Install Nix	2026-11-22T17:59:33.8092829Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-22T17:59:33.8094015Z ^[[32m Accelerated KVM is enabled ^[[33m⚡️
+build-and-validate	Install Nix	2026-11-22T17:59:33.8097284Z ##[group]Installing Nix
+build-and-validate	Install Nix	2026-11-22T17:59:33.8099688Z ##[group]Downloading nix-installer for x86_64-linux
+build-and-validate	Install Nix	2026-11-22T17:59:33.8102958Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/x86_64-linux
+build-and-validate	Install Nix	2026-11-22T17:59:34.0441629Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	Install Nix	2026-11-22T17:59:34.4717057Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/nix-installer-d59fac91-7f6d-491b-a874-bd27911296b1 --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	Install Nix	2026-11-22T17:59:34.7625981Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0hi0DawAAAACSgC/GGJvcT4q5+1VidhV5TEFYRURHRTE3MTQARWRnZQ==
+build-and-validate	Install Nix	2026-11-22T17:59:34.7666225Z ##[endgroup]
+build-and-validate	Install Nix	2026-11-22T17:59:34.7681608Z [command]/home/runner/work/_temp/nix-installer-4c7c443d-f05f-4ade-9557-bac022212fe2 install linux
+build-and-validate	Install Nix	2026-11-22T17:59:34.7742509Z  INFO nix-installer v3.24.3
+build-and-validate	Install Nix	2026-11-22T17:59:34.8988725Z ^[[2m^[[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...^[[39m^[[0m
+build-and-validate	Install Nix	2026-11-22T17:59:34.9105064Z  INFO nix-installer v3.24.3
+build-and-validate	Install Nix	2026-11-22T17:59:35.1039096Z  INFO Step: Create directory `/nix`
+build-and-validate	Install Nix	2026-11-22T17:59:35.1042874Z  INFO Step: Install Determinate Nixd
+build-and-validate	Install Nix	2026-11-22T17:59:35.1324053Z  INFO Step: Provision Nix
+build-and-validate	Install Nix	2026-11-22T17:59:37.9382902Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+build-and-validate	Install Nix	2026-11-22T17:59:38.5566675Z  INFO Step: Configure Nix
+build-and-validate	Install Nix	2026-11-22T17:59:39.2433012Z  INFO Step: Create directory `/etc/tmpfiles.d`
+build-and-validate	Install Nix	2026-11-22T17:59:39.2433693Z  INFO Step: Configure the Determinate Nix daemon
+build-and-validate	Install Nix	2026-11-22T17:59:40.5828500Z  INFO Step: Cleanup
+build-and-validate	Install Nix	2026-11-22T17:59:40.5838810Z  INFO Running self test for shell sh
+build-and-validate	Install Nix	2026-11-22T17:59:40.7967031Z  INFO Running self test for shell bash
+build-and-validate	Install Nix	2026-11-22T17:59:40.9931165Z ^[[1m^[[32mNix was installed successfully!^[[39m^[[0m
+build-and-validate	Install Nix	2026-11-22T17:59:40.9932593Z To get started using Nix, open a new shell or run `^[[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh^[[0m`
+build-and-validate	Install Nix	2026-11-22T17:59:40.9933626Z 
+build-and-validate	Install Nix	2026-11-22T17:59:41.0659324Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	﻿2026-11-22T17:59:41.1723745Z ##[group]Run DeterminateSystems/magic-nix-cache-action@v9
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1724108Z with:
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1724305Z   listen: 127.0.0.1:37515
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1724566Z   upstream-cache: https://cache.nixos.org
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1724860Z   diagnostic-endpoint: -
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1725147Z   flakehub-cache-server: https://cache.flakehub.com
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1725507Z   flakehub-api-server: https://api.flakehub.com
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1725831Z   startup-notification-port: 41239
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1726091Z   diff-store: false
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1726310Z   _internal-strict-mode: false
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1726720Z env:
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1726909Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.1727126Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.4612483Z The Nix daemon may not consider the user running this workflow to be trusted. Magic Nix Cache may not start correctly.
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.4619111Z ##[group]Downloading magic-nix-cache for X64-Linux
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.4620650Z Fetching from https://cf.install.determinate.systems/magic-nix-cache-closure/stable/X64-Linux
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:41.9391933Z ##[warning]Failed to restore: Cache service responded with 400
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:43.7756183Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/_temp/magic-nix-cache-363dd622-4e15-4baa-b7a3-ffcb6de7e740 --files-from manifest.txt --use-compress-program zstdmt
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:43.9339281Z ##[warning]Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0jy0DawAAAAB5clL4jByBQ4hRqhAO+f0vTEFYRURHRTE3MTkARWRnZQ==
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:43.9402652Z ##[endgroup]
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.7885837Z FlakeHub Cache is disabled due to missing or invalid token
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.7887164Z If you're signed up for FlakeHub Cache, make sure that your Actions config has a `permissions` block with `id-token` set to "write" and `contents` set to "read"
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.7939651Z Waiting for magic-nix-cache to start...
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8077100Z   ^[[2m2026-11-22T17:59:50.805487Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mEnabling FlakeHub cache because determinate-nixd is available.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8079580Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:325
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8080342Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8081770Z   ^[[2m2026-11-22T17:59:50.805536Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mIgnoring the user-specified --flakehub-api-server-netrc, in favor of the determinate-nixd netrc^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8083370Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:330
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8083814Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8085251Z   ^[[2m2026-11-22T17:59:50.805761Z^[[0m ^[[31mERROR^[[0m ^[[1;31mmagic_nix_cache^[[0m^[[31m: ^[[31mFlakeHub: cache initialized failed: Unauthenticated: Cannot find netrc credentials for https://api.flakehub.com/^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8086879Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:399
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8087293Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8093224Z ##[error]Unable to authenticate to FlakeHub. Individuals must register at FlakeHub.com; Organizations must create an organization at FlakeHub.com.
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8097045Z   ^[[2m2026-11-22T17:59:50.805786Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mLoading credentials from environment^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8098244Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:423
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8098687Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8173622Z   ^[[2m2026-11-22T17:59:50.816884Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mNative GitHub Action cache is enabled.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8182724Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:441
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8183421Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8184485Z   ^[[2m2026-11-22T17:59:50.816901Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache^[[0m^[[32m: ^[[32mSubscribing to Determinate Nixd build events.^[[0m
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8185512Z     ^[[2;3mat^[[0m magic-nix-cache/src/main.rs:467
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8185991Z 
+build-and-validate	Setup Magic Nix Cache	2026-11-22T17:59:50.8353400Z Launched Magic Nix Cache
+build-and-validate	Nix Flake Evaluation Check	﻿2026-11-22T17:59:50.9314387Z ##[group]Run nix flake check
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9314914Z ^[[36;1mnix flake check^[[0m
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9362126Z shell: /usr/bin/bash -e {0}
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9362395Z env:
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9362737Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9363222Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-ae1b12fd-91bf-49bd-b39e-78718889074d
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9363900Z ##[endgroup]
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9957509Z evaluating 'devShells'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9959990Z evaluating 'packages'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9960969Z evaluating 'devShells'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9961669Z evaluating 'packages'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9962690Z evaluating 'devShells.x86_64-linux'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9963489Z evaluating 'devShells.x86_64-linux.default'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9964287Z evaluating 'packages.x86_64-linux'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:50.9965103Z evaluating 'packages.x86_64-linux.dockerImage'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:51.2483630Z copying path '/nix/store/b8xf6hsi4wfakzvn6lsi040bh9n8djcc-source' from 'http://127.0.0.1:37515'...
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:58.7370934Z ✅ devShells.x86_64-linux.default (build skipped)
+build-and-validate	Nix Flake Evaluation Check	2026-11-22T17:59:58.7382545Z ✅ packages.x86_64-linux.dockerImage (build skipped)
+build-and-validate	Build Hermetic Container Image	﻿2026-11-22T17:59:58.7493599Z ##[group]Run nix build .#dockerImage
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7516127Z ^[[36;1mnix build .#dockerImage^[[0m
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7549377Z shell: /usr/bin/bash -e {0}
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7549629Z env:
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7549832Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7550717Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-ae1b12fd-91bf-49bd-b39e-78718889074d
+build-and-validate	Build Hermetic Container Image	2026-11-22T17:59:58.7551230Z ##[endgroup]
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9475404Z these 7 derivations will be built:
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9484426Z   /nix/store/7hyjimm9lylfc4n9y7jfqly6kwslxa4y-python3-3.14.7-env.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9485415Z   /nix/store/6hxk2wfh72sqla1cp5kgw48m0sn26pb2-faster-whisper-customisation-layer.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9491018Z   /nix/store/81746gdnag0i4mnbnnxczrwlbnyk753q-excludePaths.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9491806Z   /nix/store/76plv91i2sgsa73r7di24zdh9cpzfrkk-layers.json.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9492681Z   /nix/store/qpcp7dk6x960dad6b2g65jjxhmdy5ig7-faster-whisper-conf.json.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9493584Z   /nix/store/9m64rr0qd3p8nsxqpqvgqrc82i9v9f5a-stream-faster-whisper.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9494541Z   /nix/store/9r6w4cg1dbhfimkm9p4hqfrryka75gd3-faster-whisper.tar.gz.drv
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9495354Z these 223 paths will be fetched (430.6 MiB download, 3.7 GiB unpacked):
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9496123Z   /nix/store/iqvb7h1ykhm12304qwx17xbncrhhy1g4-abseil-cpp-20260107.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9496933Z   /nix/store/0gyk1hdw37b47p2pra40hjf7xzl312lf-abseil-cpp-20260107.1-dev
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9497695Z   /nix/store/bvqkbbpv0kyspw39v3by6b0cflgfsf9q-acl-2.4.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9498295Z   /nix/store/z6v6qc8cy50i90afg4kgbr4jrfg5fdnc-alsa-lib-1.2.16.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9499054Z   /nix/store/r51np6c4hvxdhbzw5c6pid7achzap1qg-alsa-topology-conf-1.2.5.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9499742Z   /nix/store/nvrgm462837l0w1gni61zqd5ckjyi2jv-alsa-ucm-conf-1.2.16.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9500480Z   /nix/store/dy7rlj1ja9s51gnm20h3f56mv424p8fs-attr-2.6.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9501127Z   /nix/store/3i19s5vb9yf6spix2pyljb2rsygz6cz0-auto-fix-elf-files
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9501775Z   /nix/store/svx59425zxp552p2b8gm11qj5r09b56i-bash-5.3p15
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9502361Z   /nix/store/7gddsfyp9bwb0m6iwd10ig7jr06xrv73-bin
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9502991Z   /nix/store/31gnwsgag5qa14hfblqi5hyn71pyx7py-binutils-2.46
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9503797Z   /nix/store/8vl6rm8j9n8f2rklmi9j8yhgry8ffhh6-binutils-2.46-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9504610Z   /nix/store/0fdc105g1896ganr8916rsjxhvr9qv5b-binutils-wrapper-2.46
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9505398Z   /nix/store/yfs07ymlj0ci9dj01jy35k2d3mra73rz-blas-3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9506025Z   /nix/store/3jq81rn55dws616y11whb1n9j8hby00q-blas-3-dev
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9506671Z   /nix/store/xhgd6rb4h8ssid9yw8nvw74cwq69md5y-brotli-1.2.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9507345Z   /nix/store/8l4s0n61pskzsgr2ccdfj70fd3vcz0gv-builder.pl
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9507977Z   /nix/store/l509wk1p0c5sh0i4pvfd9d018pzmjnd8-bzip2-1.0.8
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9508639Z   /nix/store/j3yz0ag9j442229n8harpmp9aa5qyvhn-bzip2-1.0.8-bin
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9509441Z   /nix/store/nl96vbi5p9w1ig7qn53klw3i6d121007-check-phase-thread-limit-hook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9510507Z   /nix/store/s7rdv129xwa1h2zdm528ga1j3xir2kg7-cjson-1.7.19
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9511182Z   /nix/store/xjl7p8dvyk2j53kqf7f43kdj4ypbxz7g-coreutils-9.11
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9511920Z   /nix/store/cw8yzdxqm41swgyiych0qijn8vdrlakv-ctranslate2-4.8.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9512709Z   /nix/store/b3q9lf09y4x7kzaw55wzzhazfpzc6ass-cuda12.9-cuda_cccl-12.9.27
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9513937Z   /nix/store/xax85s2ng8zfdq09jy3zfkp14yj86kiz-cuda12.9-cuda_cudart-12.9.79
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9514880Z   /nix/store/ch7ald1il1b6r7yjgyw78dvnw7y3lxsh-cuda12.9-cuda_nvrtc-12.9.86-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9515849Z   /nix/store/cipn19ja8850lv548351yvwc0imyqwqm-cuda12.9-cudnn-9.22.0.52-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9516844Z   /nix/store/yq6rrm5mab786l4qxbj7dj8zvw3y25i4-cuda12.9-libcublas-12.9.1.4-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9518001Z   /nix/store/3sglhz2m9zqinlqndndg66966r6qs5s5-cuda12.9-libcurand-10.3.10.19-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9518580Z   /nix/store/h7fpfwfyzxrgal29lpcxw9p66vcnxrnr-dav1d-1.5.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9519289Z   /nix/store/iqcd9c3zfy006qfmbz9ccc61wvrhapaq-dbus-1.16.2-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9519864Z   /nix/store/w70g5ji1q5wrgq8m3jc5rbw555wkanqi-dconf-0.49.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9520931Z   /nix/store/cnq79axmg834ya1xqzgb2sp1zj36vch0-dejavu-fonts-minimal-2.37
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9521620Z   /nix/store/6jwjml7pv5qmdhmi7sk1nm3pa1vzrwfp-die-hook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9522254Z   /nix/store/b8xvzgd52jby5dfpi0pf46nisy6wma5d-diffutils-3.12
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9522995Z   /nix/store/6jf250nz8fc5jjl0p94iidqgrsspfch9-dns-root-data-2025-04-14
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9523672Z   /nix/store/x3z8l9qvz5s1c74vfnnpcckzjrvkdasf-ed-1.22.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9524328Z   /nix/store/b3xx1nxngi605as6hv0w85rirmq0dmp3-expand-response-params
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9524919Z   /nix/store/pzky0fzxs3iy95lf14ffybxg973nv933-expat-2.8.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9525337Z   /nix/store/1z3kjwj5jvfllkhkw173knyjxvag61fn-fakeroot-1.38.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9525934Z   /nix/store/4r3mhalh5vxhbzgnrn9k7rrc1wm31k51-faster-whisper-base.json
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9526593Z   /nix/store/16920jbxyxa1l8ndgb80mgg99masfli9-ffmpeg-headless-9.0.1-data
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9527336Z   /nix/store/lxmpy640l6m63afvqch43m6181hnchjg-ffmpeg-headless-9.0.1-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9528030Z   /nix/store/mcn8x2q2ny1449kx6glbbvllvsmgwzb8-fftw-single-3.3.11
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9528773Z   /nix/store/fv9yl55hkskpc2cj9c0sdyq91car9kgl-file-5.48
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9529432Z   /nix/store/i9wgqa0l88aprvpwfaq5hkfa6pklhlv0-findutils-4.11.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9530391Z   /nix/store/v6l59lx8rmxhn5plva8flmnb3yy5gpi8-flac-1.5.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9531211Z   /nix/store/kc2l15jpngbxnl2md9j4z854jvdh3yr5-fontconfig-2.18.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9532139Z   /nix/store/hrxf1fxrp7qwxrlv5k4aqxlwlam952aa-fontconfig-2.18.3-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9532950Z   /nix/store/85v143gw8jcqjg04gxb38c4han2z7myb-freetype-2.14.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9533789Z   /nix/store/2rpxri9fbz8frvz2bw2wl64q9yqig7sa-fribidi-1.0.16
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9534597Z   /nix/store/9zib1q94gka8i5q530364cvy25504qz5-gawk-5.4.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9535320Z   /nix/store/8sjgd7q3mdks1rb7rbcv0sallhvrhai5-gcc-15.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9536063Z   /nix/store/604gsr59rj7dzd0nrhp143rpvf7gyiaz-gcc-15.3.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9536604Z   /nix/store/wkiqjb44n5k0fwhmc523dvflspd47q3b-gcc-15.3.0-libgcc
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9537487Z   /nix/store/z4c6k0mrlkwl3s4w9ysxc8vq1wylm3ms-gcc-wrapper-15.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9538309Z   /nix/store/96fkfd8hdjr8aj8jxvk0rgi6nbafjq4d-gdbm-1.26-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9538995Z   /nix/store/y2wgjq5hl7kz93qdkry455b1imvw8zqk-getRunpathEntries
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9539540Z   /nix/store/nl6nfxjnij2zjq33gmblajxsa7cz5wjs-getopt-1.1.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9540279Z   /nix/store/d17h7hf0qr99v6fadj50ybzgyvbsds81-gfortran-15.3.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9540915Z   /nix/store/dlq5qjz1m8ck351dg891p0q6sxm6gjr7-gfortran-15.3.0-libgcc
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9541466Z   /nix/store/0nmg698116nwim5hn96rm6cjxm08vnp5-giflib-6.1.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9541961Z   /nix/store/7mf69bavdjazjvbhflj0s40d2a6mk5wb-glib-2.88.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9542565Z   /nix/store/lm3pknxi0ipypy3lxh1wmm8wvvavdwrn-glibc-2.42-84
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9543112Z   /nix/store/fdpy1l72q9gvq8d9snrdq67gm0j5s1dg-glibc-2.42-84-bin
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9543856Z   /nix/store/lbjwxax9n0457lgd83rqwpd1l9lgfl7r-glibc-2.42-84-dev
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9544642Z   /nix/store/r4awsy3173chrfdqy65vlk90r43zrf73-gmp-6.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9545483Z   /nix/store/jxd26cx6cgbjzal3mzw0vcv8pqdbh0bb-gmp-with-cxx-6.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9546798Z   /nix/store/yfrd1ghcyk23shcgd84ya18axiwf5j5m-gmp-with-cxx-6.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9547694Z   /nix/store/n8k0wza75nmrx08civlj29h26scx2fjh-gnu-config-2024-01-01
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9548413Z   /nix/store/xmvbzzxm5snla5a2cyfhm7hjy9bifx7n-gnugrep-3.12
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9549286Z   /nix/store/c011mk580m964s1zxjccvdax3fcmppnl-gnumake-4.4.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9550248Z   /nix/store/qf2wzyq4irhgyhnq3s2hz0ldjq3w8a3x-gnused-4.10
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9550980Z   /nix/store/41l3h8s1lr518n03bsrzv5vsf37bhnb9-gnutar-1.35
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9551693Z   /nix/store/rv5n2g1s5q4a6w19c2f7nc9cjcwm949l-gnutls-3.8.13
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9552643Z   /nix/store/a5l4k49m1x4vdv1lr9gzl7ayswxqi08q-graphite2-1.3.15
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9553392Z   /nix/store/5sdsmm8s00hck28yp95fk993rg42mqsp-gtest-1.18.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9554051Z   /nix/store/l5sll8nxk70p73l5yqbsjy4mh0c3g0v5-gzip-1.14
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9554743Z   /nix/store/0a1k64ih9k5ribbjs07bgmzhb43djnr0-harfbuzz-13.2.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9555499Z   /nix/store/vhj92jnvlgb1xhaw0dahpylf405dx5rh-hwdata-0.411
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9556310Z   /nix/store/lywr1vz1kw06mfs0zbl6lhbyhkic9q32-hwloc-2.14.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9557086Z   /nix/store/hsps2i0c94bkprmgxmamx69w83fqjizs-isDeclaredArray
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9557788Z   /nix/store/5ajjlk8dyi96ajvm066yivd4fbyg2gjh-isl-0.20
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9558430Z   /nix/store/bkxqspw3p2d70my28z2skx5d84xkxi40-jq-1.8.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9559099Z   /nix/store/hyz22a0l5b5kv7yfypw4ss6d36vbzg01-jq-1.8.2-bin
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9559709Z   /nix/store/6yfz5ayq5c8nhhf4bb2fs6d72wmkpz99-jq-1.8.2-dev
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9560456Z   /nix/store/bjvx7flf644pczbs59jfhnmn4drvh3ly-kmod-31
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9560845Z   /nix/store/1bjjgf73l71xnddvcigvl847fy21l49l-kmod-31-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9561499Z   /nix/store/ch3yazk4fzsqnb53bw211nr69hi60n3f-lame-3.100-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9562134Z   /nix/store/sjjz4z18jjj1wjx3czpllpf6bnd46rbc-lapack-3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9562592Z   /nix/store/psaf735gr7c6j1q6dizlc3v1fd32qdk6-lapack-3-dev
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9563356Z   /nix/store/b5snblm64ranjc64wd7qb49zag3l533w-lcms2-2.19.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9564024Z   /nix/store/kqi0d4fb90jjvdyilbd9s7h4nqzkllsz-lerc-4.2.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9564582Z   /nix/store/l4f10yjgzj7n4s9933mg7p0mwz26bg3p-libaom-3.12.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9565294Z   /nix/store/q8jqhghiq85n9n59w66sdhbykldmhm24-libass-0.17.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9565831Z   /nix/store/wcvmvbp48v8fag4a7sx7n3x7yib5bp8m-libbluray-1.4.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9566570Z   /nix/store/91g04d094y71ilm3vwh7rmmrw6mmxiny-libdeflate-1.25
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9567323Z   /nix/store/sryi5l9pfv0x24jrimpdjqm5qylv84fa-libdrm-2.4.134
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9568077Z   /nix/store/sv8pf8cqmgrgh7jl2n9ww3knslxnfz33-libevent-2.1.13
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9568839Z   /nix/store/3r5wfb1dl3sfknvy1yringvmap0hxj4r-libffi-3.8.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9569620Z   /nix/store/i3jw341xs88r6wxf1j22rjx1mmd8cfjw-libidn2-2.3.8
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9570612Z   /nix/store/iw262n5fnb14x4g5krjkp7ik72admw3x-libjack2-1.9.22
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9571343Z   /nix/store/wfg9zbfa46hjr2qa7zb8yc7909si2w5l-libjpeg-turbo-3.1.4.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9571806Z   /nix/store/l7hnbf72dzsccm3bqkyvhyd10vq2z4az-libmpc-1.4.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9572218Z   /nix/store/24wz65p8xgj0j77gxhdaix1cpmfgi9ca-libmpg123-1.33.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9572942Z   /nix/store/10iy47qlkf4d83xb5m6jkgfcdagr66fs-libogg-1.3.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9573593Z   /nix/store/4h0n42zi5gf6qvi4fliba2cc3lpg62lj-libopenmpt-0.8.9
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9574347Z   /nix/store/f9yy4q7dkvpw3i508nf510h9s240f3pf-libopus-1.6.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9574864Z   /nix/store/kblyikx36fndg1yh86ch5jk840j3fnb5-libpciaccess-0.19
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9575676Z   /nix/store/pdm9fz4pc70pwhgzj88wilg3pzsyk7q1-libpng-apng-1.6.58
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9576488Z   /nix/store/w7j0gzkiisihf2z4gc8frr56ynyhpc10-libpulseaudio-17.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9577269Z   /nix/store/idgkjd49n2g5l4aryjvsmp8rg89gad03-librist-0.2.11
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9578058Z   /nix/store/mkbkpgcprprha2757s8lf8amw6wvgf19-libsamplerate-0.2.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9578922Z   /nix/store/mfc0xafdywls4v0ynqgjn1plv74b82qg-libselinux-3.10
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9579999Z   /nix/store/b49pvamq8favzzdaf543l633hx2zjsp5-libsndfile-1.2.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9580901Z   /nix/store/1an3d49p9zyp54fggajqrmvxy0wn433p-libssh-0.12.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9581423Z   /nix/store/k4lz3hi5qy0siqimiq3jxc5zknmh84j4-libtasn1-4.21.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9582059Z   /nix/store/jbx15jy9cp8a1b4mqrarmv3mjz88j127-libtheora-1.2.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9582630Z   /nix/store/alw189csp6spfiw5np500xmfqsw67l0k-libtiff-4.7.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9583216Z   /nix/store/a0bl51i3h2wmhaf055kf1rv6bkl86w8l-libtool-2.6.2-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9584136Z   /nix/store/bv3lx708clpz3m6zbd5742np4dlry0yj-libunistring-1.4.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9584708Z   /nix/store/xzd50cnimv3ycr567ca7b4ms05vjqfn8-libva-minimal-2.24.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9585546Z   /nix/store/846ixq8wd4pr42v7863qqv68mpmax1dy-libvmaf-3.0.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9586237Z   /nix/store/mkga0gmzxfb1kj0j64x852b047ml2xp7-libvorbis-1.3.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9586926Z   /nix/store/0w1q1hb2540gada9mrkdwmq61zxrqk47-libvpx-1.16.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9587326Z   /nix/store/4ag6jkbsdwq78jh74qidn7crm68cnwdp-libwebp-1.6.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9587711Z   /nix/store/9wh3vnl7plpk052nczlzyh3v7zb3jhkw-libwebp-1.6.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9588160Z   /nix/store/9159h1500cy22cgriydpl6mbih9rjnc2-libx11-1.8.13
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9588799Z   /nix/store/pbywxi9f0p8g7wzcdjibvnz030czx91r-libxau-1.0.12
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9589197Z   /nix/store/cdpwb5vckqp8il7p70jqvn27isflyxxz-libxcb-1.17.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9589901Z   /nix/store/7y2nfyd4k237pk5fp9qkfi7xr9gb1mfc-libxcrypt-4.5.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9590560Z   /nix/store/ishli778p2dqxq4zii729y4fn1d94jfw-libxdmcp-1.1.5
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9591252Z   /nix/store/hhv2z8dn6760d1bzvrd69l4ivclb792r-libxml2-2.15.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9591772Z   /nix/store/4zxw6bhr65xpy4xgmj4yxq464n176l0h-libyaml-0.2.5
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9592283Z   /nix/store/gqwgk08v8n97y38m740w1lpdwcn6f9is-linux-headers-7.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9592690Z   /nix/store/4cj18ri8yyjbiragdkxm0q3y6bqr0dqs-lndir-1.0.5
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9593114Z   /nix/store/549nkjs10xhma2f9kx3rxw61kym0abjx-mailcap-2.1.54
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9593565Z   /nix/store/xysbrlyn8h5gmxw2y4y14rbjgsvx6qdj-make-binary-wrapper-hook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9594192Z   /nix/store/48i2j08s83lddnyhlrg4ahxq5kcflkxw-make-shell-wrapper-hook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9594649Z   /nix/store/rfkidsvmdg6jrsvwcjal8fzhcapr0zdp-mbedtls-3.6.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9595206Z   /nix/store/8ci2gp6razvwij8hqv0znhb7gkr33qs0-mpdecimal-4.0.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9595777Z   /nix/store/l59iyibk32661wkzrc9nkhn3k24xz752-mpfr-4.2.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9596154Z   /nix/store/m10kb9f0vylgxbpr9sc5r1hxwvdnr34r-mpg123-1.33.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9596544Z   /nix/store/51hxzq3l1qd4gy0r4safnj1y9s0hgs68-ncurses-6.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9597044Z   /nix/store/xsmrab458wn42ilwv6s68jw9f4r5iisz-nettle-3.10.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9597573Z   /nix/store/biiabd2fcxdxmy0f99r7i88nziqdqsy6-nss-cacert-3.126
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9598169Z   /nix/store/fcnnn4w7sxx96liivqdsm1alwyh9x00d-numactl-2.0.18
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9598643Z   /nix/store/5187y296hw6clw80pv0r3w8y335akraa-ocl-icd-2.3.5
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9599385Z   /nix/store/z3xc22a4jcadqazjhxjbgi52pr6my5rn-onetbb-2022.3.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9599950Z   /nix/store/3yhkyf209xh9pb7754vi8rfjh8mygwlq-oniguruma-6.9.10-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9600995Z   /nix/store/x46rnziynpalr4phm6yh0x46s42xq5kw-onnxruntime-1.27.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9601647Z   /nix/store/hixv432kjp53c9w6fjgm1y5d507jwhaw-openapv-0.2.1.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9602403Z   /nix/store/2kjw70gcrvz5qz9a48nxssnczsv7a9kh-openblas-0.3.33
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9603231Z   /nix/store/djq0ja5bag4w9p5h5s44hzaqc598llnq-openblas-0.3.33
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9604035Z   /nix/store/gw4wzhs8mr54qdfpr5lajssr6np1xwfd-openjpeg-2.5.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9604847Z   /nix/store/yj34vymbqf7mf4lmffipy8jqc4kwr1mc-openssl-3.6.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9605696Z   /nix/store/97id4rvawj070q1bdmk85qinz20jcc97-openvino-2026.3.1-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9606563Z   /nix/store/s8sznaiwm83m6dwnxm82r8y7rz57kgqn-p11-kit-0.26.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9607206Z   /nix/store/81zqbas7qc02yfdj7142fdcqhxgd3cgz-patch-2.8
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9608029Z   /nix/store/h9wq5kdv1jc9hxmwgn9vh9bwsigmnsj6-patchelf-0.15.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9608542Z   /nix/store/6vqahj875znq0wlsy1bg926yki3d5m4r-pcre2-10.48
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9609026Z   /nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9609606Z   /nix/store/wwj5hlvb8bkwra1hcyfya5qh3fsi42xp-pigz-2.8
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9610428Z   /nix/store/4hdzvycn5mkg3xm1ggscp3mxz8005c3m-protobuf-36.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9610935Z   /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9611647Z   /nix/store/38azh8yv0cj0a8w2yy3c47lyw4pjxp10-python3.14-anyio-4.14.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9612646Z   /nix/store/98riw5bksmbj25qw7jmvyqwfwyk3yqyq-python3.14-av-17.0.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9613548Z   /nix/store/7jpv8pfyi49jywd517wm4p20wkrdm71s-python3.14-certifi-2026.06.17
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9614564Z   /nix/store/bmffbz1sbxg0fpqa7ca2hccrkv1ppnkr-python3.14-click-8.3.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9615476Z   /nix/store/v6lpv7vpjgif0by8mij39b6v5zh84v2n-python3.14-coloredlogs-15.0.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9616228Z   /nix/store/farmwi07y25hvbfwvwcallc8c5i75wr0-python3.14-ctranslate2-4.8.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9617135Z   /nix/store/2dm6xms6pgsr0l78vckcsgjb92cy9ksg-python3.14-faster-whisper-1.2.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9617797Z   /nix/store/yj33qpknmgh7ykx0bbfiriv0043qbc1y-python3.14-filelock-3.29.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9618490Z   /nix/store/4p3mnnmkls5y6xzmf5l4cgm6i5q5mhrm-python3.14-fsspec-2026.6.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9619156Z   /nix/store/42mgnq5pyppnxjbyzfj6y94p8hd9i6yf-python3.14-h11-0.16.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9619905Z   /nix/store/88cvqnjbqlhfdcnfqxmq8dq891y0i0qf-python3.14-hf-xet-1.6.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9620748Z   /nix/store/cgg54v8zj7ayvfqqkr7b75nbjpzqqvk9-python3.14-httpcore-1.0.9
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9621376Z   /nix/store/7x0xs8bbiwrs9ral4c32rnfckr0vz3yg-python3.14-httpx-0.28.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9621899Z   /nix/store/jpf5c25wg96d2fszqllbm76db5hn82m5-python3.14-huggingface-hub-1.30.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9622454Z   /nix/store/2xdbp63zbrawvjdpralx4ckgn25xdk4k-python3.14-humanfriendly-10.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9623189Z   /nix/store/yywz57n2zx5gpyarnyrqcx1z206z5jc4-python3.14-idna-3.18
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9623834Z   /nix/store/z14gnqg9yfjdz5728prknaylhsisgmfg-python3.14-numpy-2.5.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9624644Z   /nix/store/hv5vky0pbvnnm0wiz5m637qgr2hnqcc0-python3.14-onnxruntime-1.27.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9625492Z   /nix/store/68v904jylhiff5yy0s9lx8jawp68cad0-python3.14-packaging-26.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9626175Z   /nix/store/iw39pw567acajnaf1iywnwz6fwcb6cxg-python3.14-pyyaml-6.0.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9627121Z   /nix/store/ffz73949zj9r8jlkf228fxibcrfwqjbc-python3.14-tokenizers-0.23.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9628053Z   /nix/store/341xpm2l24jn1b92xmqprxvjlnvxj4q2-python3.14-tqdm-4.68.4
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9629089Z   /nix/store/3acdzrkir2rz5dd1mhw6d6d1b23kzjbp-python3.14-typing-extensions-4.16.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9630295Z   /nix/store/7d2p2g4pgdc94cwvyvix758grp7kpmay-readline-8.3p3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9631006Z   /nix/store/a4n5ccn1rl4a9rzx8ky1qshz6dv5idxg-removeStubsFromRunpathHook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9631502Z   /nix/store/bbbqxmgpaabk7fqp33k716xd8xmhixlf-snappy-1.2.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9631911Z   /nix/store/cw6v56f4fg5lf1ngzmkxd70zcnxgcs17-soxr-0.1.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9632294Z   /nix/store/3yaqyiry0vi52pxf6r8nwd66ciqwx9lj-speex-1.2.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9632690Z   /nix/store/dvwgcjkr3a5grfni2gl5fryh5g96br0l-speexdsp-1.2.1
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9633096Z   /nix/store/7a0nx1a0rdc5s07vxrsdhplqnzncl5z9-sqlite-3.53.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9633481Z   /nix/store/sgrld0sqj0y27j6zqvq41mqvpiri179j-srt-1.5.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9633879Z   /nix/store/c29a7xzhhv8nk62w1gls6f6jj8zihggv-stdenv-linux-no-cc
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9634288Z   /nix/store/qm4ff0ygxcxzc55drlpi3apdrmmv614w-stream
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9634630Z   /nix/store/sag0gzld5zranvx20gr6l5kzqng1i84m-stream
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9634996Z   /nix/store/49vjxy5apwx3pvgql58jyf16vxrq86z0-svt-av1-4.1.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9635424Z   /nix/store/ilf3wdjk0da1809mxi47plm4j2gfm5n5-systemd-minimal-261.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9635909Z   /nix/store/g909pi91zmvb7zp27cvn6ip27s2mr48q-systemd-minimal-libs-261.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9636542Z   /nix/store/fh8svr4ds87z84iarfnxrlfpjlbmc816-tzdata-2026c
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9636959Z   /nix/store/ks4qbizdbb3jkrcxlppbabn3pr4jlny4-unbound-1.26.0-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9637500Z   /nix/store/rjri54xd29c5qfwj124j62ffzjjigjmh-update-autotools-gnu-config-scripts-hook
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9638098Z   /nix/store/n5p5q01x4nqvgp36i651rc5ky95i0iq2-util-linux-minimal-2.42.3-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9638645Z   /nix/store/n48xbb1jl5vjvngr2icjlfjhripb8scb-util-linux-minimal-2.42.3-login
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9639201Z   /nix/store/az7yld9lsjdhiw5cfyqv7z84hhb9rbk1-util-linux-minimal-2.42.3-mount
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9639854Z   /nix/store/06lpd7zy6sa30wn4wjanj7rdh9skf85n-util-linux-minimal-2.42.3-swap
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9640572Z   /nix/store/d7wxlfb1l89drb2fnx9jbrl5klij22c1-v4l-utils-1.32.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9640989Z   /nix/store/6nckj64bb26vc1a7knzj7w0jw8l75pd5-vid.stab-1.1.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9641429Z   /nix/store/iahmf8kl215rjcvb3zz3l7i9w2sf9x5v-vulkan-loader-1.4.357.0
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9641934Z   /nix/store/chxa60sbf03qlfx8qdd6d1rh7xbw28f4-x264-0-unstable-2025-09-10-lib
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9642383Z   /nix/store/lb6cffq4pvdnvjl9v1m0jhgl8whn96vn-x265-4.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9642791Z   /nix/store/m07syxhld8hpprrdmzq565ziia6vlw9l-xgcc-15.3.0-libgcc
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9643214Z   /nix/store/4hki0mwbxnnz7nqgzi1620rjgqcq5djy-xvidcore-1.3.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9643595Z   /nix/store/cjippm7n89ac2z3rxdghns4p02s6g09m-xz-5.8.3
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9643965Z   /nix/store/518dig8gpvqyac6pkksyjjfzvi9zn8vq-xz-5.8.3-bin
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9644351Z   /nix/store/87s1p09ya56a484b19d0qp8zaklpvkja-zimg-3.0.6
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9644718Z   /nix/store/lw86vj9kfwgvlivg3p8qg2nibpmhmsl9-zlib-1.3.2
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9645115Z   /nix/store/4q3lydn0anq5qyzpxm5xyxnxqxn5nj7c-zlib-1.3.2-static
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9645510Z   /nix/store/8ik1d1r4l2jzm9mjh6bc0a13yczx62wg-zstd-1.5.7
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9645886Z   /nix/store/vhmxxxn1xpyxgxlznzfvfw0djwlg52kl-zvbi-0.2.45
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9646514Z copying path '/nix/store/n8k0wza75nmrx08civlj29h26scx2fjh-gnu-config-2024-01-01' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9647328Z copying path '/nix/store/m07syxhld8hpprrdmzq565ziia6vlw9l-xgcc-15.3.0-libgcc' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9648115Z copying path '/nix/store/wkiqjb44n5k0fwhmc523dvflspd47q3b-gcc-15.3.0-libgcc' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9648871Z copying path '/nix/store/bv3lx708clpz3m6zbd5742np4dlry0yj-libunistring-1.4.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9649601Z copying path '/nix/store/6jwjml7pv5qmdhmi7sk1nm3pa1vzrwfp-die-hook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9650468Z copying path '/nix/store/549nkjs10xhma2f9kx3rxw61kym0abjx-mailcap-2.1.54' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9651200Z copying path '/nix/store/fh8svr4ds87z84iarfnxrlfpjlbmc816-tzdata-2026c' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9651953Z copying path '/nix/store/b3q9lf09y4x7kzaw55wzzhazfpzc6ass-cuda12.9-cuda_cccl-12.9.27' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9694996Z copying path '/nix/store/3i19s5vb9yf6spix2pyljb2rsygz6cz0-auto-fix-elf-files' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9700472Z copying path '/nix/store/hsps2i0c94bkprmgxmamx69w83fqjizs-isDeclaredArray' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9796937Z copying path '/nix/store/7gddsfyp9bwb0m6iwd10ig7jr06xrv73-bin' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9801025Z copying path '/nix/store/8l4s0n61pskzsgr2ccdfj70fd3vcz0gv-builder.pl' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9817475Z copying path '/nix/store/nl96vbi5p9w1ig7qn53klw3i6d121007-check-phase-thread-limit-hook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9829817Z copying path '/nix/store/biiabd2fcxdxmy0f99r7i88nziqdqsy6-nss-cacert-3.126' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9881872Z copying path '/nix/store/16920jbxyxa1l8ndgb80mgg99masfli9-ffmpeg-headless-9.0.1-data' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:05.9915951Z copying path '/nix/store/r51np6c4hvxdhbzw5c6pid7achzap1qg-alsa-topology-conf-1.2.5.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0423777Z copying path '/nix/store/cnq79axmg834ya1xqzgb2sp1zj36vch0-dejavu-fonts-minimal-2.37' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0468431Z copying path '/nix/store/rjri54xd29c5qfwj124j62ffzjjigjmh-update-autotools-gnu-config-scripts-hook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0472831Z copying path '/nix/store/4q3lydn0anq5qyzpxm5xyxnxqxn5nj7c-zlib-1.3.2-static' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0486663Z copying path '/nix/store/dlq5qjz1m8ck351dg891p0q6sxm6gjr7-gfortran-15.3.0-libgcc' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0490005Z copying path '/nix/store/3sglhz2m9zqinlqndndg66966r6qs5s5-cuda12.9-libcurand-10.3.10.19-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0595820Z copying path '/nix/store/gqwgk08v8n97y38m740w1lpdwcn6f9is-linux-headers-7.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0638788Z copying path '/nix/store/6jf250nz8fc5jjl0p94iidqgrsspfch9-dns-root-data-2025-04-14' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0664813Z copying path '/nix/store/vhj92jnvlgb1xhaw0dahpylf405dx5rh-hwdata-0.411' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.0694389Z copying path '/nix/store/i3jw341xs88r6wxf1j22rjx1mmd8cfjw-libidn2-2.3.8' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.1392486Z copying path '/nix/store/kc2l15jpngbxnl2md9j4z854jvdh3yr5-fontconfig-2.18.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.1722772Z copying path '/nix/store/lm3pknxi0ipypy3lxh1wmm8wvvavdwrn-glibc-2.42-84' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5800256Z copying path '/nix/store/bvqkbbpv0kyspw39v3by6b0cflgfsf9q-acl-2.4.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5802291Z copying path '/nix/store/dy7rlj1ja9s51gnm20h3f56mv424p8fs-attr-2.6.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5805539Z copying path '/nix/store/svx59425zxp552p2b8gm11qj5r09b56i-bash-5.3p15' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5806710Z copying path '/nix/store/xhgd6rb4h8ssid9yw8nvw74cwq69md5y-brotli-1.2.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5813900Z copying path '/nix/store/l509wk1p0c5sh0i4pvfd9d018pzmjnd8-bzip2-1.0.8' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5815473Z copying path '/nix/store/s7rdv129xwa1h2zdm528ga1j3xir2kg7-cjson-1.7.19' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5817370Z copying path '/nix/store/h7fpfwfyzxrgal29lpcxw9p66vcnxrnr-dav1d-1.5.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5824882Z copying path '/nix/store/x3z8l9qvz5s1c74vfnnpcckzjrvkdasf-ed-1.22.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5826420Z copying path '/nix/store/b3xx1nxngi605as6hv0w85rirmq0dmp3-expand-response-params' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5831180Z copying path '/nix/store/pzky0fzxs3iy95lf14ffybxg973nv933-expat-2.8.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5832400Z copying path '/nix/store/9zib1q94gka8i5q530364cvy25504qz5-gawk-5.4.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5833773Z copying path '/nix/store/2rpxri9fbz8frvz2bw2wl64q9yqig7sa-fribidi-1.0.16' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5835540Z copying path '/nix/store/96fkfd8hdjr8aj8jxvk0rgi6nbafjq4d-gdbm-1.26-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.5842481Z copying path '/nix/store/604gsr59rj7dzd0nrhp143rpvf7gyiaz-gcc-15.3.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6807937Z copying path '/nix/store/lw86vj9kfwgvlivg3p8qg2nibpmhmsl9-zlib-1.3.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6846192Z copying path '/nix/store/c011mk580m964s1zxjccvdax3fcmppnl-gnumake-4.4.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6854090Z copying path '/nix/store/81zqbas7qc02yfdj7142fdcqhxgd3cgz-patch-2.8' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6868626Z copying path '/nix/store/cjippm7n89ac2z3rxdghns4p02s6g09m-xz-5.8.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6888885Z copying path '/nix/store/41l3h8s1lr518n03bsrzv5vsf37bhnb9-gnutar-1.35' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6894335Z copying path '/nix/store/l5sll8nxk70p73l5yqbsjy4mh0c3g0v5-gzip-1.14' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6895700Z copying path '/nix/store/6vqahj875znq0wlsy1bg926yki3d5m4r-pcre2-10.48' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.6938009Z copying path '/nix/store/j3yz0ag9j442229n8harpmp9aa5qyvhn-bzip2-1.0.8-bin' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7006677Z copying path '/nix/store/qf2wzyq4irhgyhnq3s2hz0ldjq3w8a3x-gnused-4.10' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7016704Z copying path '/nix/store/3r5wfb1dl3sfknvy1yringvmap0hxj4r-libffi-3.8.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7269648Z copying path '/nix/store/51hxzq3l1qd4gy0r4safnj1y9s0hgs68-ncurses-6.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7311569Z copying path '/nix/store/48i2j08s83lddnyhlrg4ahxq5kcflkxw-make-shell-wrapper-hook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7403726Z copying path '/nix/store/8ci2gp6razvwij8hqv0znhb7gkr33qs0-mpdecimal-4.0.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7759179Z copying path '/nix/store/n5p5q01x4nqvgp36i651rc5ky95i0iq2-util-linux-minimal-2.42.3-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7798464Z copying path '/nix/store/wwj5hlvb8bkwra1hcyfya5qh3fsi42xp-pigz-2.8' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.7842863Z copying path '/nix/store/fv9yl55hkskpc2cj9c0sdyq91car9kgl-file-5.48' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8009191Z copying path '/nix/store/7a0nx1a0rdc5s07vxrsdhplqnzncl5z9-sqlite-3.53.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8020389Z copying path '/nix/store/yj34vymbqf7mf4lmffipy8jqc4kwr1mc-openssl-3.6.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8073113Z copying path '/nix/store/518dig8gpvqyac6pkksyjjfzvi9zn8vq-xz-5.8.3-bin' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8206237Z copying path '/nix/store/3yhkyf209xh9pb7754vi8rfjh8mygwlq-oniguruma-6.9.10-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8226133Z copying path '/nix/store/xmvbzzxm5snla5a2cyfhm7hjy9bifx7n-gnugrep-3.12' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8254401Z copying path '/nix/store/4cj18ri8yyjbiragdkxm0q3y6bqr0dqs-lndir-1.0.5' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8305434Z copying path '/nix/store/yfrd1ghcyk23shcgd84ya18axiwf5j5m-gmp-with-cxx-6.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8307341Z copying path '/nix/store/h9wq5kdv1jc9hxmwgn9vh9bwsigmnsj6-patchelf-0.15.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8352607Z copying path '/nix/store/8ik1d1r4l2jzm9mjh6bc0a13yczx62wg-zstd-1.5.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8457330Z copying path '/nix/store/ch7ald1il1b6r7yjgyw78dvnw7y3lxsh-cuda12.9-cuda_nvrtc-12.9.86-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8609982Z copying path '/nix/store/nl6nfxjnij2zjq33gmblajxsa7cz5wjs-getopt-1.1.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.8925197Z copying path '/nix/store/7y2nfyd4k237pk5fp9qkfi7xr9gb1mfc-libxcrypt-4.5.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9084350Z copying path '/nix/store/4zxw6bhr65xpy4xgmj4yxq464n176l0h-libyaml-0.2.5' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9372157Z copying path '/nix/store/d17h7hf0qr99v6fadj50ybzgyvbsds81-gfortran-15.3.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9373932Z copying path '/nix/store/bkxqspw3p2d70my28z2skx5d84xkxi40-jq-1.8.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9481027Z copying path '/nix/store/0w1q1hb2540gada9mrkdwmq61zxrqk47-libvpx-1.16.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9513762Z copying path '/nix/store/y2wgjq5hl7kz93qdkry455b1imvw8zqk-getRunpathEntries' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9575250Z copying path '/nix/store/3yaqyiry0vi52pxf6r8nwd66ciqwx9lj-speex-1.2.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9604362Z copying path '/nix/store/49vjxy5apwx3pvgql58jyf16vxrq86z0-svt-av1-4.1.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9610975Z copying path '/nix/store/4hki0mwbxnnz7nqgzi1620rjgqcq5djy-xvidcore-1.3.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9614651Z copying path '/nix/store/5187y296hw6clw80pv0r3w8y335akraa-ocl-icd-2.3.5' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9746826Z copying path '/nix/store/xjl7p8dvyk2j53kqf7f43kdj4ypbxz7g-coreutils-9.11' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9899358Z copying path '/nix/store/6nckj64bb26vc1a7knzj7w0jw8l75pd5-vid.stab-1.1.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:06.9922659Z copying path '/nix/store/87s1p09ya56a484b19d0qp8zaklpvkja-zimg-3.0.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0001826Z copying path '/nix/store/ch3yazk4fzsqnb53bw211nr69hi60n3f-lame-3.100-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0073559Z copying path '/nix/store/chxa60sbf03qlfx8qdd6d1rh7xbw28f4-x264-0-unstable-2025-09-10-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0143069Z copying path '/nix/store/1an3d49p9zyp54fggajqrmvxy0wn433p-libssh-0.12.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0394786Z copying path '/nix/store/7d2p2g4pgdc94cwvyvix758grp7kpmay-readline-8.3p3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0396817Z copying path '/nix/store/hyz22a0l5b5kv7yfypw4ss6d36vbzg01-jq-1.8.2-bin' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0509096Z copying path '/nix/store/a4n5ccn1rl4a9rzx8ky1qshz6dv5idxg-removeStubsFromRunpathHook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0680834Z copying path '/nix/store/cw6v56f4fg5lf1ngzmkxd70zcnxgcs17-soxr-0.1.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0713627Z copying path '/nix/store/f9yy4q7dkvpw3i508nf510h9s240f3pf-libopus-1.6.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.0902909Z copying path '/nix/store/hhv2z8dn6760d1bzvrd69l4ivclb792r-libxml2-2.15.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1002032Z copying path '/nix/store/hixv432kjp53c9w6fjgm1y5d507jwhaw-openapv-0.2.1.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1008416Z copying path '/nix/store/i9wgqa0l88aprvpwfaq5hkfa6pklhlv0-findutils-4.11.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1010538Z copying path '/nix/store/b8xvzgd52jby5dfpi0pf46nisy6wma5d-diffutils-3.12' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1148873Z copying path '/nix/store/1z3kjwj5jvfllkhkw173knyjxvag61fn-fakeroot-1.38.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1301991Z copying path '/nix/store/iahmf8kl215rjcvb3zz3l7i9w2sf9x5v-vulkan-loader-1.4.357.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1329360Z copying path '/nix/store/6yfz5ayq5c8nhhf4bb2fs6d72wmkpz99-jq-1.8.2-dev' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1399735Z copying path '/nix/store/jxd26cx6cgbjzal3mzw0vcv8pqdbh0bb-gmp-with-cxx-6.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1426428Z copying path '/nix/store/xax85s2ng8zfdq09jy3zfkp14yj86kiz-cuda12.9-cuda_cudart-12.9.79' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1501180Z copying path '/nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1553746Z copying path '/nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1686301Z copying path '/nix/store/sgrld0sqj0y27j6zqvq41mqvpiri179j-srt-1.5.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1707832Z copying path '/nix/store/vhmxxxn1xpyxgxlznzfvfw0djwlg52kl-zvbi-0.2.45' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1764045Z copying path '/nix/store/fdpy1l72q9gvq8d9snrdq67gm0j5s1dg-glibc-2.42-84-bin' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.1944901Z copying path '/nix/store/djq0ja5bag4w9p5h5s44hzaqc598llnq-openblas-0.3.33' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2037688Z copying path '/nix/store/2kjw70gcrvz5qz9a48nxssnczsv7a9kh-openblas-0.3.33' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2058847Z copying path '/nix/store/bbbqxmgpaabk7fqp33k716xd8xmhixlf-snappy-1.2.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2096725Z copying path '/nix/store/5sdsmm8s00hck28yp95fk993rg42mqsp-gtest-1.18.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2181190Z copying path '/nix/store/pdm9fz4pc70pwhgzj88wilg3pzsyk7q1-libpng-apng-1.6.58' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2461542Z copying path '/nix/store/r4awsy3173chrfdqy65vlk90r43zrf73-gmp-6.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2463021Z copying path '/nix/store/k4lz3hi5qy0siqimiq3jxc5zknmh84j4-libtasn1-4.21.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2822318Z copying path '/nix/store/xsmrab458wn42ilwv6s68jw9f4r5iisz-nettle-3.10.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.2980285Z copying path '/nix/store/a5l4k49m1x4vdv1lr9gzl7ayswxqi08q-graphite2-1.3.15' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3128848Z copying path '/nix/store/c29a7xzhhv8nk62w1gls6f6jj8zihggv-stdenv-linux-no-cc' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3166883Z copying path '/nix/store/lbjwxax9n0457lgd83rqwpd1l9lgfl7r-glibc-2.42-84-dev' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3333243Z copying path '/nix/store/846ixq8wd4pr42v7863qqv68mpmax1dy-libvmaf-3.0.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3383908Z copying path '/nix/store/85v143gw8jcqjg04gxb38c4han2z7myb-freetype-2.14.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3479715Z copying path '/nix/store/iqvb7h1ykhm12304qwx17xbncrhhy1g4-abseil-cpp-20260107.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3532326Z copying path '/nix/store/kblyikx36fndg1yh86ch5jk840j3fnb5-libpciaccess-0.19' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3561110Z copying path '/nix/store/s8sznaiwm83m6dwnxm82r8y7rz57kgqn-p11-kit-0.26.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3851284Z copying path '/nix/store/5ajjlk8dyi96ajvm066yivd4fbyg2gjh-isl-0.20' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.3915748Z copying path '/nix/store/l59iyibk32661wkzrc9nkhn3k24xz752-mpfr-4.2.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.4036166Z copying path '/nix/store/10iy47qlkf4d83xb5m6jkgfcdagr66fs-libogg-1.3.6' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.4422002Z copying path '/nix/store/rfkidsvmdg6jrsvwcjal8fzhcapr0zdp-mbedtls-3.6.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.4721540Z copying path '/nix/store/sryi5l9pfv0x24jrimpdjqm5qylv84fa-libdrm-2.4.134' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.4763481Z copying path '/nix/store/l4f10yjgzj7n4s9933mg7p0mwz26bg3p-libaom-3.12.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.4999178Z copying path '/nix/store/hrxf1fxrp7qwxrlv5k4aqxlwlam952aa-fontconfig-2.18.3-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5033880Z copying path '/nix/store/jbx15jy9cp8a1b4mqrarmv3mjz88j127-libtheora-1.2.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5224516Z copying path '/nix/store/mkga0gmzxfb1kj0j64x852b047ml2xp7-libvorbis-1.3.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5300417Z copying path '/nix/store/l7hnbf72dzsccm3bqkyvhyd10vq2z4az-libmpc-1.4.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5517346Z copying path '/nix/store/0gyk1hdw37b47p2pra40hjf7xzl312lf-abseil-cpp-20260107.1-dev' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5776269Z copying path '/nix/store/0nmg698116nwim5hn96rm6cjxm08vnp5-giflib-6.1.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.5813881Z copying path '/nix/store/wfg9zbfa46hjr2qa7zb8yc7909si2w5l-libjpeg-turbo-3.1.4.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.6043679Z copying path '/nix/store/xzd50cnimv3ycr567ca7b4ms05vjqfn8-libva-minimal-2.24.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.6050678Z copying path '/nix/store/wcvmvbp48v8fag4a7sx7n3x7yib5bp8m-libbluray-1.4.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.6412058Z copying path '/nix/store/lywr1vz1kw06mfs0zbl6lhbyhkic9q32-hwloc-2.14.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.6505075Z copying path '/nix/store/8sjgd7q3mdks1rb7rbcv0sallhvrhai5-gcc-15.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.6929023Z copying path '/nix/store/b5snblm64ranjc64wd7qb49zag3l533w-lcms2-2.19.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7024539Z copying path '/nix/store/fcnnn4w7sxx96liivqdsm1alwyh9x00d-numactl-2.0.18' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7312914Z copying path '/nix/store/bjvx7flf644pczbs59jfhnmn4drvh3ly-kmod-31' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7359132Z copying path '/nix/store/8vl6rm8j9n8f2rklmi9j8yhgry8ffhh6-binutils-2.46-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7582972Z copying path '/nix/store/mfc0xafdywls4v0ynqgjn1plv74b82qg-libselinux-3.10' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7693579Z copying path '/nix/store/4ag6jkbsdwq78jh74qidn7crm68cnwdp-libwebp-1.6.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.7911017Z copying path '/nix/store/z3xc22a4jcadqazjhxjbgi52pr6my5rn-onetbb-2022.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.8250844Z copying path '/nix/store/4hdzvycn5mkg3xm1ggscp3mxz8005c3m-protobuf-36.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.8345068Z copying path '/nix/store/idgkjd49n2g5l4aryjvsmp8rg89gad03-librist-0.2.11' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.8386346Z copying path '/nix/store/91g04d094y71ilm3vwh7rmmrw6mmxiny-libdeflate-1.25' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.8473299Z copying path '/nix/store/lb6cffq4pvdnvjl9v1m0jhgl8whn96vn-x265-4.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.8631689Z copying path '/nix/store/yfs07ymlj0ci9dj01jy35k2d3mra73rz-blas-3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9055300Z copying path '/nix/store/sjjz4z18jjj1wjx3czpllpf6bnd46rbc-lapack-3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9102707Z copying path '/nix/store/97id4rvawj070q1bdmk85qinz20jcc97-openvino-2026.3.1-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9431392Z copying path '/nix/store/nvrgm462837l0w1gni61zqd5ckjyi2jv-alsa-ucm-conf-1.2.16.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9432845Z copying path '/nix/store/7mf69bavdjazjvbhflj0s40d2a6mk5wb-glib-2.88.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9452732Z copying path '/nix/store/kqi0d4fb90jjvdyilbd9s7h4nqzkllsz-lerc-4.2.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:07.9454423Z copying path '/nix/store/n48xbb1jl5vjvngr2icjlfjhripb8scb-util-linux-minimal-2.42.3-login' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.0867782Z copying path '/nix/store/31gnwsgag5qa14hfblqi5hyn71pyx7py-binutils-2.46' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.1062563Z copying path '/nix/store/g909pi91zmvb7zp27cvn6ip27s2mr48q-systemd-minimal-libs-261.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.2154791Z copying path '/nix/store/alw189csp6spfiw5np500xmfqsw67l0k-libtiff-4.7.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.2484248Z copying path '/nix/store/sv8pf8cqmgrgh7jl2n9ww3knslxnfz33-libevent-2.1.13' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.2879981Z copying path '/nix/store/z6v6qc8cy50i90afg4kgbr4jrfg5fdnc-alsa-lib-1.2.16.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.3944528Z copying path '/nix/store/mkbkpgcprprha2757s8lf8amw6wvgf19-libsamplerate-0.2.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.3987923Z copying path '/nix/store/9wh3vnl7plpk052nczlzyh3v7zb3jhkw-libwebp-1.6.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.4173635Z copying path '/nix/store/d7wxlfb1l89drb2fnx9jbrl5klij22c1-v4l-utils-1.32.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.4636255Z copying path '/nix/store/gw4wzhs8mr54qdfpr5lajssr6np1xwfd-openjpeg-2.5.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.4962003Z copying path '/nix/store/ks4qbizdbb3jkrcxlppbabn3pr4jlny4-unbound-1.26.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.5494723Z copying path '/nix/store/a0bl51i3h2wmhaf055kf1rv6bkl86w8l-libtool-2.6.2-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.5589107Z copying path '/nix/store/mcn8x2q2ny1449kx6glbbvllvsmgwzb8-fftw-single-3.3.11' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.5658669Z copying path '/nix/store/24wz65p8xgj0j77gxhdaix1cpmfgi9ca-libmpg123-1.33.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.5778396Z copying path '/nix/store/v6l59lx8rmxhn5plva8flmnb3yy5gpi8-flac-1.5.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.6032091Z copying path '/nix/store/w70g5ji1q5wrgq8m3jc5rbw555wkanqi-dconf-0.49.0-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.6039485Z copying path '/nix/store/0a1k64ih9k5ribbjs07bgmzhb43djnr0-harfbuzz-13.2.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.6265534Z copying path '/nix/store/06lpd7zy6sa30wn4wjanj7rdh9skf85n-util-linux-minimal-2.42.3-swap' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.6423324Z copying path '/nix/store/rv5n2g1s5q4a6w19c2f7nc9cjcwm949l-gnutls-3.8.13' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.6849993Z copying path '/nix/store/1bjjgf73l71xnddvcigvl847fy21l49l-kmod-31-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.7224391Z copying path '/nix/store/az7yld9lsjdhiw5cfyqv7z84hhb9rbk1-util-linux-minimal-2.42.3-mount' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.7257274Z copying path '/nix/store/ishli778p2dqxq4zii729y4fn1d94jfw-libxdmcp-1.1.5' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.7405991Z copying path '/nix/store/pbywxi9f0p8g7wzcdjibvnz030czx91r-libxau-1.0.12' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.7469797Z copying path '/nix/store/b49pvamq8favzzdaf543l633hx2zjsp5-libsndfile-1.2.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.8989797Z copying path '/nix/store/cdpwb5vckqp8il7p70jqvn27isflyxxz-libxcb-1.17.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.9001832Z copying path '/nix/store/dvwgcjkr3a5grfni2gl5fryh5g96br0l-speexdsp-1.2.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.9004273Z copying path '/nix/store/ilf3wdjk0da1809mxi47plm4j2gfm5n5-systemd-minimal-261.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:08.9353059Z copying path '/nix/store/q8jqhghiq85n9n59w66sdhbykldmhm24-libass-0.17.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.0560414Z copying path '/nix/store/9159h1500cy22cgriydpl6mbih9rjnc2-libx11-1.8.13' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.2297986Z copying path '/nix/store/0fdc105g1896ganr8916rsjxhvr9qv5b-binutils-wrapper-2.46' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.6203124Z copying path '/nix/store/iqcd9c3zfy006qfmbz9ccc61wvrhapaq-dbus-1.16.2-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.7551614Z copying path '/nix/store/iw262n5fnb14x4g5krjkp7ik72admw3x-libjack2-1.9.22' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.7574982Z copying path '/nix/store/w7j0gzkiisihf2z4gc8frr56ynyhpc10-libpulseaudio-17.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.7604926Z copying path '/nix/store/3jq81rn55dws616y11whb1n9j8hby00q-blas-3-dev' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.7999049Z copying path '/nix/store/psaf735gr7c6j1q6dizlc3v1fd32qdk6-lapack-3-dev' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:09.9500350Z copying path '/nix/store/m10kb9f0vylgxbpr9sc5r1hxwvdnr34r-mpg123-1.33.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.0656251Z copying path '/nix/store/4h0n42zi5gf6qvi4fliba2cc3lpg62lj-libopenmpt-0.8.9' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.2017823Z copying path '/nix/store/lxmpy640l6m63afvqch43m6181hnchjg-ffmpeg-headless-9.0.1-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.4973501Z copying path '/nix/store/7jpv8pfyi49jywd517wm4p20wkrdm71s-python3.14-certifi-2026.06.17' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.4981069Z copying path '/nix/store/yj33qpknmgh7ykx0bbfiriv0043qbc1y-python3.14-filelock-3.29.7' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.4987400Z copying path '/nix/store/bmffbz1sbxg0fpqa7ca2hccrkv1ppnkr-python3.14-click-8.3.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.4998638Z copying path '/nix/store/88cvqnjbqlhfdcnfqxmq8dq891y0i0qf-python3.14-hf-xet-1.6.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5001680Z copying path '/nix/store/4p3mnnmkls5y6xzmf5l4cgm6i5q5mhrm-python3.14-fsspec-2026.6.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5003488Z copying path '/nix/store/42mgnq5pyppnxjbyzfj6y94p8hd9i6yf-python3.14-h11-0.16.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5019574Z copying path '/nix/store/2xdbp63zbrawvjdpralx4ckgn25xdk4k-python3.14-humanfriendly-10.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5023971Z copying path '/nix/store/yywz57n2zx5gpyarnyrqcx1z206z5jc4-python3.14-idna-3.18' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5025643Z copying path '/nix/store/z14gnqg9yfjdz5728prknaylhsisgmfg-python3.14-numpy-2.5.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5028268Z copying path '/nix/store/68v904jylhiff5yy0s9lx8jawp68cad0-python3.14-packaging-26.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.5035068Z copying path '/nix/store/iw39pw567acajnaf1iywnwz6fwcb6cxg-python3.14-pyyaml-6.0.3' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.6233686Z copying path '/nix/store/qm4ff0ygxcxzc55drlpi3apdrmmv614w-stream' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.6261935Z copying path '/nix/store/341xpm2l24jn1b92xmqprxvjlnvxj4q2-python3.14-tqdm-4.68.4' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.6302107Z copying path '/nix/store/3acdzrkir2rz5dd1mhw6d6d1b23kzjbp-python3.14-typing-extensions-4.16.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.6384203Z copying path '/nix/store/38azh8yv0cj0a8w2yy3c47lyw4pjxp10-python3.14-anyio-4.14.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.6458225Z copying path '/nix/store/cgg54v8zj7ayvfqqkr7b75nbjpzqqvk9-python3.14-httpcore-1.0.9' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.7143076Z copying path '/nix/store/v6lpv7vpjgif0by8mij39b6v5zh84v2n-python3.14-coloredlogs-15.0.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.7187266Z copying path '/nix/store/sag0gzld5zranvx20gr6l5kzqng1i84m-stream' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.7884030Z copying path '/nix/store/7x0xs8bbiwrs9ral4c32rnfckr0vz3yg-python3.14-httpx-0.28.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.9485673Z copying path '/nix/store/x46rnziynpalr4phm6yh0x46s42xq5kw-onnxruntime-1.27.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:10.9618512Z copying path '/nix/store/98riw5bksmbj25qw7jmvyqwfwyk3yqyq-python3.14-av-17.0.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:11.0643963Z copying path '/nix/store/jpf5c25wg96d2fszqllbm76db5hn82m5-python3.14-huggingface-hub-1.30.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:11.4212070Z copying path '/nix/store/ffz73949zj9r8jlkf228fxibcrfwqjbc-python3.14-tokenizers-0.23.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:11.5530324Z copying path '/nix/store/hv5vky0pbvnnm0wiz5m637qgr2hnqcc0-python3.14-onnxruntime-1.27.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:11.7794012Z copying path '/nix/store/yq6rrm5mab786l4qxbj7dj8zvw3y25i4-cuda12.9-libcublas-12.9.1.4-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:12.0336795Z copying path '/nix/store/z4c6k0mrlkwl3s4w9ysxc8vq1wylm3ms-gcc-wrapper-15.3.0' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:12.1272009Z copying path '/nix/store/xysbrlyn8h5gmxw2y4y14rbjgsvx6qdj-make-binary-wrapper-hook' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:22.7088206Z copying path '/nix/store/cipn19ja8850lv548351yvwc0imyqwqm-cuda12.9-cudnn-9.22.0.52-lib' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:36.2179342Z copying path '/nix/store/cw8yzdxqm41swgyiych0qijn8vdrlakv-ctranslate2-4.8.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:36.2181047Z copying path '/nix/store/4r3mhalh5vxhbzgnrn9k7rrc1wm31k51-faster-whisper-base.json' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:37.4604069Z copying path '/nix/store/farmwi07y25hvbfwvwcallc8c5i75wr0-python3.14-ctranslate2-4.8.2' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:38.2858805Z copying path '/nix/store/2dm6xms6pgsr0l78vckcsgjb92cy9ksg-python3.14-faster-whisper-1.2.1' from 'http://127.0.0.1:37515'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:38.6684824Z building '/nix/store/7hyjimm9lylfc4n9y7jfqly6kwslxa4y-python3-3.14.7-env.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:41.3595053Z building '/nix/store/6hxk2wfh72sqla1cp5kgw48m0sn26pb2-faster-whisper-customisation-layer.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:41.5723492Z building '/nix/store/81746gdnag0i4mnbnnxczrwlbnyk753q-excludePaths.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:41.7745207Z building '/nix/store/76plv91i2sgsa73r7di24zdh9cpzfrkk-layers.json.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:41.9387051Z building '/nix/store/qpcp7dk6x960dad6b2g65jjxhmdy5ig7-faster-whisper-conf.json.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:42.0350715Z building '/nix/store/9m64rr0qd3p8nsxqpqvgqrc82i9v9f5a-stream-faster-whisper.drv'...
+build-and-validate	Build Hermetic Container Image	2026-11-22T18:00:42.1204052Z building '/nix/store/9r6w4cg1dbhfimkm9p4hqfrryka75gd3-faster-whisper.tar.gz.drv'...
+build-and-validate	Load Image into Docker Daemon	﻿2026-11-22T18:01:53.5733559Z ##[group]Run docker load < result
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5733912Z ^[[36;1mdocker load < result^[[0m
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5768195Z shell: /usr/bin/bash -e {0}
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5768456Z env:
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5768657Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5769129Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-ae1b12fd-91bf-49bd-b39e-78718889074d
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:01:53.5769629Z ##[endgroup]
+build-and-validate	Load Image into Docker Daemon	2026-11-22T18:02:31.5694724Z Loaded image: faster-whisper:latest
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	﻿2026-11-22T18:02:31.9249431Z ##[group]Run docker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9251365Z ^[[36;1mdocker run --rm faster-whisper:latest python3 -c "import ctypes, faster_whisper; ctypes.CDLL('libcublas.so.12'); ctypes.CDLL('libcudnn.so.9'); ctypes.CDLL('libcurand.so.10'); print('OK')"^[[0m
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9749661Z shell: /usr/bin/bash -e {0}
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9749930Z env:
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9750420Z   DETERMINATE_NIX_KVM: 1
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9750985Z   MAGIC_NIX_CACHE_DAEMONDIR: /home/runner/work/_temp/magic-nix-cache-ae1b12fd-91bf-49bd-b39e-78718889074d
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:31.9751852Z ##[endgroup]
+build-and-validate	Verify CUDA Shared Libraries (Pre-Deploy Check)	2026-11-22T18:02:35.7420385Z OK
+build-and-validate	Post Setup Magic Nix Cache	﻿2026-11-22T18:02:35.9184558Z Post job cleanup.
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3126202Z   ^[[2m2026-11-22T18:02:36.309227Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWorkflow finished^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3126964Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:58
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3127322Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3127995Z   ^[[2m2026-11-22T18:02:36.309268Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::api^[[0m^[[32m: ^[[32mWaiting for GitHub action cache uploads to finish^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3128761Z     ^[[2;3mat^[[0m magic-nix-cache/src/api.rs:98
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.3128986Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.6316335Z   ^[[2m2026-11-22T18:02:36.630671Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/1an3d49p9zyp54fggajqrmvxy0wn433p-libssh-0.12.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.6317611Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:36.6318001Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:38.0096243Z   ^[[2m2026-11-22T18:02:38.008693Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/1bjjgf73l71xnddvcigvl847fy21l49l-kmod-31-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:38.0097994Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:38.0098345Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:39.6212991Z   ^[[2m2026-11-22T18:02:39.620368Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/24wz65p8xgj0j77gxhdaix1cpmfgi9ca-libmpg123-1.33.7' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:39.6214235Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:39.6214475Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:40.9891227Z   ^[[2m2026-11-22T18:02:40.988121Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/2rpxri9fbz8frvz2bw2wl64q9yqig7sa-fribidi-1.0.16' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:40.9893687Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:40.9894123Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:42.3635515Z   ^[[2m2026-11-22T18:02:42.362495Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/3yaqyiry0vi52pxf6r8nwd66ciqwx9lj-speex-1.2.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:42.3636970Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:42.3637249Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:44.1441416Z   ^[[2m2026-11-22T18:02:44.143166Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/49vjxy5apwx3pvgql58jyf16vxrq86z0-svt-av1-4.1.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:44.1442679Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:44.1442963Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:45.6844438Z   ^[[2m2026-11-22T18:02:45.683473Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4ag6jkbsdwq78jh74qidn7crm68cnwdp-libwebp-1.6.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:45.6845596Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:45.6845844Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:47.3881494Z   ^[[2m2026-11-22T18:02:47.387150Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4h0n42zi5gf6qvi4fliba2cc3lpg62lj-libopenmpt-0.8.9' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:47.3882767Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:47.3883031Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:48.8943589Z   ^[[2m2026-11-22T18:02:48.893316Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4hki0mwbxnnz7nqgzi1620rjgqcq5djy-xvidcore-1.3.7' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:48.8944999Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:48.8945406Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:50.3199197Z   ^[[2m2026-11-22T18:02:50.318967Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4q3lydn0anq5qyzpxm5xyxnxqxn5nj7c-zlib-1.3.2-static' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:50.3201309Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:50.3201656Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:51.7517434Z   ^[[2m2026-11-22T18:02:51.750853Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/5187y296hw6clw80pv0r3w8y335akraa-ocl-icd-2.3.5' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:51.7519462Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:51.7519916Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:53.0676921Z   ^[[2m2026-11-22T18:02:53.066899Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/6jf250nz8fc5jjl0p94iidqgrsspfch9-dns-root-data-2025-04-14' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:53.0678175Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:53.0678421Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:54.5443343Z   ^[[2m2026-11-22T18:02:54.543449Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/6nckj64bb26vc1a7knzj7w0jw8l75pd5-vid.stab-1.1.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:54.5445076Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:54.5445589Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:56.4868956Z   ^[[2m2026-11-22T18:02:56.486103Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/7mf69bavdjazjvbhflj0s40d2a6mk5wb-glib-2.88.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:56.4870701Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:56.4871040Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:58.0378130Z   ^[[2m2026-11-22T18:02:58.036898Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/846ixq8wd4pr42v7863qqv68mpmax1dy-libvmaf-3.0.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:58.0379337Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:58.0379687Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:59.6092736Z   ^[[2m2026-11-22T18:02:59.608408Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/85v143gw8jcqjg04gxb38c4han2z7myb-freetype-2.14.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:59.6094213Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:02:59.6094910Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:01.2689585Z   ^[[2m2026-11-22T18:03:01.268275Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/87s1p09ya56a484b19d0qp8zaklpvkja-zimg-3.0.6' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:01.2690906Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:01.2691178Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:02.9566167Z   ^[[2m2026-11-22T18:03:02.955663Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/9159h1500cy22cgriydpl6mbih9rjnc2-libx11-1.8.13' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:02.9567620Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:02.9567958Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:04.3109103Z   ^[[2m2026-11-22T18:03:04.309666Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/91g04d094y71ilm3vwh7rmmrw6mmxiny-libdeflate-1.25' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:04.3110472Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:04.3110731Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:06.1695829Z   ^[[2m2026-11-22T18:03:06.168951Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/98riw5bksmbj25qw7jmvyqwfwyk3yqyq-python3.14-av-17.0.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:06.1696950Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:06.1697226Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:07.7198445Z   ^[[2m2026-11-22T18:03:07.718870Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/9wh3vnl7plpk052nczlzyh3v7zb3jhkw-libwebp-1.6.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:07.7200265Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:07.7200657Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:09.0811397Z   ^[[2m2026-11-22T18:03:09.080429Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/a0bl51i3h2wmhaf055kf1rv6bkl86w8l-libtool-2.6.2-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:09.0812347Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:09.0812576Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:10.5353101Z   ^[[2m2026-11-22T18:03:10.534538Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/a5l4k49m1x4vdv1lr9gzl7ayswxqi08q-graphite2-1.3.15' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:10.5354505Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:10.5355020Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:12.0452139Z   ^[[2m2026-11-22T18:03:12.044457Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/alw189csp6spfiw5np500xmfqsw67l0k-libtiff-4.7.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:12.0453318Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:13.4674518Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:13.4676356Z   ^[[2m2026-11-22T18:03:13.466925Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/az7yld9lsjdhiw5cfyqv7z84hhb9rbk1-util-linux-minimal-2.42.3-mount' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:13.4677502Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:13.4677747Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:15.0887432Z   ^[[2m2026-11-22T18:03:15.087885Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/b49pvamq8favzzdaf543l633hx2zjsp5-libsndfile-1.2.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:15.0888677Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:15.0888972Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:16.5431022Z   ^[[2m2026-11-22T18:03:16.542351Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/b5snblm64ranjc64wd7qb49zag3l533w-lcms2-2.19.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:16.5432379Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:16.5432693Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:17.9269747Z   ^[[2m2026-11-22T18:03:17.926372Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/bjvx7flf644pczbs59jfhnmn4drvh3ly-kmod-31' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:17.9270949Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:17.9271165Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:19.4378003Z   ^[[2m2026-11-22T18:03:19.437171Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/cdpwb5vckqp8il7p70jqvn27isflyxxz-libxcb-1.17.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:19.4379296Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:19.4379530Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:20.9375979Z   ^[[2m2026-11-22T18:03:20.936909Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ch3yazk4fzsqnb53bw211nr69hi60n3f-lame-3.100-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:20.9377312Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:20.9377627Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:22.5212434Z   ^[[2m2026-11-22T18:03:22.520529Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/chxa60sbf03qlfx8qdd6d1rh7xbw28f4-x264-0-unstable-2025-09-10-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:22.5214036Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:22.5214566Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:24.1413817Z   ^[[2m2026-11-22T18:03:24.140576Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/cnq79axmg834ya1xqzgb2sp1zj36vch0-dejavu-fonts-minimal-2.37' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:24.1415348Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:24.1415690Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:25.5665560Z   ^[[2m2026-11-22T18:03:25.565895Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/cw6v56f4fg5lf1ngzmkxd70zcnxgcs17-soxr-0.1.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:25.5666479Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:25.5666697Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:27.1835434Z   ^[[2m2026-11-22T18:03:27.182936Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/d7wxlfb1l89drb2fnx9jbrl5klij22c1-v4l-utils-1.32.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:27.1836338Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:27.1836552Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:28.4915614Z   ^[[2m2026-11-22T18:03:28.490834Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/dvwgcjkr3a5grfni2gl5fryh5g96br0l-speexdsp-1.2.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:28.4916974Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:28.4917291Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:30.0597730Z   ^[[2m2026-11-22T18:03:30.059081Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/f9yy4q7dkvpw3i508nf510h9s240f3pf-libopus-1.6.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:30.0598916Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:30.0599140Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:31.4627392Z   ^[[2m2026-11-22T18:03:31.461934Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/fcnnn4w7sxx96liivqdsm1alwyh9x00d-numactl-2.0.18' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:31.4628778Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:31.4629091Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:33.1528325Z   ^[[2m2026-11-22T18:03:33.152106Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/g909pi91zmvb7zp27cvn6ip27s2mr48q-systemd-minimal-libs-261.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:33.1529344Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:33.1529579Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:34.6886030Z   ^[[2m2026-11-22T18:03:34.687894Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/gw4wzhs8mr54qdfpr5lajssr6np1xwfd-openjpeg-2.5.4' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:34.6887514Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:34.6887859Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:36.3040795Z   ^[[2m2026-11-22T18:03:36.303333Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/h7fpfwfyzxrgal29lpcxw9p66vcnxrnr-dav1d-1.5.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:36.3042411Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:36.3042761Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:37.9007139Z   ^[[2m2026-11-22T18:03:37.900035Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hhv2z8dn6760d1bzvrd69l4ivclb792r-libxml2-2.15.4' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:37.9008942Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:37.9009180Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:39.3602054Z   ^[[2m2026-11-22T18:03:39.359417Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hixv432kjp53c9w6fjgm1y5d507jwhaw-openapv-0.2.1.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:39.3603726Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:39.3604147Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:40.8597953Z   ^[[2m2026-11-22T18:03:40.858975Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hrxf1fxrp7qwxrlv5k4aqxlwlam952aa-fontconfig-2.18.3-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:40.8600451Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:40.8600896Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:42.4333108Z   ^[[2m2026-11-22T18:03:42.432562Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/iahmf8kl215rjcvb3zz3l7i9w2sf9x5v-vulkan-loader-1.4.357.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:42.4334697Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:42.4335064Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:43.8296535Z   ^[[2m2026-11-22T18:03:43.828939Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/idgkjd49n2g5l4aryjvsmp8rg89gad03-librist-0.2.11' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:43.8297727Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:43.8298003Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:45.9428227Z   ^[[2m2026-11-22T18:03:45.942041Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ilf3wdjk0da1809mxi47plm4j2gfm5n5-systemd-minimal-261.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:45.9429354Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:45.9429611Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:47.3230966Z   ^[[2m2026-11-22T18:03:47.322373Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/iqcd9c3zfy006qfmbz9ccc61wvrhapaq-dbus-1.16.2-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:47.3232328Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:47.3232589Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:48.6264611Z   ^[[2m2026-11-22T18:03:48.625795Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ishli778p2dqxq4zii729y4fn1d94jfw-libxdmcp-1.1.5' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:48.6266335Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:48.6266661Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:50.0664372Z   ^[[2m2026-11-22T18:03:50.065771Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/iw262n5fnb14x4g5krjkp7ik72admw3x-libjack2-1.9.22' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:50.0665442Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:50.0665690Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:51.4508221Z   ^[[2m2026-11-22T18:03:51.450144Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/jbx15jy9cp8a1b4mqrarmv3mjz88j127-libtheora-1.2.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:51.4509639Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:51.4509913Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:52.9311346Z   ^[[2m2026-11-22T18:03:52.930501Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/jxd26cx6cgbjzal3mzw0vcv8pqdbh0bb-gmp-with-cxx-6.3.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:52.9312456Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:52.9312714Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:54.3748141Z   ^[[2m2026-11-22T18:03:54.374201Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/k4lz3hi5qy0siqimiq3jxc5zknmh84j4-libtasn1-4.21.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:54.3749193Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:54.3749447Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:55.7349295Z   ^[[2m2026-11-22T18:03:55.734316Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/kblyikx36fndg1yh86ch5jk840j3fnb5-libpciaccess-0.19' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:55.7351072Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:55.7351304Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:57.3553980Z   ^[[2m2026-11-22T18:03:57.354684Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/kc2l15jpngbxnl2md9j4z854jvdh3yr5-fontconfig-2.18.3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:57.3555625Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:57.3556002Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:58.8749837Z   ^[[2m2026-11-22T18:03:58.874280Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/kqi0d4fb90jjvdyilbd9s7h4nqzkllsz-lerc-4.2.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:58.8751277Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:03:58.8751540Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:00.5645275Z   ^[[2m2026-11-22T18:04:00.563863Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ks4qbizdbb3jkrcxlppbabn3pr4jlny4-unbound-1.26.0-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:00.5646511Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:00.5646800Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:02.3822596Z   ^[[2m2026-11-22T18:04:02.381564Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/l4f10yjgzj7n4s9933mg7p0mwz26bg3p-libaom-3.12.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:02.3823708Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:02.3823966Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:04.3993018Z   ^[[2m2026-11-22T18:04:04.398206Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/lb6cffq4pvdnvjl9v1m0jhgl8whn96vn-x265-4.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:04.3994399Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:04.3994623Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:06.6578618Z   ^[[2m2026-11-22T18:04:06.656788Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/lxmpy640l6m63afvqch43m6181hnchjg-ffmpeg-headless-9.0.1-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:06.6579889Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:06.6580409Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:08.2624293Z   ^[[2m2026-11-22T18:04:08.261682Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/m10kb9f0vylgxbpr9sc5r1hxwvdnr34r-mpg123-1.33.7' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:08.2625537Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:08.2625783Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:09.9198095Z   ^[[2m2026-11-22T18:04:09.919119Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/mcn8x2q2ny1449kx6glbbvllvsmgwzb8-fftw-single-3.3.11' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:09.9199178Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:09.9199428Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:11.3707457Z   ^[[2m2026-11-22T18:04:11.370119Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/mfc0xafdywls4v0ynqgjn1plv74b82qg-libselinux-3.10' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:11.3708526Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:11.3709002Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:13.0247022Z   ^[[2m2026-11-22T18:04:13.024149Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/mkbkpgcprprha2757s8lf8amw6wvgf19-libsamplerate-0.2.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:13.0248225Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:13.0248503Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:14.5094800Z   ^[[2m2026-11-22T18:04:14.508792Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/mkga0gmzxfb1kj0j64x852b047ml2xp7-libvorbis-1.3.7' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:14.5095898Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:14.5096151Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:15.8402886Z   ^[[2m2026-11-22T18:04:15.839623Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/n48xbb1jl5vjvngr2icjlfjhripb8scb-util-linux-minimal-2.42.3-login' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:15.8404447Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:15.8405073Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:17.3364319Z   ^[[2m2026-11-22T18:04:17.335663Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/nvrgm462837l0w1gni61zqd5ckjyi2jv-alsa-ucm-conf-1.2.16.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:17.3365725Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:17.3365975Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:18.5734719Z   ^[[2m2026-11-22T18:04:18.572830Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/pbywxi9f0p8g7wzcdjibvnz030czx91r-libxau-1.0.12' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:18.5736153Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:18.5736489Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:20.0613060Z   ^[[2m2026-11-22T18:04:20.060615Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/pdm9fz4pc70pwhgzj88wilg3pzsyk7q1-libpng-apng-1.6.58' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:20.0614298Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:20.0614607Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:21.4564822Z   ^[[2m2026-11-22T18:04:21.455776Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/q8jqhghiq85n9n59w66sdhbykldmhm24-libass-0.17.4' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:21.4566004Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:21.4566285Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:22.7600016Z   ^[[2m2026-11-22T18:04:22.759360Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/r51np6c4hvxdhbzw5c6pid7achzap1qg-alsa-topology-conf-1.2.5.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:22.7601903Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:22.7602289Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:24.5317334Z   ^[[2m2026-11-22T18:04:24.530952Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/rfkidsvmdg6jrsvwcjal8fzhcapr0zdp-mbedtls-3.6.7' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:24.5318529Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:24.5318840Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:26.2635368Z   ^[[2m2026-11-22T18:04:26.262885Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/rv5n2g1s5q4a6w19c2f7nc9cjcwm949l-gnutls-3.8.13' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:26.2636660Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:26.2636917Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:27.5740879Z   ^[[2m2026-11-22T18:04:27.573445Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/s7rdv129xwa1h2zdm528ga1j3xir2kg7-cjson-1.7.19' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:27.5741844Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:27.5742062Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:29.2346734Z   ^[[2m2026-11-22T18:04:29.233969Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/s8sznaiwm83m6dwnxm82r8y7rz57kgqn-p11-kit-0.26.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:29.2348004Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:29.2348347Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:31.0126237Z   ^[[2m2026-11-22T18:04:31.011943Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/sgrld0sqj0y27j6zqvq41mqvpiri179j-srt-1.5.6' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:31.0127383Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:31.0127677Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:32.5268306Z   ^[[2m2026-11-22T18:04:32.526116Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/sryi5l9pfv0x24jrimpdjqm5qylv84fa-libdrm-2.4.134' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:32.5269739Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:32.5270418Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:34.0610544Z   ^[[2m2026-11-22T18:04:34.060377Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/sv8pf8cqmgrgh7jl2n9ww3knslxnfz33-libevent-2.1.13' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:34.0611639Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:34.0611890Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:35.5810549Z   ^[[2m2026-11-22T18:04:35.580470Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/v6l59lx8rmxhn5plva8flmnb3yy5gpi8-flac-1.5.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:35.5811625Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:35.5811907Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:37.3890576Z   ^[[2m2026-11-22T18:04:37.388227Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/vhj92jnvlgb1xhaw0dahpylf405dx5rh-hwdata-0.411' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:37.3892024Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:37.3892282Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:38.8769162Z   ^[[2m2026-11-22T18:04:38.876268Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/vhmxxxn1xpyxgxlznzfvfw0djwlg52kl-zvbi-0.2.45' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:38.8770627Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:38.8770871Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:40.2099095Z   ^[[2m2026-11-22T18:04:40.209253Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/w70g5ji1q5wrgq8m3jc5rbw555wkanqi-dconf-0.49.0-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:40.2100986Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:40.2101352Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:41.8409084Z   ^[[2m2026-11-22T18:04:41.840232Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/w7j0gzkiisihf2z4gc8frr56ynyhpc10-libpulseaudio-17.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:41.8410305Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:41.8410597Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:43.3300516Z   ^[[2m2026-11-22T18:04:43.329394Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/wcvmvbp48v8fag4a7sx7n3x7yib5bp8m-libbluray-1.4.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:43.3301976Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:43.3302312Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:44.9154227Z   ^[[2m2026-11-22T18:04:44.914751Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/wfg9zbfa46hjr2qa7zb8yc7909si2w5l-libjpeg-turbo-3.1.4.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:44.9155459Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:44.9155834Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:46.4716495Z   ^[[2m2026-11-22T18:04:46.471032Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xhgd6rb4h8ssid9yw8nvw74cwq69md5y-brotli-1.2.0-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:46.4717510Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:46.4717749Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:47.9618576Z   ^[[2m2026-11-22T18:04:47.961352Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xsmrab458wn42ilwv6s68jw9f4r5iisz-nettle-3.10.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:47.9619625Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:47.9619887Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:49.3569667Z   ^[[2m2026-11-22T18:04:49.356378Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xzd50cnimv3ycr567ca7b4ms05vjqfn8-libva-minimal-2.24.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:49.3571259Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:49.3571549Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:50.9544898Z   ^[[2m2026-11-22T18:04:50.953793Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/z6v6qc8cy50i90afg4kgbr4jrfg5fdnc-alsa-lib-1.2.16.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:50.9546339Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:50.9546609Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:52.1727611Z   ^[[2m2026-11-22T18:04:52.172049Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/3jq81rn55dws616y11whb1n9j8hby00q-blas-3-dev' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:52.1729866Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:52.1730387Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:54.1620436Z   ^[[2m2026-11-22T18:04:54.161252Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/d17h7hf0qr99v6fadj50ybzgyvbsds81-gfortran-15.3.0-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:54.1622338Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:54.1622594Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:56.2218743Z   ^[[2m2026-11-22T18:04:56.221133Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/djq0ja5bag4w9p5h5s44hzaqc598llnq-openblas-0.3.33' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:56.2220377Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:56.2220669Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:57.5732588Z   ^[[2m2026-11-22T18:04:57.572424Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/dlq5qjz1m8ck351dg891p0q6sxm6gjr7-gfortran-15.3.0-libgcc' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:57.5733913Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:57.5734213Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:58.8920661Z   ^[[2m2026-11-22T18:04:58.891310Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/nl96vbi5p9w1ig7qn53klw3i6d121007-check-phase-thread-limit-hook' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:58.8921979Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:04:58.8922259Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:00.4256249Z   ^[[2m2026-11-22T18:05:00.424764Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/psaf735gr7c6j1q6dizlc3v1fd32qdk6-lapack-3-dev' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:00.4257621Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:00.4257936Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:02.9223914Z   ^[[2m2026-11-22T18:05:02.921397Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/sjjz4z18jjj1wjx3czpllpf6bnd46rbc-lapack-3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:02.9224984Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:02.9225238Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:05.4536854Z   ^[[2m2026-11-22T18:05:05.452883Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/yfs07ymlj0ci9dj01jy35k2d3mra73rz-blas-3' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:05.4538193Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:05.4538498Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:07.6771290Z   ^[[2m2026-11-22T18:05:07.676307Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/z14gnqg9yfjdz5728prknaylhsisgmfg-python3.14-numpy-2.5.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:07.6772565Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:07.6772782Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:09.4351460Z   ^[[2m2026-11-22T18:05:09.434197Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/jpf5c25wg96d2fszqllbm76db5hn82m5-python3.14-huggingface-hub-1.30.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:09.4353082Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:09.4353378Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:11.1937681Z   ^[[2m2026-11-22T18:05:11.192874Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ffz73949zj9r8jlkf228fxibcrfwqjbc-python3.14-tokenizers-0.23.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:11.1938713Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:11.1938926Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:12.8033326Z   ^[[2m2026-11-22T18:05:12.802487Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/0gyk1hdw37b47p2pra40hjf7xzl312lf-abseil-cpp-20260107.1-dev' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:12.8034498Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:12.8034745Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:14.8486663Z   ^[[2m2026-11-22T18:05:14.847848Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4hdzvycn5mkg3xm1ggscp3mxz8005c3m-protobuf-36.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:14.8487836Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:14.8488111Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:16.4013668Z   ^[[2m2026-11-22T18:05:16.400506Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/5sdsmm8s00hck28yp95fk993rg42mqsp-gtest-1.18.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:16.4015044Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:16.4015262Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:20.2671924Z   ^[[2m2026-11-22T18:05:20.266339Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/97id4rvawj070q1bdmk85qinz20jcc97-openvino-2026.3.1-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:20.2673123Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:20.2673379Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:21.5701404Z   ^[[2m2026-11-22T18:05:21.569212Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/bbbqxmgpaabk7fqp33k716xd8xmhixlf-snappy-1.2.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:21.5702451Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:21.5702670Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:24.2921280Z   ^[[2m2026-11-22T18:05:24.291227Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hv5vky0pbvnnm0wiz5m637qgr2hnqcc0-python3.14-onnxruntime-1.27.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:24.2922668Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:24.2922877Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:25.9387843Z   ^[[2m2026-11-22T18:05:25.937955Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/iqvb7h1ykhm12304qwx17xbncrhhy1g4-abseil-cpp-20260107.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:25.9389285Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:25.9389594Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:27.3304734Z   ^[[2m2026-11-22T18:05:27.329620Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/lywr1vz1kw06mfs0zbl6lhbyhkic9q32-hwloc-2.14.0-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:27.3306253Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:27.3306596Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:29.8229235Z   ^[[2m2026-11-22T18:05:29.822121Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/x46rnziynpalr4phm6yh0x46s42xq5kw-onnxruntime-1.27.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:29.8230630Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:29.8230867Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:31.2273799Z   ^[[2m2026-11-22T18:05:31.226437Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/z3xc22a4jcadqazjhxjbgi52pr6my5rn-onetbb-2022.3.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:31.2275769Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:31.2276038Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:32.4459528Z   ^[[2m2026-11-22T18:05:32.445077Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/0fdc105g1896ganr8916rsjxhvr9qv5b-binutils-wrapper-2.46' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:32.4460906Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:32.4461167Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:34.6811684Z   ^[[2m2026-11-22T18:05:34.680282Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/31gnwsgag5qa14hfblqi5hyn71pyx7py-binutils-2.46' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:34.6813405Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:34.6813676Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:36.2971569Z   ^[[2m2026-11-22T18:05:36.296265Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/5ajjlk8dyi96ajvm066yivd4fbyg2gjh-isl-0.20' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:36.2972675Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:36.2972927Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:42.5222993Z   ^[[2m2026-11-22T18:05:42.521346Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/8sjgd7q3mdks1rb7rbcv0sallhvrhai5-gcc-15.3.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:42.5224510Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:42.5224785Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:44.0749702Z   ^[[2m2026-11-22T18:05:44.074168Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/8vl6rm8j9n8f2rklmi9j8yhgry8ffhh6-binutils-2.46-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:44.0751802Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:44.0752066Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:45.3255947Z   ^[[2m2026-11-22T18:05:45.324740Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/b3xx1nxngi605as6hv0w85rirmq0dmp3-expand-response-params' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:45.3257898Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:45.3258176Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:46.9384842Z   ^[[2m2026-11-22T18:05:46.937674Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/fdpy1l72q9gvq8d9snrdq67gm0j5s1dg-glibc-2.42-84-bin' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:46.9386877Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:46.9387170Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:48.6795272Z   ^[[2m2026-11-22T18:05:48.678674Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/gqwgk08v8n97y38m740w1lpdwcn6f9is-linux-headers-7.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:48.6796491Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:48.6796746Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:50.1971363Z   ^[[2m2026-11-22T18:05:50.196380Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/l59iyibk32661wkzrc9nkhn3k24xz752-mpfr-4.2.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:50.1972468Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:50.1972727Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:51.6183582Z   ^[[2m2026-11-22T18:05:51.617468Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/l7hnbf72dzsccm3bqkyvhyd10vq2z4az-libmpc-1.4.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:51.6184904Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:51.6185148Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:53.1841955Z   ^[[2m2026-11-22T18:05:53.183311Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/lbjwxax9n0457lgd83rqwpd1l9lgfl7r-glibc-2.42-84-dev' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:53.1856083Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:53.1856355Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:54.6404904Z   ^[[2m2026-11-22T18:05:54.639631Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/r4awsy3173chrfdqy65vlk90r43zrf73-gmp-6.3.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:54.6406714Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:54.6406963Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:55.9223317Z   ^[[2m2026-11-22T18:05:55.921433Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xysbrlyn8h5gmxw2y4y14rbjgsvx6qdj-make-binary-wrapper-hook' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:55.9225649Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:55.9225924Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:57.1898784Z   ^[[2m2026-11-22T18:05:57.188996Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/z4c6k0mrlkwl3s4w9ysxc8vq1wylm3ms-gcc-wrapper-15.3.0' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:57.1899972Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:57.1900571Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:58.4583781Z   ^[[2m2026-11-22T18:05:58.457094Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/3i19s5vb9yf6spix2pyljb2rsygz6cz0-auto-fix-elf-files' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:58.4585006Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:05:58.4585425Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:01.9012670Z   ^[[2m2026-11-22T18:06:01.900441Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/3sglhz2m9zqinlqndndg66966r6qs5s5-cuda12.9-libcurand-10.3.10.19-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:01.9013858Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:01.9014113Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:03.1411118Z   ^[[2m2026-11-22T18:06:03.139495Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/4r3mhalh5vxhbzgnrn9k7rrc1wm31k51-faster-whisper-base.json' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:03.1412106Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:03.1412645Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:04.4481559Z   ^[[2m2026-11-22T18:06:04.447372Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/a4n5ccn1rl4a9rzx8ky1qshz6dv5idxg-removeStubsFromRunpathHook' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:04.4482783Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:04.4483036Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:06.2595342Z   ^[[2m2026-11-22T18:06:06.258744Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/b3q9lf09y4x7kzaw55wzzhazfpzc6ass-cuda12.9-cuda_cccl-12.9.27' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:06.2596726Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:06.2597074Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:11.8613856Z   ^[[2m2026-11-22T18:06:11.860551Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/ch7ald1il1b6r7yjgyw78dvnw7y3lxsh-cuda12.9-cuda_nvrtc-12.9.86-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:11.8615256Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:11.8615573Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:39.6802711Z   ^[[2m2026-11-22T18:06:39.679457Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/cipn19ja8850lv548351yvwc0imyqwqm-cuda12.9-cudnn-9.22.0.52-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:39.6804214Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:39.6804628Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:40.8909913Z   ^[[2m2026-11-22T18:06:40.890212Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hsps2i0c94bkprmgxmamx69w83fqjizs-isDeclaredArray' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:40.8911448Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:40.8911754Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:42.6701686Z   ^[[2m2026-11-22T18:06:42.669394Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xax85s2ng8zfdq09jy3zfkp14yj86kiz-cuda12.9-cuda_cudart-12.9.79' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:42.6702816Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:42.6703046Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:43.9914996Z   ^[[2m2026-11-22T18:06:43.990691Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/y2wgjq5hl7kz93qdkry455b1imvw8zqk-getRunpathEntries' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:43.9916688Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:06:43.9917036Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:02.0919222Z   ^[[2m2026-11-22T18:07:02.091225Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/yq6rrm5mab786l4qxbj7dj8zvw3y25i4-cuda12.9-libcublas-12.9.1.4-lib' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:02.0920630Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:02.0920867Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:04.1560606Z   ^[[2m2026-11-22T18:07:04.155285Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/2kjw70gcrvz5qz9a48nxssnczsv7a9kh-openblas-0.3.33' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:04.1561848Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:04.1562072Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:06.2996022Z   ^[[2m2026-11-22T18:07:06.298753Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/cw8yzdxqm41swgyiych0qijn8vdrlakv-ctranslate2-4.8.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:06.2997350Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:06.2997646Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:07.9172035Z   ^[[2m2026-11-22T18:07:07.916465Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/farmwi07y25hvbfwvwcallc8c5i75wr0-python3.14-ctranslate2-4.8.2' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:07.9173158Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:07.9173427Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:09.6489936Z   ^[[2m2026-11-22T18:07:09.648226Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/2dm6xms6pgsr0l78vckcsgjb92cy9ksg-python3.14-faster-whisper-1.2.1' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:10.9389674Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:10.9390315Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:10.9391593Z   ^[[2m2026-11-22T18:07:10.938303Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/hkg923nc7ix7dg2dlhdi066iw3kmvd8q-python3-3.14.7-env' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:10.9393328Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:10.9393768Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:12.2159396Z   ^[[2m2026-11-22T18:07:12.215175Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/d313y0gfzpv13pwf2g10ksyf6qbmdcmh-faster-whisper-customisation-layer' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:12.2161225Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:12.2161542Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:13.5349643Z   ^[[2m2026-11-22T18:07:13.534164Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/j74nkwdyj1dggjcfvgpmvlyd70433kc4-excludePaths' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:13.5351037Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:13.5351298Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:14.7958422Z   ^[[2m2026-11-22T18:07:14.795057Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/xzk8lgygmc92f2ng5amls724l9nsfc7x-layers.json' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:14.7959681Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:14.7959920Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:16.0618894Z   ^[[2m2026-11-22T18:07:16.061053Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/grngl5j07i1n1vmvlp5j1sdg6j5yhz4q-faster-whisper-conf.json' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:16.0621261Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:16.0621570Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:17.4423587Z   ^[[2m2026-11-22T18:07:17.441596Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/88989620ny5mdhkyiphbg2adhvdajgkp-stream-faster-whisper' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:17.4424575Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:17.4424796Z 
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:59.3668605Z   ^[[2m2026-11-22T18:07:59.363696Z^[[0m ^[[32m INFO^[[0m ^[[1;32mmagic_nix_cache::gha^[[0m^[[32m: ^[[32mUploaded '/nix/store/kqnb8wg7b8y7b6d6z9i2jiv5gl1i36f1-faster-whisper.tar.gz' to the GitHub Action Cache^[[0m
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:59.3670920Z     ^[[2;3mat^[[0m magic-nix-cache/src/gha.rs:213
+build-and-validate	Post Setup Magic Nix Cache	2026-11-22T18:07:59.3671401Z 
+build-and-validate	Post Install Nix	﻿2026-11-22T18:07:59.7432084Z Post job cleanup.
+build-and-validate	Post Install Nix	2026-11-22T18:07:59.8965407Z (node:5417) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-validate	Post Install Nix	2026-11-22T18:07:59.8966497Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-validate	Post Checkout Repository	﻿2026-11-22T18:08:00.9174891Z Post job cleanup.
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0090808Z [command]/usr/bin/git version
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0134987Z git version 2.56.1
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0179989Z Temporarily overriding HOME='/home/runner/work/_temp/32c2b132-f30a-450b-97a4-06a5feeb74de' before making global git config changes
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0181937Z Adding repository directory to the temporary git global config as a safe directory
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0186761Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/faster-whisper-ci-poc/faster-whisper-ci-poc
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0229396Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0266297Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0641355Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0680444Z http.https://github.com/.extraheader
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0693468Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.0751318Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.1060221Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-validate	Post Checkout Repository	2026-11-22T18:08:01.1098638Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-validate	Complete job	﻿2026-11-22T18:08:01.1513452Z Cleaning up orphan processes
+build-and-validate	Complete job	2026-11-22T18:08:01.2049062Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, DeterminateSystems/magic-nix-cache-action@v9, DeterminateSystems/nix-installer-action@v16. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
